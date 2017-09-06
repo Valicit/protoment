@@ -1,0 +1,2019 @@
+fileFormatVersion: 2
+guid: 7f13baec52126cb4c9b06bb71036fd02
+timeCreated: 1504716592
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Novice_0
+    21300002: Novice_1
+    21300004: Novice_2
+    21300006: Novice_3
+    21300008: Novice_4
+    21300010: Novice_5
+    21300012: Novice_6
+    21300014: Novice_7
+    21300016: Novice_8
+    21300018: Novice_9
+    21300020: Novice_10
+    21300022: Novice_11
+    21300024: Novice_12
+    21300026: Novice_13
+    21300028: Novice_14
+    21300030: Novice_15
+    21300032: Novice_16
+    21300034: Novice_17
+    21300036: Novice_18
+    21300038: Novice_19
+    21300040: Novice_20
+    21300042: Novice_21
+    21300044: Novice_22
+    21300046: Novice_23
+    21300048: Novice_24
+    21300050: Novice_25
+    21300052: Novice_26
+    21300054: Novice_27
+    21300056: Novice_28
+    21300058: Novice_29
+    21300060: Novice_30
+    21300062: Novice_31
+    21300064: Novice_32
+    21300066: Novice_33
+    21300068: Novice_34
+    21300070: Novice_35
+    21300072: Novice_36
+    21300074: Novice_37
+    21300076: Novice_38
+    21300078: Novice_39
+    21300080: Novice_40
+    21300082: Novice_41
+    21300084: Novice_42
+    21300086: Novice_43
+    21300088: Novice_44
+    21300090: Novice_45
+    21300092: Novice_46
+    21300094: Novice_47
+    21300096: Novice_48
+    21300098: Novice_49
+    21300100: Novice_50
+    21300102: Novice_51
+    21300104: Novice_52
+    21300106: Novice_53
+    21300108: Novice_54
+    21300110: Novice_55
+    21300112: Novice_56
+    21300114: Novice_57
+    21300116: Novice_58
+    21300118: Novice_59
+    21300120: Novice_60
+    21300122: Novice_61
+    21300124: Novice_62
+    21300126: Novice_63
+    21300128: Novice_64
+    21300130: Novice_65
+    21300132: Novice_66
+    21300134: Novice_67
+    21300136: Novice_68
+    21300138: Novice_69
+    21300140: Novice_70
+    21300142: Novice_71
+    21300144: Novice_72
+    21300146: Novice_73
+    21300148: Novice_74
+    21300150: Novice_75
+    21300152: Novice_76
+    21300154: Novice_77
+    21300156: Novice_78
+    21300158: Novice_79
+    21300160: Novice_80
+    21300162: Novice_81
+    21300164: Novice_82
+    21300166: Novice_83
+    21300168: Novice_84
+    21300170: Novice_85
+    21300172: Novice_86
+    21300174: Novice_87
+    21300176: Novice_88
+    21300178: Novice_89
+    21300180: Novice_90
+    21300182: Novice_91
+    21300184: Novice_92
+    21300186: Novice_93
+    21300188: Novice_94
+    21300190: Novice_95
+    21300192: Novice_96
+    21300194: Novice_97
+    21300196: Novice_98
+    21300198: Novice_99
+    21300200: Novice_100
+    21300202: Novice_101
+    21300204: Novice_102
+    21300206: Novice_103
+    21300208: Novice_104
+    21300210: Novice_105
+    21300212: Novice_106
+    21300214: Novice_107
+    21300216: Novice_108
+    21300218: Novice_109
+    21300220: Novice_110
+    21300222: Novice_111
+    21300224: Novice_112
+    21300226: Novice_113
+    21300228: Novice_114
+    21300230: Novice_115
+    21300232: Novice_116
+    21300234: Novice_117
+    21300236: Novice_118
+    21300238: Novice_119
+    21300240: Novice_120
+    21300242: Novice_121
+    21300244: Novice_122
+    21300246: Novice_123
+    21300248: Novice_124
+    21300250: Novice_125
+    21300252: Novice_126
+    21300254: Novice_127
+    21300256: Novice_128
+    21300258: Novice_129
+    21300260: Novice_130
+    21300262: Novice_131
+    21300264: Novice_132
+    21300266: Novice_133
+    21300268: Novice_134
+    21300270: Novice_135
+    21300272: Novice_136
+    21300274: Novice_137
+    21300276: Novice_138
+    21300278: Novice_139
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Novice_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 2218
+        width: 82
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 2225
+        width: 80
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_2
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 2224
+        width: 81
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 2226
+        width: 79
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_4
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 2225
+        width: 82
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_5
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 2223
+        width: 90
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_6
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 2223
+        width: 87
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_7
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 2223
+        width: 70
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_8
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 2222
+        width: 77
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_9
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 2216
+        width: 89
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_10
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 2064
+        width: 82
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_11
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 2068
+        width: 80
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_12
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 2067
+        width: 77
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_13
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 2067
+        width: 74
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_14
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2041
+        width: 96
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_15
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 2040
+        width: 90
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_16
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 2040
+        width: 90
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_17
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 2040
+        width: 94
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_18
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 2145
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_19
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 2060
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_20
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1908
+        width: 76
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_21
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1906
+        width: 75
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_22
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1908
+        width: 82
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_23
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1910
+        width: 84
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_24
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 2018
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_25
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 2021
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_26
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 2020
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_27
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 2018
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_28
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 1871
+        width: 91
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_29
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1985
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_30
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1984
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_31
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 1863
+        width: 83
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_32
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 1863
+        width: 78
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_33
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 1863
+        width: 89
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_34
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1706
+        width: 66
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_35
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 1708
+        width: 65
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_36
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1700
+        width: 67
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_37
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1707
+        width: 86
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_38
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 1709
+        width: 72
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_39
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1695
+        width: 81
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_40
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 1700
+        width: 89
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_41
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 1697
+        width: 85
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_42
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 1697
+        width: 85
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_43
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1539
+        width: 64
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_44
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1538
+        width: 84
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_45
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 1536
+        width: 61
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_46
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 1538
+        width: 75
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_47
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 1530
+        width: 84
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_48
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1528
+        width: 84
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_49
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 1530
+        width: 72
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_50
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 1529
+        width: 84
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_51
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1545
+        width: 77
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_52
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1367
+        width: 88
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_53
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1368
+        width: 65
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_54
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 1370
+        width: 76
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_55
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 1367
+        width: 69
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_56
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 1418
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_57
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 1375
+        width: 76
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_58
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1367
+        width: 68
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_59
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 1367
+        width: 78
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_60
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 1386
+        width: 76
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_61
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1218
+        width: 73
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_62
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1218
+        width: 73
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_63
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1196
+        width: 66
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_64
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1269
+        width: 156
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_65
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1215
+        width: 76
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_66
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1189
+        width: 79
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_67
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 1186
+        width: 69
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_68
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 1205
+        width: 79
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_69
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1037
+        width: 67
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_70
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 1047
+        width: 67
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_71
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 1046
+        width: 76
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_72
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1157
+        width: 141
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_73
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 1020
+        width: 76
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_74
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1031
+        width: 84
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_75
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1055
+        width: 138
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_76
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 1037
+        width: 100
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_77
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 1047
+        width: 92
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_78
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 875
+        width: 65
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_79
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 861
+        width: 65
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_80
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 867
+        width: 66
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_81
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 870
+        width: 68
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_82
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 994
+        width: 49
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_83
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 852
+        width: 80
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_84
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 852
+        width: 91
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_85
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 852
+        width: 65
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_86
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 850
+        width: 70
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_87
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 969
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_88
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 691
+        width: 112
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_89
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 691
+        width: 107
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_90
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 685
+        width: 105
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_91
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 685
+        width: 100
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_92
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 686
+        width: 92
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_93
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 685
+        width: 92
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_94
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 678
+        width: 76
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_95
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 677
+        width: 77
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_96
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 811
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_97
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 757
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_98
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 719
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_99
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 679
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_100
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 509
+        width: 82
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_101
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 515
+        width: 85
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_102
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 520
+        width: 86
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_103
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 520
+        width: 91
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_104
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 530
+        width: 114
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_105
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 521
+        width: 100
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_106
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 545
+        width: 67
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_107
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 545
+        width: 73
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_108
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 347
+        width: 83
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_109
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 347
+        width: 79
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_110
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 347
+        width: 77
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_111
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 344
+        width: 76
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_112
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 344
+        width: 75
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_113
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 429
+        width: 104
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_114
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 423
+        width: 108
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_115
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 402
+        width: 79
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_116
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 402
+        width: 78
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_117
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 180
+        width: 85
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_118
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 179
+        width: 90
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_119
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 178
+        width: 83
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_120
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 178
+        width: 82
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_121
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 282
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_122
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 292
+        width: 81
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_123
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 310
+        width: 95
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_124
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 223
+        width: 68
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_125
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 222
+        width: 62
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_126
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 201
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_127
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 201
+        width: 94
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_128
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 194
+        width: 90
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_129
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 175
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_130
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 167
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_131
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 181
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_132
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 167
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_133
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 8
+        width: 84
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_134
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 10
+        width: 83
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_135
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 5
+        width: 86
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_136
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 5
+        width: 85
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_137
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 114
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_138
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 79
+        width: 242
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Novice_139
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 33
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

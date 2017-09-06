@@ -55,14 +55,14 @@
  <Reference Include="UnityEngine.Analytics">
  <HintPath>D:/Applications/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
- <Reference Include="System.Data">
- <HintPath>C:/Users/valic/Documents/GitHub/protoment/Protoment/Assets/Plugins/System.Data.dll</HintPath>
+ <Reference Include="Mono.Data.Sqlite">
+ <HintPath>C:/Users/valic/Documents/GitHub/protoment/Protoment/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Data.SqliteClient">
  <HintPath>C:/Users/valic/Documents/GitHub/protoment/Protoment/Assets/Plugins/Mono.Data.SqliteClient.dll</HintPath>
  </Reference>
- <Reference Include="Mono.Data.Sqlite">
- <HintPath>C:/Users/valic/Documents/GitHub/protoment/Protoment/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
+ <Reference Include="System.Data">
+ <HintPath>C:/Users/valic/Documents/GitHub/protoment/Protoment/Assets/Plugins/System.Data.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
