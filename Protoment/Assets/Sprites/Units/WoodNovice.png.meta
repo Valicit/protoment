@@ -1,0 +1,2019 @@
+fileFormatVersion: 2
+guid: 40968304020cfe44582d92c1baad41cf
+timeCreated: 1504722225
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: WoodNovice_0
+    21300002: WoodNovice_1
+    21300004: WoodNovice_2
+    21300006: WoodNovice_3
+    21300008: WoodNovice_4
+    21300010: WoodNovice_5
+    21300012: WoodNovice_6
+    21300014: WoodNovice_7
+    21300016: WoodNovice_8
+    21300018: WoodNovice_9
+    21300020: WoodNovice_10
+    21300022: WoodNovice_11
+    21300024: WoodNovice_12
+    21300026: WoodNovice_13
+    21300028: WoodNovice_14
+    21300030: WoodNovice_15
+    21300032: WoodNovice_16
+    21300034: WoodNovice_17
+    21300036: WoodNovice_18
+    21300038: WoodNovice_19
+    21300040: WoodNovice_20
+    21300042: WoodNovice_21
+    21300044: WoodNovice_22
+    21300046: WoodNovice_23
+    21300048: WoodNovice_24
+    21300050: WoodNovice_25
+    21300052: WoodNovice_26
+    21300054: WoodNovice_27
+    21300056: WoodNovice_28
+    21300058: WoodNovice_29
+    21300060: WoodNovice_30
+    21300062: WoodNovice_31
+    21300064: WoodNovice_32
+    21300066: WoodNovice_33
+    21300068: WoodNovice_34
+    21300070: WoodNovice_35
+    21300072: WoodNovice_36
+    21300074: WoodNovice_37
+    21300076: WoodNovice_38
+    21300078: WoodNovice_39
+    21300080: WoodNovice_40
+    21300082: WoodNovice_41
+    21300084: WoodNovice_42
+    21300086: WoodNovice_43
+    21300088: WoodNovice_44
+    21300090: WoodNovice_45
+    21300092: WoodNovice_46
+    21300094: WoodNovice_47
+    21300096: WoodNovice_48
+    21300098: WoodNovice_49
+    21300100: WoodNovice_50
+    21300102: WoodNovice_51
+    21300104: WoodNovice_52
+    21300106: WoodNovice_53
+    21300108: WoodNovice_54
+    21300110: WoodNovice_55
+    21300112: WoodNovice_56
+    21300114: WoodNovice_57
+    21300116: WoodNovice_58
+    21300118: WoodNovice_59
+    21300120: WoodNovice_60
+    21300122: WoodNovice_61
+    21300124: WoodNovice_62
+    21300126: WoodNovice_63
+    21300128: WoodNovice_64
+    21300130: WoodNovice_65
+    21300132: WoodNovice_66
+    21300134: WoodNovice_67
+    21300136: WoodNovice_68
+    21300138: WoodNovice_69
+    21300140: WoodNovice_70
+    21300142: WoodNovice_71
+    21300144: WoodNovice_72
+    21300146: WoodNovice_73
+    21300148: WoodNovice_74
+    21300150: WoodNovice_75
+    21300152: WoodNovice_76
+    21300154: WoodNovice_77
+    21300156: WoodNovice_78
+    21300158: WoodNovice_79
+    21300160: WoodNovice_80
+    21300162: WoodNovice_81
+    21300164: WoodNovice_82
+    21300166: WoodNovice_83
+    21300168: WoodNovice_84
+    21300170: WoodNovice_85
+    21300172: WoodNovice_86
+    21300174: WoodNovice_87
+    21300176: WoodNovice_88
+    21300178: WoodNovice_89
+    21300180: WoodNovice_90
+    21300182: WoodNovice_91
+    21300184: WoodNovice_92
+    21300186: WoodNovice_93
+    21300188: WoodNovice_94
+    21300190: WoodNovice_95
+    21300192: WoodNovice_96
+    21300194: WoodNovice_97
+    21300196: WoodNovice_98
+    21300198: WoodNovice_99
+    21300200: WoodNovice_100
+    21300202: WoodNovice_101
+    21300204: WoodNovice_102
+    21300206: WoodNovice_103
+    21300208: WoodNovice_104
+    21300210: WoodNovice_105
+    21300212: WoodNovice_106
+    21300214: WoodNovice_107
+    21300216: WoodNovice_108
+    21300218: WoodNovice_109
+    21300220: WoodNovice_110
+    21300222: WoodNovice_111
+    21300224: WoodNovice_112
+    21300226: WoodNovice_113
+    21300228: WoodNovice_114
+    21300230: WoodNovice_115
+    21300232: WoodNovice_116
+    21300234: WoodNovice_117
+    21300236: WoodNovice_118
+    21300238: WoodNovice_119
+    21300240: WoodNovice_120
+    21300242: WoodNovice_121
+    21300244: WoodNovice_122
+    21300246: WoodNovice_123
+    21300248: WoodNovice_124
+    21300250: WoodNovice_125
+    21300252: WoodNovice_126
+    21300254: WoodNovice_127
+    21300256: WoodNovice_128
+    21300258: WoodNovice_129
+    21300260: WoodNovice_130
+    21300262: WoodNovice_131
+    21300264: WoodNovice_132
+    21300266: WoodNovice_133
+    21300268: WoodNovice_134
+    21300270: WoodNovice_135
+    21300272: WoodNovice_136
+    21300274: WoodNovice_137
+    21300276: WoodNovice_138
+    21300278: WoodNovice_139
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WoodNovice_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 2218
+        width: 82
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 2225
+        width: 80
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_2
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 2224
+        width: 81
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 2226
+        width: 79
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_4
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 2225
+        width: 82
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_5
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 2223
+        width: 90
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_6
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 2223
+        width: 87
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_7
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 2223
+        width: 70
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_8
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 2222
+        width: 77
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_9
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 2216
+        width: 89
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_10
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 2064
+        width: 82
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_11
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 2068
+        width: 80
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_12
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 2067
+        width: 77
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_13
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 2067
+        width: 74
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_14
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2041
+        width: 96
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_15
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 2040
+        width: 90
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_16
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 2040
+        width: 90
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_17
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 2040
+        width: 94
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_18
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 2145
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_19
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 2060
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_20
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1908
+        width: 76
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_21
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1906
+        width: 75
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_22
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1908
+        width: 82
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_23
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1910
+        width: 84
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_24
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 2018
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_25
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 2021
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_26
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 2020
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_27
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 2018
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_28
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 1871
+        width: 91
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_29
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1985
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_30
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1984
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_31
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 1863
+        width: 83
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_32
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 1863
+        width: 78
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_33
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 1863
+        width: 89
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_34
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1706
+        width: 66
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_35
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 1708
+        width: 65
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_36
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1700
+        width: 67
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_37
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1707
+        width: 86
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_38
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 1709
+        width: 72
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_39
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1695
+        width: 81
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_40
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 1700
+        width: 89
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_41
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 1697
+        width: 85
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_42
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 1697
+        width: 85
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_43
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1539
+        width: 64
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_44
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1538
+        width: 84
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_45
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 1536
+        width: 61
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_46
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 1538
+        width: 75
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_47
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 1530
+        width: 84
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_48
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1528
+        width: 84
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_49
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 1530
+        width: 72
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_50
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 1529
+        width: 84
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_51
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1545
+        width: 77
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_52
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1367
+        width: 88
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_53
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1368
+        width: 65
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_54
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 1370
+        width: 76
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_55
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 1367
+        width: 69
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_56
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 1418
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_57
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 1375
+        width: 76
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_58
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1367
+        width: 68
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_59
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 1367
+        width: 78
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_60
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 1386
+        width: 76
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_61
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1218
+        width: 73
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_62
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1218
+        width: 73
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_63
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1196
+        width: 66
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_64
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1269
+        width: 156
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_65
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1215
+        width: 76
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_66
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1189
+        width: 79
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_67
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 1186
+        width: 69
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_68
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 1205
+        width: 79
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_69
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1037
+        width: 67
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_70
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 1047
+        width: 67
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_71
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 1046
+        width: 76
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_72
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1157
+        width: 141
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_73
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 1020
+        width: 76
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_74
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1031
+        width: 84
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_75
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1055
+        width: 138
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_76
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 1037
+        width: 100
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_77
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 1047
+        width: 92
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_78
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 875
+        width: 65
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_79
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 861
+        width: 65
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_80
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 867
+        width: 66
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_81
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 870
+        width: 68
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_82
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 994
+        width: 49
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_83
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 852
+        width: 80
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_84
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 852
+        width: 91
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_85
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 852
+        width: 65
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_86
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 850
+        width: 70
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_87
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 969
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_88
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 691
+        width: 112
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_89
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 691
+        width: 107
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_90
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 685
+        width: 105
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_91
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 685
+        width: 100
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_92
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 686
+        width: 92
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_93
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 685
+        width: 92
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_94
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 678
+        width: 76
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_95
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 677
+        width: 77
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_96
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 811
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_97
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 757
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_98
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 719
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_99
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 679
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_100
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 509
+        width: 82
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_101
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 515
+        width: 85
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_102
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 520
+        width: 86
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_103
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 520
+        width: 91
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_104
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 530
+        width: 114
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_105
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 521
+        width: 100
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_106
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 545
+        width: 67
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_107
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 545
+        width: 73
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_108
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 347
+        width: 83
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_109
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 347
+        width: 79
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_110
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 347
+        width: 77
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_111
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 344
+        width: 76
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_112
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 344
+        width: 75
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_113
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 429
+        width: 104
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_114
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 423
+        width: 108
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_115
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 402
+        width: 79
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_116
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 402
+        width: 78
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_117
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 180
+        width: 85
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_118
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 179
+        width: 90
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_119
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 178
+        width: 83
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_120
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 178
+        width: 82
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_121
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 282
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_122
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 292
+        width: 81
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_123
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 310
+        width: 95
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_124
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 223
+        width: 68
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_125
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 222
+        width: 62
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_126
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 201
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_127
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 201
+        width: 94
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_128
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 194
+        width: 90
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_129
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 175
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_130
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 167
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_131
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 181
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_132
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 167
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_133
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 8
+        width: 84
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_134
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 10
+        width: 83
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_135
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 5
+        width: 86
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_136
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 5
+        width: 85
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_137
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 114
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_138
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 79
+        width: 242
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WoodNovice_139
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 33
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

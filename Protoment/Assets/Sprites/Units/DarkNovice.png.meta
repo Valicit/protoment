@@ -1,0 +1,2019 @@
+fileFormatVersion: 2
+guid: 383f2e6bad6ad084db705452706e210d
+timeCreated: 1504722159
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: DarkNovice_0
+    21300002: DarkNovice_1
+    21300004: DarkNovice_2
+    21300006: DarkNovice_3
+    21300008: DarkNovice_4
+    21300010: DarkNovice_5
+    21300012: DarkNovice_6
+    21300014: DarkNovice_7
+    21300016: DarkNovice_8
+    21300018: DarkNovice_9
+    21300020: DarkNovice_10
+    21300022: DarkNovice_11
+    21300024: DarkNovice_12
+    21300026: DarkNovice_13
+    21300028: DarkNovice_14
+    21300030: DarkNovice_15
+    21300032: DarkNovice_16
+    21300034: DarkNovice_17
+    21300036: DarkNovice_18
+    21300038: DarkNovice_19
+    21300040: DarkNovice_20
+    21300042: DarkNovice_21
+    21300044: DarkNovice_22
+    21300046: DarkNovice_23
+    21300048: DarkNovice_24
+    21300050: DarkNovice_25
+    21300052: DarkNovice_26
+    21300054: DarkNovice_27
+    21300056: DarkNovice_28
+    21300058: DarkNovice_29
+    21300060: DarkNovice_30
+    21300062: DarkNovice_31
+    21300064: DarkNovice_32
+    21300066: DarkNovice_33
+    21300068: DarkNovice_34
+    21300070: DarkNovice_35
+    21300072: DarkNovice_36
+    21300074: DarkNovice_37
+    21300076: DarkNovice_38
+    21300078: DarkNovice_39
+    21300080: DarkNovice_40
+    21300082: DarkNovice_41
+    21300084: DarkNovice_42
+    21300086: DarkNovice_43
+    21300088: DarkNovice_44
+    21300090: DarkNovice_45
+    21300092: DarkNovice_46
+    21300094: DarkNovice_47
+    21300096: DarkNovice_48
+    21300098: DarkNovice_49
+    21300100: DarkNovice_50
+    21300102: DarkNovice_51
+    21300104: DarkNovice_52
+    21300106: DarkNovice_53
+    21300108: DarkNovice_54
+    21300110: DarkNovice_55
+    21300112: DarkNovice_56
+    21300114: DarkNovice_57
+    21300116: DarkNovice_58
+    21300118: DarkNovice_59
+    21300120: DarkNovice_60
+    21300122: DarkNovice_61
+    21300124: DarkNovice_62
+    21300126: DarkNovice_63
+    21300128: DarkNovice_64
+    21300130: DarkNovice_65
+    21300132: DarkNovice_66
+    21300134: DarkNovice_67
+    21300136: DarkNovice_68
+    21300138: DarkNovice_69
+    21300140: DarkNovice_70
+    21300142: DarkNovice_71
+    21300144: DarkNovice_72
+    21300146: DarkNovice_73
+    21300148: DarkNovice_74
+    21300150: DarkNovice_75
+    21300152: DarkNovice_76
+    21300154: DarkNovice_77
+    21300156: DarkNovice_78
+    21300158: DarkNovice_79
+    21300160: DarkNovice_80
+    21300162: DarkNovice_81
+    21300164: DarkNovice_82
+    21300166: DarkNovice_83
+    21300168: DarkNovice_84
+    21300170: DarkNovice_85
+    21300172: DarkNovice_86
+    21300174: DarkNovice_87
+    21300176: DarkNovice_88
+    21300178: DarkNovice_89
+    21300180: DarkNovice_90
+    21300182: DarkNovice_91
+    21300184: DarkNovice_92
+    21300186: DarkNovice_93
+    21300188: DarkNovice_94
+    21300190: DarkNovice_95
+    21300192: DarkNovice_96
+    21300194: DarkNovice_97
+    21300196: DarkNovice_98
+    21300198: DarkNovice_99
+    21300200: DarkNovice_100
+    21300202: DarkNovice_101
+    21300204: DarkNovice_102
+    21300206: DarkNovice_103
+    21300208: DarkNovice_104
+    21300210: DarkNovice_105
+    21300212: DarkNovice_106
+    21300214: DarkNovice_107
+    21300216: DarkNovice_108
+    21300218: DarkNovice_109
+    21300220: DarkNovice_110
+    21300222: DarkNovice_111
+    21300224: DarkNovice_112
+    21300226: DarkNovice_113
+    21300228: DarkNovice_114
+    21300230: DarkNovice_115
+    21300232: DarkNovice_116
+    21300234: DarkNovice_117
+    21300236: DarkNovice_118
+    21300238: DarkNovice_119
+    21300240: DarkNovice_120
+    21300242: DarkNovice_121
+    21300244: DarkNovice_122
+    21300246: DarkNovice_123
+    21300248: DarkNovice_124
+    21300250: DarkNovice_125
+    21300252: DarkNovice_126
+    21300254: DarkNovice_127
+    21300256: DarkNovice_128
+    21300258: DarkNovice_129
+    21300260: DarkNovice_130
+    21300262: DarkNovice_131
+    21300264: DarkNovice_132
+    21300266: DarkNovice_133
+    21300268: DarkNovice_134
+    21300270: DarkNovice_135
+    21300272: DarkNovice_136
+    21300274: DarkNovice_137
+    21300276: DarkNovice_138
+    21300278: DarkNovice_139
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DarkNovice_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 2218
+        width: 82
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 2225
+        width: 80
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_2
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 2224
+        width: 81
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 2226
+        width: 79
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_4
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 2225
+        width: 82
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_5
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 2223
+        width: 90
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_6
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 2223
+        width: 87
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_7
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 2223
+        width: 70
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_8
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 2222
+        width: 77
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_9
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 2216
+        width: 89
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_10
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 2064
+        width: 82
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_11
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 2068
+        width: 80
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_12
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 2067
+        width: 77
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_13
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 2067
+        width: 74
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_14
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2041
+        width: 96
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_15
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 2040
+        width: 90
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_16
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 2040
+        width: 90
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_17
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 2040
+        width: 94
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_18
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 2145
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_19
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 2060
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_20
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1908
+        width: 76
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_21
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1906
+        width: 75
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_22
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1908
+        width: 82
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_23
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1910
+        width: 84
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_24
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 2018
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_25
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 2021
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_26
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 2020
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_27
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 2018
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_28
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 1871
+        width: 91
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_29
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1985
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_30
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1984
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_31
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 1863
+        width: 83
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_32
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 1863
+        width: 78
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_33
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 1863
+        width: 89
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_34
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1706
+        width: 66
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_35
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 1708
+        width: 65
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_36
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1700
+        width: 67
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_37
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1707
+        width: 86
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_38
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 1709
+        width: 72
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_39
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1695
+        width: 81
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_40
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 1700
+        width: 89
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_41
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 1697
+        width: 85
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_42
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 1697
+        width: 85
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_43
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1539
+        width: 64
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_44
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1538
+        width: 84
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_45
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 1536
+        width: 61
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_46
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 1538
+        width: 75
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_47
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 1530
+        width: 84
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_48
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1528
+        width: 84
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_49
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 1530
+        width: 72
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_50
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 1529
+        width: 84
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_51
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1545
+        width: 77
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_52
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1367
+        width: 88
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_53
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1368
+        width: 65
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_54
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 1370
+        width: 76
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_55
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 1367
+        width: 69
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_56
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 1418
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_57
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 1375
+        width: 76
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_58
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1367
+        width: 68
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_59
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 1367
+        width: 78
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_60
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 1386
+        width: 76
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_61
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1218
+        width: 73
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_62
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1218
+        width: 73
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_63
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1196
+        width: 66
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_64
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1269
+        width: 156
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_65
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1215
+        width: 76
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_66
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1189
+        width: 79
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_67
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 1186
+        width: 69
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_68
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 1205
+        width: 79
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_69
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1037
+        width: 67
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_70
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 1047
+        width: 67
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_71
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 1046
+        width: 76
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_72
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1157
+        width: 141
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_73
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 1020
+        width: 76
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_74
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1031
+        width: 84
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_75
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1055
+        width: 138
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_76
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 1037
+        width: 100
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_77
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 1047
+        width: 92
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_78
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 875
+        width: 65
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_79
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 861
+        width: 65
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_80
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 867
+        width: 66
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_81
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 870
+        width: 68
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_82
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 994
+        width: 49
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_83
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 852
+        width: 80
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_84
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 852
+        width: 91
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_85
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 852
+        width: 65
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_86
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 850
+        width: 70
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_87
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 969
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_88
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 691
+        width: 112
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_89
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 691
+        width: 107
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_90
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 685
+        width: 105
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_91
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 685
+        width: 100
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_92
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 686
+        width: 92
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_93
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 685
+        width: 92
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_94
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 678
+        width: 76
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_95
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 677
+        width: 77
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_96
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 811
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_97
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 757
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_98
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 719
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_99
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 679
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_100
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 509
+        width: 82
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_101
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 515
+        width: 85
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_102
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 520
+        width: 86
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_103
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 520
+        width: 91
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_104
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 530
+        width: 114
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_105
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 521
+        width: 100
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_106
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 545
+        width: 67
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_107
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 545
+        width: 73
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_108
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 347
+        width: 83
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_109
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 347
+        width: 79
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_110
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 347
+        width: 77
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_111
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 344
+        width: 76
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_112
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 344
+        width: 75
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_113
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 429
+        width: 104
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_114
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 423
+        width: 108
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_115
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 402
+        width: 79
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_116
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 402
+        width: 78
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_117
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 180
+        width: 85
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_118
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 179
+        width: 90
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_119
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 178
+        width: 83
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_120
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 178
+        width: 82
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_121
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 282
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_122
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 292
+        width: 81
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_123
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 310
+        width: 95
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_124
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 223
+        width: 68
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_125
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 222
+        width: 62
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_126
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 201
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_127
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 201
+        width: 94
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_128
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 194
+        width: 90
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_129
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 175
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_130
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 167
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_131
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 181
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_132
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 167
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_133
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 8
+        width: 84
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_134
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 10
+        width: 83
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_135
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 5
+        width: 86
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_136
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 5
+        width: 85
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_137
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 114
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_138
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 79
+        width: 242
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DarkNovice_139
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 33
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

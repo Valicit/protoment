@@ -1,0 +1,2019 @@
+fileFormatVersion: 2
+guid: 9b4b019fe6797b54dae2f13ed2d8c996
+timeCreated: 1504722214
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: WaterNovice_0
+    21300002: WaterNovice_1
+    21300004: WaterNovice_2
+    21300006: WaterNovice_3
+    21300008: WaterNovice_4
+    21300010: WaterNovice_5
+    21300012: WaterNovice_6
+    21300014: WaterNovice_7
+    21300016: WaterNovice_8
+    21300018: WaterNovice_9
+    21300020: WaterNovice_10
+    21300022: WaterNovice_11
+    21300024: WaterNovice_12
+    21300026: WaterNovice_13
+    21300028: WaterNovice_14
+    21300030: WaterNovice_15
+    21300032: WaterNovice_16
+    21300034: WaterNovice_17
+    21300036: WaterNovice_18
+    21300038: WaterNovice_19
+    21300040: WaterNovice_20
+    21300042: WaterNovice_21
+    21300044: WaterNovice_22
+    21300046: WaterNovice_23
+    21300048: WaterNovice_24
+    21300050: WaterNovice_25
+    21300052: WaterNovice_26
+    21300054: WaterNovice_27
+    21300056: WaterNovice_28
+    21300058: WaterNovice_29
+    21300060: WaterNovice_30
+    21300062: WaterNovice_31
+    21300064: WaterNovice_32
+    21300066: WaterNovice_33
+    21300068: WaterNovice_34
+    21300070: WaterNovice_35
+    21300072: WaterNovice_36
+    21300074: WaterNovice_37
+    21300076: WaterNovice_38
+    21300078: WaterNovice_39
+    21300080: WaterNovice_40
+    21300082: WaterNovice_41
+    21300084: WaterNovice_42
+    21300086: WaterNovice_43
+    21300088: WaterNovice_44
+    21300090: WaterNovice_45
+    21300092: WaterNovice_46
+    21300094: WaterNovice_47
+    21300096: WaterNovice_48
+    21300098: WaterNovice_49
+    21300100: WaterNovice_50
+    21300102: WaterNovice_51
+    21300104: WaterNovice_52
+    21300106: WaterNovice_53
+    21300108: WaterNovice_54
+    21300110: WaterNovice_55
+    21300112: WaterNovice_56
+    21300114: WaterNovice_57
+    21300116: WaterNovice_58
+    21300118: WaterNovice_59
+    21300120: WaterNovice_60
+    21300122: WaterNovice_61
+    21300124: WaterNovice_62
+    21300126: WaterNovice_63
+    21300128: WaterNovice_64
+    21300130: WaterNovice_65
+    21300132: WaterNovice_66
+    21300134: WaterNovice_67
+    21300136: WaterNovice_68
+    21300138: WaterNovice_69
+    21300140: WaterNovice_70
+    21300142: WaterNovice_71
+    21300144: WaterNovice_72
+    21300146: WaterNovice_73
+    21300148: WaterNovice_74
+    21300150: WaterNovice_75
+    21300152: WaterNovice_76
+    21300154: WaterNovice_77
+    21300156: WaterNovice_78
+    21300158: WaterNovice_79
+    21300160: WaterNovice_80
+    21300162: WaterNovice_81
+    21300164: WaterNovice_82
+    21300166: WaterNovice_83
+    21300168: WaterNovice_84
+    21300170: WaterNovice_85
+    21300172: WaterNovice_86
+    21300174: WaterNovice_87
+    21300176: WaterNovice_88
+    21300178: WaterNovice_89
+    21300180: WaterNovice_90
+    21300182: WaterNovice_91
+    21300184: WaterNovice_92
+    21300186: WaterNovice_93
+    21300188: WaterNovice_94
+    21300190: WaterNovice_95
+    21300192: WaterNovice_96
+    21300194: WaterNovice_97
+    21300196: WaterNovice_98
+    21300198: WaterNovice_99
+    21300200: WaterNovice_100
+    21300202: WaterNovice_101
+    21300204: WaterNovice_102
+    21300206: WaterNovice_103
+    21300208: WaterNovice_104
+    21300210: WaterNovice_105
+    21300212: WaterNovice_106
+    21300214: WaterNovice_107
+    21300216: WaterNovice_108
+    21300218: WaterNovice_109
+    21300220: WaterNovice_110
+    21300222: WaterNovice_111
+    21300224: WaterNovice_112
+    21300226: WaterNovice_113
+    21300228: WaterNovice_114
+    21300230: WaterNovice_115
+    21300232: WaterNovice_116
+    21300234: WaterNovice_117
+    21300236: WaterNovice_118
+    21300238: WaterNovice_119
+    21300240: WaterNovice_120
+    21300242: WaterNovice_121
+    21300244: WaterNovice_122
+    21300246: WaterNovice_123
+    21300248: WaterNovice_124
+    21300250: WaterNovice_125
+    21300252: WaterNovice_126
+    21300254: WaterNovice_127
+    21300256: WaterNovice_128
+    21300258: WaterNovice_129
+    21300260: WaterNovice_130
+    21300262: WaterNovice_131
+    21300264: WaterNovice_132
+    21300266: WaterNovice_133
+    21300268: WaterNovice_134
+    21300270: WaterNovice_135
+    21300272: WaterNovice_136
+    21300274: WaterNovice_137
+    21300276: WaterNovice_138
+    21300278: WaterNovice_139
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WaterNovice_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 2218
+        width: 82
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 2225
+        width: 80
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_2
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 2224
+        width: 81
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 2226
+        width: 79
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_4
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 2225
+        width: 82
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_5
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 2223
+        width: 90
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_6
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 2223
+        width: 87
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_7
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 2223
+        width: 70
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_8
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 2222
+        width: 77
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_9
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 2216
+        width: 89
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_10
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 2064
+        width: 82
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_11
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 2068
+        width: 80
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_12
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 2067
+        width: 77
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_13
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 2067
+        width: 74
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_14
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2041
+        width: 96
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_15
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 2040
+        width: 90
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_16
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 2040
+        width: 90
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_17
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 2040
+        width: 94
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_18
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 2145
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_19
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 2060
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_20
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1908
+        width: 76
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_21
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1906
+        width: 75
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_22
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1908
+        width: 82
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_23
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1910
+        width: 84
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_24
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 2018
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_25
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 2021
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_26
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 2020
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_27
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 2018
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_28
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 1871
+        width: 91
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_29
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1985
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_30
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1984
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_31
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 1863
+        width: 83
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_32
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 1863
+        width: 78
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_33
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 1863
+        width: 89
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_34
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1706
+        width: 66
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_35
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 1708
+        width: 65
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_36
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1700
+        width: 67
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_37
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1707
+        width: 86
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_38
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 1709
+        width: 72
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_39
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1695
+        width: 81
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_40
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 1700
+        width: 89
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_41
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 1697
+        width: 85
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_42
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 1697
+        width: 85
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_43
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1539
+        width: 64
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_44
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1538
+        width: 84
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_45
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 1536
+        width: 61
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_46
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 1538
+        width: 75
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_47
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 1530
+        width: 84
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_48
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1528
+        width: 84
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_49
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 1530
+        width: 72
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_50
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 1529
+        width: 84
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_51
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1545
+        width: 77
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_52
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1367
+        width: 88
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_53
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1368
+        width: 65
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_54
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 1370
+        width: 76
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_55
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 1367
+        width: 69
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_56
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 1418
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_57
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 1375
+        width: 76
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_58
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1367
+        width: 68
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_59
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 1367
+        width: 78
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_60
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 1386
+        width: 76
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_61
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1218
+        width: 73
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_62
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1218
+        width: 73
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_63
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1196
+        width: 66
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_64
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1269
+        width: 156
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_65
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1215
+        width: 76
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_66
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1189
+        width: 79
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_67
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 1186
+        width: 69
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_68
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 1205
+        width: 79
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_69
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1037
+        width: 67
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_70
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 1047
+        width: 67
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_71
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 1046
+        width: 76
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_72
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1157
+        width: 141
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_73
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 1020
+        width: 76
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_74
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1031
+        width: 84
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_75
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1055
+        width: 138
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_76
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 1037
+        width: 100
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_77
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 1047
+        width: 92
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_78
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 875
+        width: 65
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_79
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 861
+        width: 65
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_80
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 867
+        width: 66
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_81
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 870
+        width: 68
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_82
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 994
+        width: 49
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_83
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 852
+        width: 80
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_84
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 852
+        width: 91
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_85
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 852
+        width: 65
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_86
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 850
+        width: 70
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_87
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 969
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_88
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 691
+        width: 112
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_89
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 691
+        width: 107
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_90
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 685
+        width: 105
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_91
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 685
+        width: 100
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_92
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 686
+        width: 92
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_93
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 685
+        width: 92
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_94
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 678
+        width: 76
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_95
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 677
+        width: 77
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_96
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 811
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_97
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 757
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_98
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 719
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_99
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 679
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_100
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 509
+        width: 82
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_101
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 515
+        width: 85
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_102
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 520
+        width: 86
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_103
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 520
+        width: 91
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_104
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 530
+        width: 114
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_105
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 521
+        width: 100
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_106
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 545
+        width: 67
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_107
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 545
+        width: 73
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_108
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 347
+        width: 83
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_109
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 347
+        width: 79
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_110
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 347
+        width: 77
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_111
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 344
+        width: 76
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_112
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 344
+        width: 75
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_113
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 429
+        width: 104
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_114
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 423
+        width: 108
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_115
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 402
+        width: 79
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_116
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 402
+        width: 78
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_117
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 180
+        width: 85
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_118
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 179
+        width: 90
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_119
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 178
+        width: 83
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_120
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 178
+        width: 82
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_121
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 282
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_122
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 292
+        width: 81
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_123
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 310
+        width: 95
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_124
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 223
+        width: 68
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_125
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 222
+        width: 62
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_126
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 201
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_127
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 201
+        width: 94
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_128
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 194
+        width: 90
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_129
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 175
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_130
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 167
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_131
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 181
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_132
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 167
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_133
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 8
+        width: 84
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_134
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 10
+        width: 83
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_135
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 5
+        width: 86
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_136
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 5
+        width: 85
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_137
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 114
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_138
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 79
+        width: 242
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: WaterNovice_139
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 33
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

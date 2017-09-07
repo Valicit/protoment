@@ -1,0 +1,2019 @@
+fileFormatVersion: 2
+guid: 65cb30c3b421fc545a0c76d56cec01d4
+timeCreated: 1504722190
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: FireNovice_0
+    21300002: FireNovice_1
+    21300004: FireNovice_2
+    21300006: FireNovice_3
+    21300008: FireNovice_4
+    21300010: FireNovice_5
+    21300012: FireNovice_6
+    21300014: FireNovice_7
+    21300016: FireNovice_8
+    21300018: FireNovice_9
+    21300020: FireNovice_10
+    21300022: FireNovice_11
+    21300024: FireNovice_12
+    21300026: FireNovice_13
+    21300028: FireNovice_14
+    21300030: FireNovice_15
+    21300032: FireNovice_16
+    21300034: FireNovice_17
+    21300036: FireNovice_18
+    21300038: FireNovice_19
+    21300040: FireNovice_20
+    21300042: FireNovice_21
+    21300044: FireNovice_22
+    21300046: FireNovice_23
+    21300048: FireNovice_24
+    21300050: FireNovice_25
+    21300052: FireNovice_26
+    21300054: FireNovice_27
+    21300056: FireNovice_28
+    21300058: FireNovice_29
+    21300060: FireNovice_30
+    21300062: FireNovice_31
+    21300064: FireNovice_32
+    21300066: FireNovice_33
+    21300068: FireNovice_34
+    21300070: FireNovice_35
+    21300072: FireNovice_36
+    21300074: FireNovice_37
+    21300076: FireNovice_38
+    21300078: FireNovice_39
+    21300080: FireNovice_40
+    21300082: FireNovice_41
+    21300084: FireNovice_42
+    21300086: FireNovice_43
+    21300088: FireNovice_44
+    21300090: FireNovice_45
+    21300092: FireNovice_46
+    21300094: FireNovice_47
+    21300096: FireNovice_48
+    21300098: FireNovice_49
+    21300100: FireNovice_50
+    21300102: FireNovice_51
+    21300104: FireNovice_52
+    21300106: FireNovice_53
+    21300108: FireNovice_54
+    21300110: FireNovice_55
+    21300112: FireNovice_56
+    21300114: FireNovice_57
+    21300116: FireNovice_58
+    21300118: FireNovice_59
+    21300120: FireNovice_60
+    21300122: FireNovice_61
+    21300124: FireNovice_62
+    21300126: FireNovice_63
+    21300128: FireNovice_64
+    21300130: FireNovice_65
+    21300132: FireNovice_66
+    21300134: FireNovice_67
+    21300136: FireNovice_68
+    21300138: FireNovice_69
+    21300140: FireNovice_70
+    21300142: FireNovice_71
+    21300144: FireNovice_72
+    21300146: FireNovice_73
+    21300148: FireNovice_74
+    21300150: FireNovice_75
+    21300152: FireNovice_76
+    21300154: FireNovice_77
+    21300156: FireNovice_78
+    21300158: FireNovice_79
+    21300160: FireNovice_80
+    21300162: FireNovice_81
+    21300164: FireNovice_82
+    21300166: FireNovice_83
+    21300168: FireNovice_84
+    21300170: FireNovice_85
+    21300172: FireNovice_86
+    21300174: FireNovice_87
+    21300176: FireNovice_88
+    21300178: FireNovice_89
+    21300180: FireNovice_90
+    21300182: FireNovice_91
+    21300184: FireNovice_92
+    21300186: FireNovice_93
+    21300188: FireNovice_94
+    21300190: FireNovice_95
+    21300192: FireNovice_96
+    21300194: FireNovice_97
+    21300196: FireNovice_98
+    21300198: FireNovice_99
+    21300200: FireNovice_100
+    21300202: FireNovice_101
+    21300204: FireNovice_102
+    21300206: FireNovice_103
+    21300208: FireNovice_104
+    21300210: FireNovice_105
+    21300212: FireNovice_106
+    21300214: FireNovice_107
+    21300216: FireNovice_108
+    21300218: FireNovice_109
+    21300220: FireNovice_110
+    21300222: FireNovice_111
+    21300224: FireNovice_112
+    21300226: FireNovice_113
+    21300228: FireNovice_114
+    21300230: FireNovice_115
+    21300232: FireNovice_116
+    21300234: FireNovice_117
+    21300236: FireNovice_118
+    21300238: FireNovice_119
+    21300240: FireNovice_120
+    21300242: FireNovice_121
+    21300244: FireNovice_122
+    21300246: FireNovice_123
+    21300248: FireNovice_124
+    21300250: FireNovice_125
+    21300252: FireNovice_126
+    21300254: FireNovice_127
+    21300256: FireNovice_128
+    21300258: FireNovice_129
+    21300260: FireNovice_130
+    21300262: FireNovice_131
+    21300264: FireNovice_132
+    21300266: FireNovice_133
+    21300268: FireNovice_134
+    21300270: FireNovice_135
+    21300272: FireNovice_136
+    21300274: FireNovice_137
+    21300276: FireNovice_138
+    21300278: FireNovice_139
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FireNovice_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 2218
+        width: 82
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 2225
+        width: 80
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_2
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 2224
+        width: 81
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 2226
+        width: 79
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_4
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 2225
+        width: 82
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_5
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 2223
+        width: 90
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_6
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 2223
+        width: 87
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_7
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 2223
+        width: 70
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_8
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 2222
+        width: 77
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_9
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 2216
+        width: 89
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_10
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 2064
+        width: 82
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_11
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 2068
+        width: 80
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_12
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 2067
+        width: 77
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_13
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 2067
+        width: 74
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_14
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2041
+        width: 96
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_15
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 2040
+        width: 90
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_16
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 2040
+        width: 90
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_17
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 2040
+        width: 94
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_18
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 2145
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_19
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 2060
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_20
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1908
+        width: 76
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_21
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1906
+        width: 75
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_22
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1908
+        width: 82
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_23
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1910
+        width: 84
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_24
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 2018
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_25
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 2021
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_26
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 2020
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_27
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 2018
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_28
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 1871
+        width: 91
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_29
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1985
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_30
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1984
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_31
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 1863
+        width: 83
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_32
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 1863
+        width: 78
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_33
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 1863
+        width: 89
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_34
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1706
+        width: 66
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_35
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 1708
+        width: 65
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_36
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1700
+        width: 67
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_37
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 1707
+        width: 86
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_38
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 1709
+        width: 72
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_39
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1695
+        width: 81
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_40
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 1700
+        width: 89
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_41
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 1697
+        width: 85
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_42
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 1697
+        width: 85
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_43
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1539
+        width: 64
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_44
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1538
+        width: 84
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_45
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 1536
+        width: 61
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_46
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 1538
+        width: 75
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_47
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 1530
+        width: 84
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_48
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1528
+        width: 84
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_49
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 1530
+        width: 72
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_50
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 1529
+        width: 84
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_51
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1545
+        width: 77
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_52
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1367
+        width: 88
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_53
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1368
+        width: 65
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_54
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 1370
+        width: 76
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_55
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 1367
+        width: 69
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_56
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 1418
+        width: 26
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_57
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 1375
+        width: 76
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_58
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1367
+        width: 68
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_59
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 1367
+        width: 78
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_60
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 1386
+        width: 76
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_61
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1218
+        width: 73
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_62
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1218
+        width: 73
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_63
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1196
+        width: 66
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_64
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1269
+        width: 156
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_65
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1215
+        width: 76
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_66
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1189
+        width: 79
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_67
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 1186
+        width: 69
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_68
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 1205
+        width: 79
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_69
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1037
+        width: 67
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_70
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 1047
+        width: 67
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_71
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 1046
+        width: 76
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_72
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1157
+        width: 141
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_73
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 1020
+        width: 76
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_74
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1031
+        width: 84
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_75
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1055
+        width: 138
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_76
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 1037
+        width: 100
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_77
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 1047
+        width: 92
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_78
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 875
+        width: 65
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_79
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 861
+        width: 65
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_80
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 867
+        width: 66
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_81
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 870
+        width: 68
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_82
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 994
+        width: 49
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_83
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 852
+        width: 80
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_84
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 852
+        width: 91
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_85
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 852
+        width: 65
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_86
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 850
+        width: 70
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_87
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 969
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_88
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 691
+        width: 112
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_89
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 691
+        width: 107
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_90
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 685
+        width: 105
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_91
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 685
+        width: 100
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_92
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 686
+        width: 92
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_93
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 685
+        width: 92
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_94
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 678
+        width: 76
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_95
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 677
+        width: 77
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_96
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 811
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_97
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 757
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_98
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 719
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_99
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 679
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_100
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 509
+        width: 82
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_101
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 515
+        width: 85
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_102
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 520
+        width: 86
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_103
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 520
+        width: 91
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_104
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 530
+        width: 114
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_105
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 521
+        width: 100
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_106
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 545
+        width: 67
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_107
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 545
+        width: 73
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_108
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 347
+        width: 83
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_109
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 347
+        width: 79
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_110
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 347
+        width: 77
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_111
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 344
+        width: 76
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_112
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 344
+        width: 75
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_113
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 429
+        width: 104
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_114
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 423
+        width: 108
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_115
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 402
+        width: 79
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_116
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 402
+        width: 78
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_117
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 180
+        width: 85
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_118
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 179
+        width: 90
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_119
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 178
+        width: 83
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_120
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 178
+        width: 82
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_121
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 282
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_122
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 292
+        width: 81
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_123
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 310
+        width: 95
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_124
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 223
+        width: 68
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_125
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 222
+        width: 62
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_126
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 201
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_127
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 201
+        width: 94
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_128
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 194
+        width: 90
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_129
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 175
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_130
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 167
+        width: 37
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_131
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 181
+        width: 30
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_132
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 167
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_133
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 8
+        width: 84
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_134
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 10
+        width: 83
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_135
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 5
+        width: 86
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_136
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 5
+        width: 85
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_137
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 114
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_138
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 79
+        width: 242
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: FireNovice_139
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 33
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
