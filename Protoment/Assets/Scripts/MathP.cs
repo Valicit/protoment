@@ -8,7 +8,7 @@ public static class MathP
     //Calculate normal damage.
     public static long GetDamage(long atk, long def)
     {
-        long r = (atk * 3) - (def * 2);
+        long r = (long)((atk * (decimal)Random.Range(.75f, 1.25f)) - def);
         if (r < 0) r = 0;
         return r;
     }

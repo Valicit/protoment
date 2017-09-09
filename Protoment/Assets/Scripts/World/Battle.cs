@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Battle : MonoBehaviour
 {
@@ -15,14 +16,51 @@ public class Battle : MonoBehaviour
     //On game updates
     public void Update()
     {
-        //Tick the game forward.
-        Tick();
+        //Count down the skill handler being busy.
+        SkillHandler.busy -= Time.deltaTime * speed;
+
+        //If there's at least one character alive on both sides, and there isn't someone currently taking a turn.
+        if (PlayerArena.myParty.GetAllLiving().Count > 0 && EnemyArena.myParty.GetAllLiving().Count > 0 && PlayerArena.myParty.GetAllReady().Count == 0 && EnemyArena.myParty.GetAllReady().Count == 0)
+        {
+            //Tick the game forward.
+            Tick();
+        }
+        else
+        {
+            //Take any turns that need taking.
+            TakeTurns(PlayerArena, EnemyArena);
+            TakeTurns(EnemyArena, PlayerArena);
+        }
     }
 
     //Tick the game update the battle state.
     public void Tick()
     {
+        //Tick the battle forward.
+        PlayerArena.Tick();
+        EnemyArena.Tick();
+    }
 
+    //Give each ready unit a turn.
+    public void TakeTurns(Arena ally, Arena enemy)
+    {
+        //Get a list of units from this team ready to take a turn.
+        List<Unit> ready = ally.myParty.GetAllReady();
+
+        //For each unit that's ready.
+        foreach (Unit u in ready)
+        {
+            //If no one is currently taking a turn.
+            if (SkillHandler.busy <= 0)
+            {
+                //Set off turn start stuff.
+                u.TurnStart();
+                //Use a skill.
+                SkillHandler.UseSkill(u, u.mySkills[0], ally.myParty, enemy.myParty);
+                //Set off end of turn stuff.
+                u.TurnEnd();
+            }
+        }
     }
 
     //This goes off on Victory.

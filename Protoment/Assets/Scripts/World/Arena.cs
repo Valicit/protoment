@@ -20,7 +20,25 @@ public class Arena : MonoBehaviour
     public void Start()
     {
         //Populate the list of panels from panels1D.
+        myParty.myUnits[0, 0] = Unit.NewUnit((UnitData)Resources.Load(string.Format("Units/{0}/{1}", "Novice", "Fire")));
+        myParty.myUnits[0, 1] = Unit.NewUnit((UnitData)Resources.Load(string.Format("Units/{0}/{1}", "Novice", "Water")));
+        myParty.myUnits[0, 2] = Unit.NewUnit((UnitData)Resources.Load(string.Format("Units/{0}/{1}", "Novice", "Electric")));
+        myParty.myUnits[2, 0] = Unit.NewUnit((UnitData)Resources.Load(string.Format("Units/{0}/{1}", "Novice", "Wood")));
+        myParty.myUnits[2, 1] = Unit.NewUnit((UnitData)Resources.Load(string.Format("Units/{0}/{1}", "Novice", "Light")));
+        myParty.myUnits[2, 2] = Unit.NewUnit((UnitData)Resources.Load(string.Format("Units/{0}/{1}", "Novice", "Dark")));
         PopulatePanelArray();
+    }
+
+    //On Updates.
+    public void Update()
+    {
+        
+    }
+
+    //Tick time forward!
+    public void Tick()
+    {
+        myParty.Tick();
     }
 
     //Populate the 2D array, because Unity is a butt and won't let you do it in the Editor. WHAT NOW UNITY?
@@ -32,6 +50,7 @@ public class Arena : MonoBehaviour
             for (int y = 0; y < 3; y++)
             {
                 panels[x, y] = panels1D[i].GetComponent<Panel>();
+                panels[x, y].myUnit = myParty.myUnits[x, y];
                 i++;
             }
         }
