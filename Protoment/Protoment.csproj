@@ -78,11 +78,13 @@
     <Compile Include="Assets\Scripts\DbTest.cs" />
     <Compile Include="Assets\Scripts\MathP.cs" />
     <Compile Include="Assets\Scripts\UI\AutoDelete.cs" />
+    <Compile Include="Assets\Scripts\UI\StatusIcon.cs" />
     <Compile Include="Assets\Scripts\Units\Skill.cs" />
     <Compile Include="Assets\Scripts\Units\StatusEffect.cs" />
     <Compile Include="Assets\Scripts\Units\Unit.cs" />
     <Compile Include="Assets\Scripts\Units\UnitData.cs" />
     <Compile Include="Assets\Scripts\World\Arena.cs" />
+    <Compile Include="Assets\Scripts\World\AttackData.cs" />
     <Compile Include="Assets\Scripts\World\Battle.cs" />
     <Compile Include="Assets\Scripts\World\Panel.cs" />
     <Compile Include="Assets\Scripts\World\Party.cs" />

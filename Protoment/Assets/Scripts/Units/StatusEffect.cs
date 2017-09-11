@@ -14,6 +14,19 @@ public class StatusEffect : ScriptableObject
 
     //this is basic information.
     public bool isStackable;
+    public bool isNegative;
     public int duration;
     public bool preventAction;
+    public float percentDamage;
+    public float percentHealing;
+    public float HPmod = 1;
+    public float STRmod = 1;
+    public float DEFmod = 1;
+    public float INTmod = 1;
+    public float DEXmod = 1;
+    public float AGImod = 1;
+    public float critMod = 1;
+    public float critDMGMod = 1;
+    public float speedMod = 1;
+    public float takenDamageMod;
 }

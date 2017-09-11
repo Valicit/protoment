@@ -16,6 +16,8 @@ public class Panel : MonoBehaviour
     public Canvas uCanvas;
     public Slider HPBar;
     public Slider ATBBar;
+    public GameObject statusFrame;
+    public StatusIcon[] sIcons;
 
     //This is our text prefab.
     public GameObject textFab;
@@ -51,6 +53,16 @@ public class Panel : MonoBehaviour
             uSpriteObject.SetActive(true);
             HPBar.gameObject.SetActive(true);
             ATBBar.gameObject.SetActive(true);
+
+            //If we just took a turn, highlight.
+            if (myUnit == Battle.ManualUnit)
+            {
+                Highlight();
+            }
+            else
+            {
+                UnHighlight();
+            }
         }
     }
 
@@ -63,6 +75,30 @@ public class Panel : MonoBehaviour
             HPBar.value = ((float)myUnit.cHP / (float)myUnit.GetmHP());
             ATBBar.value = myUnit.atb / 100;
             uSprite.sprite = myUnit.uSprite;
+
+            //Update the status icons.
+            UpdateStatusIcons();
+        }
+    }
+
+    //Update Status Icons.
+    public void UpdateStatusIcons()
+    {
+        //For each icon.
+        for (int i = 0; i < sIcons.Length; i++)
+        {
+            //If there is no effect here.
+            if (i >= myUnit.myStatusEffects.Count)
+            {
+                //Hide everything.
+                sIcons[i].gameObject.SetActive(false);
+            }
+            else
+            {
+                sIcons[i].sImage.sprite = myUnit.myStatusEffects[i].statusIcon;
+                sIcons[i].sText.text = myUnit.myStatusEffects[i].duration.ToString();
+                sIcons[i].gameObject.SetActive(true);
+            }
         }
     }
 
@@ -83,5 +119,21 @@ public class Panel : MonoBehaviour
                 myUnit.textColor.RemoveAt(0);
             }
         }
+    }
+
+    //Send a message that this unit was selected.
+    public void TargetUnit()
+    {
+        if(myUnit != null) SendMessageUpwards("BattleTargetUnit", myUnit);
+    }
+
+    //Highlight the panel if the unit is taking a turn.
+    public void Highlight()
+    {
+        pSprite.color = Color.yellow;
+    }
+    public void UnHighlight()
+    {
+        pSprite.color = Color.white;
     }
 }
