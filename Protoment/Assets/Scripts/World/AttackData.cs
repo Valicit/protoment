@@ -12,6 +12,7 @@ public struct AttackData
     public Party defendingParty;
     public List<Unit> affectedTargets;
     public Skill skillUsed;
+    public Unit selectedUnit;
 
     //This is a reference to attack data that may be valuable at some point.
     public long damageDone;

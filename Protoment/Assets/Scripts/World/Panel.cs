@@ -18,6 +18,7 @@ public class Panel : MonoBehaviour
     public Slider ATBBar;
     public GameObject statusFrame;
     public StatusIcon[] sIcons;
+    public Skill s;
 
     //This is our text prefab.
     public GameObject textFab;
@@ -36,6 +37,10 @@ public class Panel : MonoBehaviour
 
         //Update UI stuff.
         UpdateUnitUI();
+
+        //Highlight if needed.
+        if (myUnit == Battle.readyUnit && myUnit != null) Highlight();
+        else UnHighlight();
     }
 
     //Update the sprite.
@@ -53,16 +58,6 @@ public class Panel : MonoBehaviour
             uSpriteObject.SetActive(true);
             HPBar.gameObject.SetActive(true);
             ATBBar.gameObject.SetActive(true);
-
-            //If we just took a turn, highlight.
-            if (myUnit == Battle.ManualUnit)
-            {
-                Highlight();
-            }
-            else
-            {
-                UnHighlight();
-            }
         }
     }
 

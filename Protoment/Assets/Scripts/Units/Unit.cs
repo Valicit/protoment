@@ -15,7 +15,6 @@ public class Unit
     public Rarity uRarity = Rarity.Common;
     public Skill[] mySkills = new Skill[3];
     public Sprite uSprite;
-    public bool isAlly;
 
     //These are all the units current stats.
     public long mHP = 100;
@@ -50,16 +49,9 @@ public class Unit
     //Current Battle Stuff
     public long cHP = 100;
     public float atb = 0;
-    public int[] cooldowns = new int[3];
     public List<string> textQueue = new List<string>();
     public List<Color> textColor = new List<Color>();
-    public bool tookTurn; //This is here for panel highlighting.
     public List<StatusEffect> myStatusEffects = new List<StatusEffect>();
-
-    //This is for counter attacks?
-    public Unit lastAttacker;
-    public Party lastAttackerParty;
-    public Party lastAllyParty;
 
     //This ticks the character forward in battle, updating ATB and anything else.
     public void Tick()
@@ -81,8 +73,8 @@ public class Unit
         //Tick down and remove status effects.
         for (int i = 0; i < myStatusEffects.Count; i++)
         {
-            if (myStatusEffects[i].percentDamage > 0) TakeHit((long)((float)GetmHP() * myStatusEffects[i].percentDamage), false, 1f);
-            if (myStatusEffects[i].percentHealing > 0) TakeHit((long)((float)GetmHP() * myStatusEffects[i].percentHealing), true, 1f);
+            //if (myStatusEffects[i].percentDamage > 0) TakeHit((long)((float)GetmHP() * myStatusEffects[i].percentDamage), false, 1f);
+            //if (myStatusEffects[i].percentHealing > 0) TakeHit((long)((float)GetmHP() * myStatusEffects[i].percentHealing), true, 1f);
             myStatusEffects[i].duration--;
         }
         myStatusEffects.RemoveAll(n => n.duration <= 0);
@@ -90,12 +82,8 @@ public class Unit
         //Count down our cooldowns.
         for (int i = 0; i < mySkills.Length; i++)
         {
-            mySkills[i].CDCountdown();
+            mySkills[i].CountCD();
         }
-
-        //It is no longer our turn.
-        tookTurn = false;
-        Debug.Log(GetSTRstatus());
     }
 
     //This checks if the character is ready to take a turn.
@@ -113,13 +101,10 @@ public class Unit
     }
 
     //This makes the unit get hit by something.
-    public void TakeHit(long d, bool isHealing, float critMod)
+    public void TakeHit(long d, bool isHealing, float critMod, AttackData data)
     {
         //Add crit.
         d = (long)(d * critMod);
-
-        //Add damage reduction.
-        d = (long)(d * GetDMGReduction());
 
         //Add damage text.
         string dString = d.ToString();
@@ -129,25 +114,25 @@ public class Unit
         //If this is healing, cause healing.
         if (isHealing)
         {
-            TakeHealing(d);
+            TakeHealing(d, data);
             textColor.Add(Color.green);
         }
         else //Otherwise do damage.
         {
-            TakeDamage(d);
+            TakeDamage(d, data);
             textColor.Add(Color.white);
         }
     }
 
     //Take some damage!
-    public void TakeDamage(long d) //Hah. Long d. Remember kids, naming conventions can be hilarious.
+    public void TakeDamage(long d, AttackData data) //Hah. Long d. Remember kids, naming conventions can be hilarious.
     {
         cHP -= d;
         if (cHP < 0) cHP = 0;
     }
 
     //Take some healing.
-    public void TakeHealing(long d)
+    public void TakeHealing(long d, AttackData data)
     {
         cHP += d;
         if (cHP > GetmHP()) cHP = GetmHP();
@@ -168,19 +153,6 @@ public class Unit
             if (r != null) r.duration = Mathf.Max(r.duration, s.duration);
             else myStatusEffects.Add(s);
         }
-    }
-
-    //Use a counter attack.
-    public void UseCounter()
-    {
-        for (int sk = 0; sk < mySkills.Length; sk++)
-        {
-            if (mySkills[sk].counterSkill != null) SkillHandler.UseSkillManual(this, mySkills[sk].counterSkill, lastAllyParty, lastAttackerParty, lastAttacker);
-        }
-        //Wipe all counter data.
-        lastAttacker = null;
-        lastAllyParty = null;
-        lastAttackerParty = null;
     }
 
     #region GetStats
@@ -221,26 +193,6 @@ public class Unit
         }
         return r;
     }
-    public float GetDMGReduction()
-    {
-        float r = 1;
-        //For each skil.
-        for (int sk = 0; sk < mySkills.Length; sk++)
-        {
-            r += mySkills[sk].takenDamageMod;
-            if (mySkills[sk].takenDamageMod != 0)
-            {
-                textQueue.Add("(" + mySkills[sk].displayName + ")");
-                textColor.Add(Color.white);
-            }
-        }
-        for (int se = 0; se < myStatusEffects.Count; se++)
-        {
-            r += myStatusEffects[se].takenDamageMod;
-        }
-
-        return r;
-    }
     public long GetStat(StatBase s)
     {
         switch (s)
@@ -277,9 +229,11 @@ public class Unit
         if (u == null) Debug.Log("Not loading Properly");
         r.uName = u.uName;
         r.job = u.job;
-        r.mySkills[0] = Skill.Instantiate(u.skill1);
-        r.mySkills[1] = Skill.Instantiate(u.skill2);
-        r.mySkills[2] = Skill.Instantiate(u.skill3);
+        r.mySkills[0] = new LuckyStrike();
+        r.mySkills[1] = ScriptableObject.CreateInstance("Lucky Strike") as Skill;
+        r.mySkills[2] = ScriptableObject.CreateInstance("Lucky Strike") as Skill;
+        r.mySkills[2].displayName = "THIS IS TOTALLY A DISPLAY NAME";
+        Debug.Log(r.mySkills[0].displayName);
         r.uRarity = u.uRarity;
         r.uSprite = u.unitSprite;
 

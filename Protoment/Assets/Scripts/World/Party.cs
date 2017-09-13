@@ -22,6 +22,7 @@ public class Party
         }
     }
 
+    #region Unit Finding Stuff.
     //Get a list of all units.
     public List<Unit> GetAllUnits()
     {
@@ -49,4 +50,46 @@ public class Party
     {
         return GetAllLiving().FindAll(n => n.TurnReady());
     }
+    #endregion
+
+
+    #region Skill targeting stuff.
+    //Get a random single target.
+    public List<Unit> ValidateSingleRandom()
+    {
+        if (GetAllLiving().Count > 0) return GetAllLiving();
+        return null;
+    }
+
+    //Get a random target closest to the front line.
+    public List<Unit> ValidateSingleFrontLine()
+    {
+        List<Unit> r = new List<Unit>();
+        //If there is a unit on the very front line, add all living units on the front line. Then the next, then the next, till we find at least one.
+        if (GetAllLiving().Contains(myUnits[0, 0]) || GetAllLiving().Contains(myUnits[0, 1]) || GetAllLiving().Contains(myUnits[0, 2]))
+        {
+            if (GetAllLiving().Contains(myUnits[0, 0])) r.Add(myUnits[0, 0]);
+            if (GetAllLiving().Contains(myUnits[0, 1])) r.Add(myUnits[0, 1]);
+            if (GetAllLiving().Contains(myUnits[0, 2])) r.Add(myUnits[0, 2]);
+        }
+        else if (GetAllLiving().Contains(myUnits[1, 0]) || GetAllLiving().Contains(myUnits[1, 1]) || GetAllLiving().Contains(myUnits[1, 2]))
+        {
+            if (GetAllLiving().Contains(myUnits[1, 0])) r.Add(myUnits[1, 0]);
+            if (GetAllLiving().Contains(myUnits[1, 1])) r.Add(myUnits[1, 1]);
+            if (GetAllLiving().Contains(myUnits[1, 2])) r.Add(myUnits[1, 2]);
+        }
+        else if (GetAllLiving().Contains(myUnits[2, 0]) || GetAllLiving().Contains(myUnits[2, 1]) || GetAllLiving().Contains(myUnits[2, 2]))
+        {
+            if (GetAllLiving().Contains(myUnits[2, 0])) r.Add(myUnits[2, 0]);
+            if (GetAllLiving().Contains(myUnits[2, 1])) r.Add(myUnits[2, 1]);
+            if (GetAllLiving().Contains(myUnits[2, 2])) r.Add(myUnits[2, 2]);
+        }
+
+        return r;
+    }
+    public Unit GetSingleFrontLine()
+    {
+        return ValidateSingleFrontLine()[Random.Range(0, ValidateSingleFrontLine().Count)];
+    }
+    #endregion
 }

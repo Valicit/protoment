@@ -1,46 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
-//This controls how the skill targets.
-public enum TargetArea
-{
-    None,
-    SingleRandom,
-    SingleFront,
-    SingleBack,
-    RandomRow,
-    TopRow,
-    BottomRow,
-    RandomLine,
-    FrontLine,
-    BackLine,
-    Plus,
-    X,
-    O,
-    All,
-    Self,
-    Repeat
-}
-
-//This controls how the skill targets manually.
-public enum ManualTargetType
-{
-    Single,
-    Team
-}
-
-//These are the bits that decide what kind of hit gets through.
-public enum SkillComponent
-{
-    None,
-    True,
-    NormalHit,
-    NormalHitChance,
-    RemoveNegativeEffect,
-    RemovePositiveEffect,
-    AddStatus,
-    ModATB
-}
+using System.Collections.Generic;
 
 //This says what stats are used to attack and defend with.
 public enum StatBase
@@ -55,46 +15,67 @@ public enum StatBase
     None
 }
 
-//These are use conditions for skills. Skills not meeting the condition will not be used.
-public enum UseCondition
+//This helps decide what is and is not a valid target.
+public enum ValidTarget
 {
-    None,
-    UnderPercentHP
+    SingleEnemy,
+    ClosestEnemy
 }
 
-[CreateAssetMenu(menuName = "Skill")]
-public class Skill : ScriptableObject
+public class Skill
 {
-    //This class has all of the values that control how a skill works.
+    //This class has all of the methods a skill needs to work.
 
-    //These are basic skill values.
-    public string displayName;
-    public ManualTargetType manualTargetType;
-    public UseCondition condition;
-    public float conditionValue;
-    public bool isPassive;
-    public bool isHealing;
-    public StatBase atkStat;
-    public StatBase defStat;
-    public SkillComponent[] components = new SkillComponent[10];
-    public bool[] targetAlly = new bool[10];
-    public TargetArea[] targetArea = new TargetArea[10];
-    public StatusEffect[] statusEffect = new StatusEffect[10];
-    public float[] statusChance = new float[10];
-    public int[] statusDuration = new int[10];
-    public float[] value1 = new float[10];
-    public float[] value2 = new float[10];
-    public float[] critOffset = new float[10];
-    public float[] critDMGOffset = new float[10];
-    public float takenDamageMod;
-    public Skill counterSkill;
-    public bool isCounter;
-    public float pauseDuration;
+    //These are a list of variables commonly needed by skills.
+    public string displayName = "Skill";
+    public ValidTarget validTarget = ValidTarget.SingleEnemy;
+    public int cd = 0;
+    internal int maxCD = 0;
+    public bool isCounterable = true;
+    public bool isPassive = false;
 
-    //Cooldown stuff.
-    public int cooldown;
-    private int cdCount;
-    public int GetCD() { return cdCount; }
-    public void SetCD() { cdCount = cooldown; }
-    public void CDCountdown() { if(cdCount > 0) cdCount--; }
+    //Skill use requires attack data, populated by all the data that can be collected before the skill starts.
+    public virtual void UseSkill(AttackData data) { }
+
+    //These methods are all used when things happen in the scene.
+    public virtual void OnGetHurt(AttackData data) { }
+    public virtual void OnGetHealed(AttackData data) { }
+    public virtual void OnUseSkill(AttackData data) { }
+    public virtual void OnDeath(AttackData data) { }
+    public virtual void OnTurnStart(AttackData data) { }
+    public virtual void OnTurnEnd(AttackData data) { }
+    public virtual void OnAllyHurt(AttackData data) { }
+    public virtual void OnAllyHealed(AttackData data) { }
+    public virtual void OnAllyTurn(AttackData data) { }
+    public virtual void OnAllyDeath(AttackData data) { }
+
+    //This checks if the skill is ready to use.
+    public bool IsReady()
+    {
+        if (cd == 0 && !isPassive) return true;
+        else return false;
+    }
+
+    //Count down the cooldown by one.
+    public void CountCD()
+    {
+        cd = Mathf.Max(0, cd--);
+    }
+
+    //Get whether the attack is being made against a valid target.
+    public bool IsValidTarget(Unit target, AttackData data)
+    {
+        switch (validTarget)
+        {
+            case ValidTarget.SingleEnemy:
+                if (data.defendingParty.ValidateSingleRandom().Contains(target)) return true;
+                break;
+            case ValidTarget.ClosestEnemy:
+                if(data.defendingParty.ValidateSingleFrontLine().Contains(target)) return true;
+                break;
+        }
+
+        //Default to false.
+        return false;
+    }
 }
