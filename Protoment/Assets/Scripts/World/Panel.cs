@@ -92,6 +92,7 @@ public class Panel : MonoBehaviour
             {
                 sIcons[i].sImage.sprite = myUnit.myStatusEffects[i].statusIcon;
                 sIcons[i].sText.text = myUnit.myStatusEffects[i].duration.ToString();
+                if (myUnit.myStatusEffects[i].permanent) sIcons[i].sText.text = "";
                 sIcons[i].gameObject.SetActive(true);
             }
         }

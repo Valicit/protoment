@@ -13,8 +13,10 @@ public class StatusEffect : ScriptableObject
     public Sprite statusIcon;
 
     //this is basic information.
+    public bool showIcon = true;
     public bool isStackable;
     public bool isNegative;
+    public bool permanent;
     public int duration;
     public bool preventAction;
     public float percentDamage;
@@ -29,4 +31,7 @@ public class StatusEffect : ScriptableObject
     public float critDMGMod = 1;
     public float speedMod = 1;
     public float takenDamageMod;
+    public StatusEffect counterStatus;
+    public float counterStatusChance;
+    public int counterStatusDuration;
 }

@@ -59,26 +59,32 @@ public class Unit
         //Move the atb forward.
         atb += (GetSpeed() / 100) * Battle.speed;
         if (atb > 100) atb = 100;
+
+        //Work through passive skills.
+        for (int i = 0; i < mySkills.Length; i++)
+        {
+            mySkills[i].Tick(this);
+        }
     }
 
     //This happens when the turn starts.
     public void TurnStart()
     {
         atb = 0;
+
+        //Tick down and remove status effects.
+        for (int i = 0; i < myStatusEffects.Count; i++)
+        {
+            if (myStatusEffects[i].percentDamage > 0) TakeHit((long)((float)GetmHP() * myStatusEffects[i].percentDamage), false, 1f);
+            if (myStatusEffects[i].percentHealing > 0) TakeHit((long)((float)GetmHP() * myStatusEffects[i].percentHealing), true, 1f);
+            if (!myStatusEffects[i].permanent) myStatusEffects[i].duration--;
+        }
+        myStatusEffects.RemoveAll(n => n.duration <= 0);
     }
 
     //This happens when the turn ends.
     public void TurnEnd()
     {
-        //Tick down and remove status effects.
-        for (int i = 0; i < myStatusEffects.Count; i++)
-        {
-            //if (myStatusEffects[i].percentDamage > 0) TakeHit((long)((float)GetmHP() * myStatusEffects[i].percentDamage), false, 1f);
-            //if (myStatusEffects[i].percentHealing > 0) TakeHit((long)((float)GetmHP() * myStatusEffects[i].percentHealing), true, 1f);
-            myStatusEffects[i].duration--;
-        }
-        myStatusEffects.RemoveAll(n => n.duration <= 0);
-
         //Count down our cooldowns.
         for (int i = 0; i < mySkills.Length; i++)
         {
@@ -101,10 +107,13 @@ public class Unit
     }
 
     //This makes the unit get hit by something.
-    public void TakeHit(long d, bool isHealing, float critMod, AttackData data)
+    public void TakeHit(long d, bool isHealing, float critMod)
     {
         //Add crit.
         d = (long)(d * critMod);
+
+        //Factor damage taken mod.
+        if(!isHealing) d = (long)(d * GetDamageReduction());
 
         //Add damage text.
         string dString = d.ToString();
@@ -114,25 +123,25 @@ public class Unit
         //If this is healing, cause healing.
         if (isHealing)
         {
-            TakeHealing(d, data);
+            TakeHealing(d);
             textColor.Add(Color.green);
         }
         else //Otherwise do damage.
         {
-            TakeDamage(d, data);
+            TakeDamage(d);
             textColor.Add(Color.white);
         }
     }
 
     //Take some damage!
-    public void TakeDamage(long d, AttackData data) //Hah. Long d. Remember kids, naming conventions can be hilarious.
+    public void TakeDamage(long d) //Hah. Long d. Remember kids, naming conventions can be hilarious.
     {
         cHP -= d;
         if (cHP < 0) cHP = 0;
     }
 
     //Take some healing.
-    public void TakeHealing(long d, AttackData data)
+    public void TakeHealing(long d)
     {
         cHP += d;
         if (cHP > GetmHP()) cHP = GetmHP();
@@ -155,6 +164,22 @@ public class Unit
         }
     }
 
+    //Set off any counter attacks.
+    public void Counter(AttackData data)
+    {
+        //For each status effect we have.
+        foreach (StatusEffect se in myStatusEffects)
+        {
+            if (se.counterStatus != null)
+            {
+                //Roll.
+                StatusEffect counterStatus = StatusEffect.Instantiate(se.counterStatus);
+                counterStatus.duration = se.counterStatusDuration;
+                if (Random.Range(0, 100) < se.counterStatusChance) data.actor.AddStatusEffect(counterStatus);
+            }
+        }
+    }
+
     #region GetStats
     public long GetmHP() { return (long)(mHP * modHP); }
     public long GetSTR() { return (long)(STR * modSTR * GetSTRstatus()); }
@@ -166,6 +191,16 @@ public class Unit
     public float GetCrit() { return Crit; }
     public float GetCritDMG() { return CritDMG; }
     public float GetSpeed() { return Speed * GetSpeedStatus(); }
+    public float GetDamageReduction()
+    {
+        float r = 1f;
+        //Factor status effects.
+        foreach (StatusEffect se in myStatusEffects)
+        {
+            r += se.takenDamageMod;
+        }
+        return r;
+    }
     public decimal GetSTRstatus() //TODO: Add in other stat mods from Status Effects.
     {
         float r = 1;
@@ -197,6 +232,8 @@ public class Unit
     {
         switch (s)
         {
+            case StatBase.None:
+                return 0;
             case StatBase.HP:
                 return GetmHP();
             case StatBase.STR:
@@ -229,11 +266,9 @@ public class Unit
         if (u == null) Debug.Log("Not loading Properly");
         r.uName = u.uName;
         r.job = u.job;
-        r.mySkills[0] = new LuckyStrike();
-        r.mySkills[1] = ScriptableObject.CreateInstance("Lucky Strike") as Skill;
-        r.mySkills[2] = ScriptableObject.CreateInstance("Lucky Strike") as Skill;
-        r.mySkills[2].displayName = "THIS IS TOTALLY A DISPLAY NAME";
-        Debug.Log(r.mySkills[0].displayName);
+        r.mySkills[0] = Skill.Instantiate(u.skill1);
+        r.mySkills[1] = Skill.Instantiate(u.skill2);
+        r.mySkills[2] = Skill.Instantiate(u.skill3);
         r.uRarity = u.uRarity;
         r.uSprite = u.unitSprite;
 

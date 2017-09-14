@@ -60,6 +60,10 @@ public class Party
         if (GetAllLiving().Count > 0) return GetAllLiving();
         return null;
     }
+    public Unit GetSingleRandom()
+    {
+        return ValidateSingleRandom()[Random.Range(0, ValidateSingleRandom().Count)];
+    }
 
     //Get a random target closest to the front line.
     public List<Unit> ValidateSingleFrontLine()

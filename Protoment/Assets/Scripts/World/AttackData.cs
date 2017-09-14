@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public struct AttackData
+public class AttackData
 {
     //This class contains all of the relevant data about one attack that is made. It is passed along everywhere it needs to go, before being added to a list of attacks made in this battle.
 
@@ -10,7 +10,9 @@ public struct AttackData
     public Unit actor;
     public Party actorParty;
     public Party defendingParty;
-    public List<Unit> affectedTargets;
+    public List<Unit> affectedTargets = new List<Unit>();
+    public List<Unit> helpedTargets = new List<Unit>();
+    public List<Unit> repeatTargets = new List<Unit>();
     public Skill skillUsed;
     public Unit selectedUnit;
 
@@ -19,4 +21,13 @@ public struct AttackData
     public long healingDone;
     public int effectsInflicted;
     public int effectsCleansed;
+
+    //Add units to one of our lists.
+    public void AddAffectedUnits(List<Unit> list, List<Unit> targets)
+    {
+        foreach (Unit u in targets)
+        {
+            if (!list.Contains(u)) list.Add(u);
+        }
+    }
 }

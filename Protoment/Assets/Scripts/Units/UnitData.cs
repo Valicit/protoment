@@ -46,9 +46,9 @@ public class UnitData : ScriptableObject
     public float speed;
 
     //These are the units skills.
-    public string skill1;
-    public string skill2;
-    public string skill3;
+    public Skill skill1;
+    public Skill skill2;
+    public Skill skill3;
 
     //This is the sprite for the character.
     public Sprite unitSprite;

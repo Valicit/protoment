@@ -20,12 +20,14 @@ public class Arena : MonoBehaviour
     public void Start()
     {
         //Populate the list of panels from panels1D.
-        myParty.myUnits[0, 0] = Unit.NewUnit((UnitData)Resources.Load(string.Format("Units/{0}/{1}", "Novice", "Fire")));
-        myParty.myUnits[0, 1] = Unit.NewUnit((UnitData)Resources.Load(string.Format("Units/{0}/{1}", "Novice", "Water")));
-        myParty.myUnits[0, 2] = Unit.NewUnit((UnitData)Resources.Load(string.Format("Units/{0}/{1}", "Novice", "Electric")));
-        myParty.myUnits[2, 0] = Unit.NewUnit((UnitData)Resources.Load(string.Format("Units/{0}/{1}", "Novice", "Wood")));
-        myParty.myUnits[2, 1] = Unit.NewUnit((UnitData)Resources.Load(string.Format("Units/{0}/{1}", "Novice", "Light")));
-        myParty.myUnits[2, 2] = Unit.NewUnit((UnitData)Resources.Load(string.Format("Units/{0}/{1}", "Novice", "Dark")));
+        if (isPlayer)
+        {
+            myParty = Player.playerParty;
+        }
+        else
+        {
+            myParty = Player.currentDungeon.GetParty(Player.currentDungeon.currentWave);
+        }
         PopulatePanelArray();
     }
 

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -23,6 +24,7 @@ public class Battle : MonoBehaviour
 
     //These are battle variables.
     public bool auto;
+    public bool ended = false;
     public static float speed = 0.1f;
     public static List<AttackData> usedActions = new List<AttackData>();
     public static Battle battle;
@@ -37,11 +39,21 @@ public class Battle : MonoBehaviour
     //Update the battle.
     public void Update()
     {
-        //Updates the units of the battle.
-        UpdateUnits();
+        //Updates the units of the battle, if the battle is ongoing.
+        if (PlayerArena.myParty.GetAllLiving().Count > 0 && EnemyArena.myParty.GetAllLiving().Count > 0) UpdateUnits();
+        else if (PlayerArena.myParty.GetAllLiving().Count > 0 && !ended)
+        {
+            Invoke("NextWave", 2.0f);
+            ended = true;
+        }
+        else if (!ended)
+        {
+            Invoke("Deafeat", 2.0f);
+            ended = true;
+        }
 
         //Update the battle UI.
-        UpdateBattleUI();
+            UpdateBattleUI();
     }
 
     //Update the battle UI.
@@ -143,8 +155,8 @@ public class Battle : MonoBehaviour
         //We also need to choose a skill to use. 
         //One auto, the skill will use an enum to find a random valid target from Party class. On manual, it will check if the player selected target is contained in that set of valid targets, and if not, the target will become unselected and the skill will not go off.
 
-        //If we're on manual, and there's already a ready unit, a selected unit.
-        if (!auto && readyUnit != null && selectedUnit != null)
+        //If we're on manual, and there's already a ready unit, a selected unit, and this isn't an enemy unit.
+        if (!auto && readyUnit != null && selectedUnit != null && !EnemyArena.myParty.GetAllLiving().Contains(readyUnit))
         {
             //Get a reference to the selected skill.
             Skill s = readyUnit.mySkills[selectedSkill];
@@ -175,6 +187,7 @@ public class Battle : MonoBehaviour
                     data.selectedUnit = selectedUnit;
                     s.UseSkill(data);
                     selectedUnit = null;
+                    selectedSkill = 0;
                     readyUnit.TurnEnd();
                     readyUnit = null;
                 }
@@ -185,18 +198,68 @@ public class Battle : MonoBehaviour
                 }
             }
         }
+        else if ((auto || EnemyArena.myParty.GetAllLiving().Contains(readyUnit)) && readyUnit != null) //If we're on auto, or this is an enemy unit, this happens instead.
+        {
+            //for each skill, counting down.
+            for (int sk = readyUnit.mySkills.Length -1; sk >= 0; sk--)
+            {
+                Skill autoSkill = readyUnit.mySkills[sk];
+
+                //If the skill is ready and not passive.
+                if (autoSkill.IsReady() && !autoSkill.isPassive)
+                {
+                    //Gather attack data.
+                    AttackData data = new AttackData
+                    {
+                        actor = readyUnit
+                    };
+                    if (PlayerArena.myParty.GetAllUnits().Contains(readyUnit))
+                    {
+                        data.actorParty = PlayerArena.myParty;
+                        data.defendingParty = EnemyArena.myParty;
+                    }
+                    else
+                    {
+                        data.actorParty = EnemyArena.myParty;
+                        data.defendingParty = PlayerArena.myParty;
+                    }
+
+                    //Use the skill.
+                    autoSkill.UseSkill(data);
+                    readyUnit.TurnEnd();
+                    readyUnit = null;
+                    break;
+                }
+            }
+        }
     }
     #endregion
+
+    //This sets off the next wave.
+    public void NextWave()
+    {
+        if (Player.currentDungeon.currentWave < Player.currentDungeon.waves.Length)
+        {
+            Player.currentDungeon.currentWave++;
+            SceneManager.LoadScene("Battle");
+        }
+        else
+        {
+            Victory();
+        }
+    }
 
     //This goes off on Victory.
     public void Victory()
     {
         Debug.Log("You win the battle! Good job. I bet you're stuck at this screen with nothing to look at now, huh?");
+        SceneManager.LoadScene("Town");
     }
 
     //This goes off on Defeat.
     public void Defeat()
     {
         Debug.Log("You lost. Sucks to be you.");
+        SceneManager.LoadScene("Town");
     }
 }
