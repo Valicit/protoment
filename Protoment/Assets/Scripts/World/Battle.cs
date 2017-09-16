@@ -23,9 +23,10 @@ public class Battle : MonoBehaviour
     public Button AutoButton;
 
     //These are battle variables.
-    public bool auto;
+    public static bool auto;
     public bool ended = false;
-    public static float speed = 0.1f;
+    public static long exp = 0;
+    public static float speed = 0.5f;
     public static List<AttackData> usedActions = new List<AttackData>();
     public static Battle battle;
 
@@ -48,7 +49,8 @@ public class Battle : MonoBehaviour
         }
         else if (!ended)
         {
-            Invoke("Deafeat", 2.0f);
+            //Invoke("Deafeat", 2.0f);
+            Defeat();
             ended = true;
         }
 
@@ -76,7 +78,7 @@ public class Battle : MonoBehaviour
         else
         {
             //If the battle is on manual and we have a unit waiting, show the buttons and update them.
-            for (int i = 0; i < SkillButtons.Length; i++)
+            for (int i = 0; i < Mathf.Min(SkillButtons.Length, readyUnit.mySkills.Count); i++)
             {
                 SkillButtons[i].gameObject.SetActive(true);
                 SkillButtons[i].interactable = readyUnit.mySkills[i].IsReady();
@@ -154,7 +156,7 @@ public class Battle : MonoBehaviour
         //Information a skill needs to go off. 1) A reference to the unit using the skill. 2) A reference to the characters party. 3) A reference to the enemy party. 
         //We also need to choose a skill to use. 
         //One auto, the skill will use an enum to find a random valid target from Party class. On manual, it will check if the player selected target is contained in that set of valid targets, and if not, the target will become unselected and the skill will not go off.
-
+        
         //If we're on manual, and there's already a ready unit, a selected unit, and this isn't an enemy unit.
         if (!auto && readyUnit != null && selectedUnit != null && !EnemyArena.myParty.GetAllLiving().Contains(readyUnit))
         {
@@ -201,8 +203,9 @@ public class Battle : MonoBehaviour
         else if ((auto || EnemyArena.myParty.GetAllLiving().Contains(readyUnit)) && readyUnit != null) //If we're on auto, or this is an enemy unit, this happens instead.
         {
             //for each skill, counting down.
-            for (int sk = readyUnit.mySkills.Length -1; sk >= 0; sk--)
+            for (int sk = readyUnit.mySkills.Count -1; sk >= 0; sk--)
             {
+                Debug.Log("TEST");
                 Skill autoSkill = readyUnit.mySkills[sk];
 
                 //If the skill is ready and not passive.
@@ -238,7 +241,11 @@ public class Battle : MonoBehaviour
     //This sets off the next wave.
     public void NextWave()
     {
-        if (Player.currentDungeon.currentWave < Player.currentDungeon.waves.Length)
+        //Add exp.
+        exp += EnemyArena.myParty.GetEXP();
+        GrantExp();
+
+        if (Player.currentDungeon.currentWave < Player.currentDungeon.waves.Length -1)
         {
             Player.currentDungeon.currentWave++;
             SceneManager.LoadScene("Battle");
@@ -252,6 +259,7 @@ public class Battle : MonoBehaviour
     //This goes off on Victory.
     public void Victory()
     {
+        ResolveBattle();
         Debug.Log("You win the battle! Good job. I bet you're stuck at this screen with nothing to look at now, huh?");
         SceneManager.LoadScene("Town");
     }
@@ -259,7 +267,37 @@ public class Battle : MonoBehaviour
     //This goes off on Defeat.
     public void Defeat()
     {
+        ResolveBattle();
         Debug.Log("You lost. Sucks to be you.");
         SceneManager.LoadScene("Town");
+    }
+
+    //Do some battle end stuff.
+    public void ResolveBattle()
+    {
+        //For each unit in the player's inventory.
+        foreach (Unit u in Player.playerUnits)
+        {
+            u.cHP = u.GetmHP();
+            u.myStatusEffects = new List<StatusEffect>();
+            u.atb = 0;
+        }
+
+        //Remove exp.
+        exp = 0;
+    }
+
+    //Grant exp.
+    public void GrantExp()
+    {
+        //Get final exp.
+        long fExp = 0;
+        if (PlayerArena.myParty.GetAllUnits().Count > 0) fExp = (long)Mathf.Round((float)exp / PlayerArena.myParty.GetAllUnits().Count);
+
+        //Give out exp.
+        foreach (Unit u in Player.playerParty.GetAllLiving())
+        {
+            u.AddExp(fExp);
+        }
     }
 }

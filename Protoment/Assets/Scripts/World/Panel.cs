@@ -16,6 +16,8 @@ public class Panel : MonoBehaviour
     public Canvas uCanvas;
     public Slider HPBar;
     public Slider ATBBar;
+    public Slider EXPBar;
+    public Text levelText;
     public GameObject statusFrame;
     public StatusIcon[] sIcons;
     public Skill s;
@@ -52,12 +54,14 @@ public class Panel : MonoBehaviour
             uSpriteObject.SetActive(false);
             HPBar.gameObject.SetActive(false);
             ATBBar.gameObject.SetActive(false);
+            EXPBar.gameObject.SetActive(false);
         }
         else
         {
             uSpriteObject.SetActive(true);
             HPBar.gameObject.SetActive(true);
             ATBBar.gameObject.SetActive(true);
+            EXPBar.gameObject.SetActive(true);
         }
     }
 
@@ -69,7 +73,9 @@ public class Panel : MonoBehaviour
         {
             HPBar.value = ((float)myUnit.cHP / (float)myUnit.GetmHP());
             ATBBar.value = myUnit.atb / 100;
+            EXPBar.value = (float)myUnit.exp / (float)myUnit.GetENext(myUnit.level);
             uSprite.sprite = myUnit.uSprite;
+            levelText.text = myUnit.level.ToString();
 
             //Update the status icons.
             UpdateStatusIcons();

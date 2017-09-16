@@ -78,7 +78,12 @@
     <Compile Include="Assets\Scripts\DbTest.cs" />
     <Compile Include="Assets\Scripts\MathP.cs" />
     <Compile Include="Assets\Scripts\UI\AutoDelete.cs" />
+    <Compile Include="Assets\Scripts\UI\DungeonButton.cs" />
+    <Compile Include="Assets\Scripts\UI\DungeonSelect.cs" />
+    <Compile Include="Assets\Scripts\UI\PartyUnitSelect.cs" />
     <Compile Include="Assets\Scripts\UI\StatusIcon.cs" />
+    <Compile Include="Assets\Scripts\UI\UnitSelectButton.cs" />
+    <Compile Include="Assets\Scripts\UI\UnitStatusScreen.cs" />
     <Compile Include="Assets\Scripts\Units\Skill.cs" />
     <Compile Include="Assets\Scripts\Units\SkillComponent.cs" />
     <Compile Include="Assets\Scripts\Units\StatRatioPair.cs" />

@@ -16,4 +16,5 @@ public class Wave
     public UnitData unit20;
     public UnitData unit21;
     public UnitData unit22;
+    public int[] Level = new int[9];
 }

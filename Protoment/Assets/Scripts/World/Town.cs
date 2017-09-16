@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
 public class Town : MonoBehaviour
@@ -9,26 +10,29 @@ public class Town : MonoBehaviour
     //This is our test dungeon.
     public Dungeon testDungeon;
 
+    //This is a list of units we can potentially summon.
+    public List<UnitData> summonList;
+
+    //This is a reference to the starter character.
+    public UnitData starter;
 
     //Startup stuff.
     public void Start()
     {
-        if (Player.playerParty == null)
-        {
-            Player.playerParty = new Party();
-            Player.playerParty.myUnits[0, 0] = Unit.NewUnit((UnitData)Resources.Load(string.Format("Units/{0}/{1}", "Novice", "Fire")));
-            Player.playerParty.myUnits[0, 1] = Unit.NewUnit((UnitData)Resources.Load(string.Format("Units/{0}/{1}", "Novice", "Water")));
-            Player.playerParty.myUnits[0, 2] = Unit.NewUnit((UnitData)Resources.Load(string.Format("Units/{0}/{1}", "Novice", "Electric")));
-            Player.playerParty.myUnits[2, 0] = Unit.NewUnit((UnitData)Resources.Load(string.Format("Units/{0}/{1}", "Novice", "Wood")));
-            Player.playerParty.myUnits[2, 1] = Unit.NewUnit((UnitData)Resources.Load(string.Format("Units/{0}/{1}", "Novice", "Light")));
-            Player.playerParty.myUnits[2, 2] = Unit.NewUnit((UnitData)Resources.Load(string.Format("Units/{0}/{1}", "Novice", "Dark")));
-        }
+        //If the players unit list is empty, spawn the starter character.
+        if (Player.playerUnits.Count == 0) Player.playerUnits.Add(Unit.NewUnit(starter, 9999));
     }
 
     //This starts a battle.
     public void StartBattle()
     {
         Player.currentDungeon = Dungeon.Instantiate(testDungeon);
-        SceneManager.LoadScene("Battle");
+        SceneManager.LoadScene("DungeonSelect");
+    }
+
+    //Summon a unit.
+    public void SummonUnit()
+    {
+        Player.playerUnits.Add(Unit.NewUnit(summonList[Random.Range(0, summonList.Count)]));
     }
 }

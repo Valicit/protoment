@@ -13,8 +13,10 @@ public class Unit
     public string job = "Job";
     public Element uElement = Element.Fire;
     public Rarity uRarity = Rarity.Common;
-    public Skill[] mySkills = new Skill[3];
+    public float classExpMod;
+    public List<Skill> mySkills = new List<Skill>();
     public Sprite uSprite;
+    public UnitData myData;
 
     //These are all the units current stats.
     public long mHP = 100;
@@ -38,13 +40,13 @@ public class Unit
     public long bAGI = 10;
 
     //These are the units stat modifiers.
-    public decimal modHP = 1m;
-    public decimal modSTR = 1m;
-    public decimal modDEF = 1m;
-    public decimal modINT = 1m;
-    public decimal modSPR = 1m;
-    public decimal modDEX = 1m;
-    public decimal modAGI = 1m;
+    public float modHP = 1;
+    public float modSTR = 1;
+    public float modDEF = 1;
+    public float modINT = 1;
+    public float modSPR = 1;
+    public float modDEX = 1;
+    public float modAGI = 1;
 
     //Current Battle Stuff
     public long cHP = 100;
@@ -61,7 +63,7 @@ public class Unit
         if (atb > 100) atb = 100;
 
         //Work through passive skills.
-        for (int i = 0; i < mySkills.Length; i++)
+        for (int i = 0; i < mySkills.Count; i++)
         {
             mySkills[i].Tick(this);
         }
@@ -86,7 +88,7 @@ public class Unit
     public void TurnEnd()
     {
         //Count down our cooldowns.
-        for (int i = 0; i < mySkills.Length; i++)
+        for (int i = 0; i < mySkills.Count; i++)
         {
             mySkills[i].CountCD();
         }
@@ -180,6 +182,41 @@ public class Unit
         }
     }
 
+    //Add exp.
+    public void AddExp(long n)
+    {
+        exp += n;
+        Debug.Log(n);
+        //If we got a level.
+        while (exp >= GetENext(level))
+        {
+            //Subtract the exp and level up.
+            exp -= GetENext(level);
+            LevelUp();
+        }
+    }
+
+    //Level up the unit.
+    public void LevelUp()
+    {
+        mHP += (long)(myData.HP * Random.Range(MathP.minStatGain, MathP.maxStatGain));
+        STR += (long)(myData.STR * Random.Range(MathP.minStatGain, MathP.maxStatGain));
+        DEF += (long)(myData.DEF * Random.Range(MathP.minStatGain, MathP.maxStatGain));
+        INT += (long)(myData.INT * Random.Range(MathP.minStatGain, MathP.maxStatGain));
+        SPR += (long)(myData.SPR * Random.Range(MathP.minStatGain, MathP.maxStatGain));
+        DEX += (long)(myData.DEX * Random.Range(MathP.minStatGain, MathP.maxStatGain));
+        AGI += (long)(myData.AGI * Random.Range(MathP.minStatGain, MathP.maxStatGain));
+        cHP = GetmHP();
+        level++;
+    }
+    public void LevelUp(int times)
+    {
+        for (int i = 0; i < times; i++)
+        {
+            LevelUp();
+        }
+    }
+
     #region GetStats
     public long GetmHP() { return (long)(mHP * modHP); }
     public long GetSTR() { return (long)(STR * modSTR * GetSTRstatus()); }
@@ -201,23 +238,23 @@ public class Unit
         }
         return r;
     }
-    public decimal GetSTRstatus() //TODO: Add in other stat mods from Status Effects.
+    public float GetSTRstatus() //TODO: Add in other stat mods from Status Effects.
     {
         float r = 1;
         for (int i = 0; i < myStatusEffects.Count; i++)
         {
             r *= myStatusEffects[i].STRmod;
         }
-        return (decimal)r;
+        return r;
     }
-    public decimal GetDEFstatus() //TODO: Add in other stat mods from Status Effects.
+    public float GetDEFstatus() //TODO: Add in other stat mods from Status Effects.
     {
         float r = 1;
         for (int i = 0; i < myStatusEffects.Count; i++)
         {
             r *= myStatusEffects[i].DEFmod;
         }
-        return (decimal)r;
+        return r;
     }
     public float GetSpeedStatus()
     {
@@ -254,10 +291,18 @@ public class Unit
         Debug.Log("Somehow got a stat that wasn't really there?");
         return GetSTR();
     }
+
+    //get exp to next level.
+    public long GetENext(float level)
+    {
+        float r = (0.04f * Mathf.Pow(level,3)) + (0.8f * Mathf.Pow(level, 2)) + (2 * level);
+        r *= classExpMod;
+        return (long)r;
+    }
     #endregion
 
     //Return a new unit of the specified class.
-    public static Unit NewUnit(UnitData u)
+    public static Unit NewUnit(UnitData u, int level)
     {
         //Create a new unit.
         Unit r = new Unit();
@@ -266,11 +311,14 @@ public class Unit
         if (u == null) Debug.Log("Not loading Properly");
         r.uName = u.uName;
         r.job = u.job;
-        r.mySkills[0] = Skill.Instantiate(u.skill1);
-        r.mySkills[1] = Skill.Instantiate(u.skill2);
-        r.mySkills[2] = Skill.Instantiate(u.skill3);
+        foreach (Skill s in u.skills)
+        {
+            r.mySkills.Add(Skill.Instantiate(s));
+        }
         r.uRarity = u.uRarity;
+        r.classExpMod = u.classExpMod;
         r.uSprite = u.unitSprite;
+        r.myData = UnitData.Instantiate(u);
 
         //Set all stats properly.
         r.mHP = u.HP;
@@ -286,11 +334,18 @@ public class Unit
 
         //Set default values.
         r.cHP = r.GetmHP();
+        r.LevelUp(level - 1);
 
         //TEMP
         r.atb = Random.Range(0, 100);
 
         //Return the result.
         return r;
+    }
+
+    //Roll a unit.
+    public static Unit NewUnit(UnitData u)
+    {
+        return NewUnit(u, 1);
     }
 }

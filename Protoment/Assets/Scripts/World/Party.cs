@@ -22,6 +22,18 @@ public class Party
         }
     }
 
+    //Get the exp this party gives.
+    public long GetEXP()
+    {
+        long r = 0;
+        foreach (Unit u in GetAllUnits())
+        {
+            r += (long)Mathf.Round(u.GetENext(u.level) * 0.1f) + 6;
+        }
+        Debug.Log("Party EXP: " + r);
+        return r;
+    }
+
     #region Unit Finding Stuff.
     //Get a list of all units.
     public List<Unit> GetAllUnits()

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 //This is for element selection.
 public enum Element
@@ -32,6 +33,7 @@ public class UnitData : ScriptableObject
     public string job;
     public Element uElement;
     public Rarity uRarity;
+    public float classExpMod = 1;
 
     //These are stats.
     public int HP;
@@ -46,9 +48,7 @@ public class UnitData : ScriptableObject
     public float speed;
 
     //These are the units skills.
-    public Skill skill1;
-    public Skill skill2;
-    public Skill skill3;
+    public List<Skill> skills;
 
     //This is the sprite for the character.
     public Sprite unitSprite;
