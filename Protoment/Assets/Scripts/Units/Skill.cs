@@ -30,10 +30,15 @@ public class Skill : ScriptableObject
     //Skill use requires attack data, populated by all the data that can be collected before the skill starts.
     public void UseSkill(AttackData data)
     {
+        //Announce the skill.
+        data.actor.textQueue.Add(displayName);
+        data.actor.textColor.Add(Color.yellow);
+
         //For each component.
         foreach (SkillComponent component in components)
         {
             component.UseComponent(data);
+            data.selectedUnit = null;
         }
 
         //If this is counterable.

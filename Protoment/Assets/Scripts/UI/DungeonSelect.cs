@@ -35,6 +35,25 @@ public class DungeonSelect : MonoBehaviour
         partyFrame.OnLoad();
     }
 
+    //On update.
+    public void Update()
+    {
+        UpdatePartyButtons();
+    }
+
+    //Update the party buttons.
+    public void UpdatePartyButtons()
+    {
+        for (int x = 0; x < 3; x++)
+        {
+            for (int y = 0; y < 3; y++)
+            {
+                if (Player.playerParty.myUnits[x, y] != null) buttons[x, y].SetImage(Player.playerParty.myUnits[x, y].uSprite);
+                else buttons[x, y].SetImage(null);
+            }
+        }
+    }
+
     //This selects the dungeon.
     public void SelectDungeon(Dungeon d)
     {

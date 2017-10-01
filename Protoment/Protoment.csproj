@@ -80,10 +80,15 @@
     <Compile Include="Assets\Scripts\UI\AutoDelete.cs" />
     <Compile Include="Assets\Scripts\UI\DungeonButton.cs" />
     <Compile Include="Assets\Scripts\UI\DungeonSelect.cs" />
+    <Compile Include="Assets\Scripts\UI\EquipSelectButton.cs" />
+    <Compile Include="Assets\Scripts\UI\EquipSelectPane.cs" />
     <Compile Include="Assets\Scripts\UI\PartyUnitSelect.cs" />
     <Compile Include="Assets\Scripts\UI\StatusIcon.cs" />
+    <Compile Include="Assets\Scripts\UI\SummoningScreen.cs" />
+    <Compile Include="Assets\Scripts\UI\UnitEquipScreen.cs" />
     <Compile Include="Assets\Scripts\UI\UnitSelectButton.cs" />
     <Compile Include="Assets\Scripts\UI\UnitStatusScreen.cs" />
+    <Compile Include="Assets\Scripts\Units\Equipment.cs" />
     <Compile Include="Assets\Scripts\Units\Skill.cs" />
     <Compile Include="Assets\Scripts\Units\SkillComponent.cs" />
     <Compile Include="Assets\Scripts\Units\StatRatioPair.cs" />
@@ -97,6 +102,7 @@
     <Compile Include="Assets\Scripts\World\Panel.cs" />
     <Compile Include="Assets\Scripts\World\Party.cs" />
     <Compile Include="Assets\Scripts\World\Player.cs" />
+    <Compile Include="Assets\Scripts\World\Reward.cs" />
     <Compile Include="Assets\Scripts\World\Town.cs" />
     <Compile Include="Assets\Scripts\World\Wave.cs" />
   </ItemGroup>

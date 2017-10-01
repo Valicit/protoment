@@ -21,6 +21,11 @@ public class Battle : MonoBehaviour
     public Text[] SkillButtonText;
     public int selectedSkill;
     public Button AutoButton;
+    public GameObject EscapeScreen;
+    public GameObject DefeatScreen;
+    public GameObject VictoryScreen;
+    public Text VictoryText;
+    public Image VictorySprite;
 
     //These are battle variables.
     public static bool auto;
@@ -187,7 +192,7 @@ public class Battle : MonoBehaviour
                 {
                     //Use the skill.
                     data.selectedUnit = selectedUnit;
-                    s.UseSkill(data);
+                    if(readyUnit.myStatusEffects.Find(n => n.preventAction) == null) s.UseSkill(data);
                     selectedUnit = null;
                     selectedSkill = 0;
                     readyUnit.TurnEnd();
@@ -205,7 +210,6 @@ public class Battle : MonoBehaviour
             //for each skill, counting down.
             for (int sk = readyUnit.mySkills.Count -1; sk >= 0; sk--)
             {
-                Debug.Log("TEST");
                 Skill autoSkill = readyUnit.mySkills[sk];
 
                 //If the skill is ready and not passive.
@@ -228,7 +232,7 @@ public class Battle : MonoBehaviour
                     }
 
                     //Use the skill.
-                    autoSkill.UseSkill(data);
+                    if (readyUnit.myStatusEffects.Find(n => n.preventAction) == null) autoSkill.UseSkill(data);
                     readyUnit.TurnEnd();
                     readyUnit = null;
                     break;
@@ -245,7 +249,13 @@ public class Battle : MonoBehaviour
         exp += EnemyArena.myParty.GetEXP();
         GrantExp();
 
-        if (Player.currentDungeon.currentWave < Player.currentDungeon.waves.Length -1)
+        //If this is a random dungeon.
+        if (Player.currentDungeon.isRandom && Player.currentDungeon.currentWave < Player.currentDungeon.waves.Length - 1)
+        {
+            Escape();
+        }
+        //Otherwise, if this isn't the end of the dungeon load the next wave.
+        else if (Player.currentDungeon.currentWave < Player.currentDungeon.waves.Length -1)
         {
             Player.currentDungeon.currentWave++;
             SceneManager.LoadScene("Battle");
@@ -256,20 +266,23 @@ public class Battle : MonoBehaviour
         }
     }
 
+    //This goes off when the player gets a chance to leave.
+    public void Escape()
+    {
+        EscapeScreen.SetActive(true);
+    }
+
     //This goes off on Victory.
     public void Victory()
     {
-        ResolveBattle();
-        Debug.Log("You win the battle! Good job. I bet you're stuck at this screen with nothing to look at now, huh?");
-        SceneManager.LoadScene("Town");
+        VictoryScreen.SetActive(true);
+        VictoryText.text = Player.currentDungeon.GrantReward();
     }
 
     //This goes off on Defeat.
     public void Defeat()
     {
-        ResolveBattle();
-        Debug.Log("You lost. Sucks to be you.");
-        SceneManager.LoadScene("Town");
+        DefeatScreen.SetActive(true);        
     }
 
     //Do some battle end stuff.
@@ -287,6 +300,50 @@ public class Battle : MonoBehaviour
         exp = 0;
     }
 
+    //This happens when the done button is pressed.
+    public void OnDoneButton()
+    {
+        //Resolve the battle and go back to town.
+        ResolveBattle();
+        SceneManager.LoadScene("Town");
+    }
+
+    //This is what happens when the repeat button is pressed.
+    public void OnRepeatButton()
+    {
+        //Resolve the battle and repeat the stage.
+        ResolveBattle();
+        Player.currentDungeon.currentWave = 0;
+        SceneManager.LoadScene("Battle");
+    }
+
+    //This is what happens when the continue button is pressed.
+    public void OnContinueButton()
+    {
+        //Level up the item if there is one.
+        if (Player.currentDungeon.itemWorldEquip != null)
+        {
+            Equipment e = Player.currentDungeon.itemWorldEquip;
+            e.level = Mathf.Max(e.level, Player.currentDungeon.currentWave);
+        }
+        Player.currentDungeon.currentWave++;
+        SceneManager.LoadScene("Battle");
+    }
+
+    //On escape done button.
+    public void OnEscapeButton()
+    {
+        //Level up the item if there is one.
+        if (Player.currentDungeon.itemWorldEquip != null)
+        {
+            Equipment e = Player.currentDungeon.itemWorldEquip;
+            e.level = Mathf.Max(e.level, Player.currentDungeon.currentWave);
+        }
+        //Resolve the battle and go back to town.
+        ResolveBattle();
+        SceneManager.LoadScene("Town");
+    }
+
     //Grant exp.
     public void GrantExp()
     {
@@ -299,5 +356,6 @@ public class Battle : MonoBehaviour
         {
             u.AddExp(fExp);
         }
+        exp = 0;
     }
 }

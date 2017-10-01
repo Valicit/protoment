@@ -9,6 +9,9 @@ public class UnitStatusScreen : MonoBehaviour
     //This is our unit.
     public Unit myUnit;
 
+    //This is a reference to the party select.
+    public PartyUnitSelect partyPane;
+
     //This is all the UI objects.
     public Image unitPort;
     public Text txt_name;
@@ -28,10 +31,15 @@ public class UnitStatusScreen : MonoBehaviour
     public Text txt_skill2;
     public Text txt_skill3;
 
+    //These are button texts.
+    public Text txt_reap;
+    public Text txt_upgrade;
+
     //On updates. show unit info.
     public void Update()
     {
         if (myUnit != null) UpdateUI();
+        else myUnit = Player.playerUnits[0];
     }
 
     //Update ui.
@@ -40,7 +48,7 @@ public class UnitStatusScreen : MonoBehaviour
         unitPort.sprite = myUnit.uSprite;
         txt_name.text = myUnit.uName;
         txt_class.text = myUnit.job;
-        txt_level.text = "Lv. " + myUnit.level + " " + myUnit.exp + " / " + myUnit.GetENext(myUnit.level) + " " + ((float)myUnit.exp / (float)myUnit.GetENext(myUnit.level)) + "%";
+        txt_level.text = "Lv. " + myUnit.level + " / " + MathP.maxLevels[myUnit.rank - 1] + " " + myUnit.exp + " / " + myUnit.GetENext(myUnit.level) + " " + ((float)myUnit.exp / (float)myUnit.GetENext(myUnit.level)) + "%";
         txt_HP.text = "HP: " + myUnit.GetmHP() + " (" + (myUnit.modHP * 100) + "%)";
         txt_str.text = "STR: " + myUnit.GetSTR() + " (" + (myUnit.modSTR * 100) + "%)";
         txt_def.text = "DEF: " + myUnit.GetDEF() + " (" + (myUnit.modDEF * 100) + "%)";
@@ -54,11 +62,65 @@ public class UnitStatusScreen : MonoBehaviour
         txt_skill1.text = "SkillText";
         txt_skill2.text = "SkillText";
         txt_skill3.text = "SkillText";
+
+        txt_reap.text = string.Format("Reap: {0}", MathP.GetReapValue(myUnit.rank));
+        txt_upgrade.text = string.Format("Upgrade: {0} / {1}", Player.mana, MathP.GetReapValue(myUnit.rank) * myUnit.rank);
     }
 
     //Select a new unit.
     public void OnUnitSelectButtonPressed(Unit u)
     {
         myUnit = u;
+    }
+
+    //Delete a unit.
+    public void DeleteUnit()
+    {
+        //If there is a unit selected.
+        if (myUnit != null && Player.playerUnits.Count > 1)
+        {
+            Player.playerUnits.Remove(myUnit);
+            myUnit = Player.playerUnits[0];
+        }
+        partyPane.OnLoad();
+    }
+
+    //Upgrade the unit.
+    public void OnUpgrade()
+    {
+        //If we have the mana.
+        if (Player.mana >= MathP.GetReapValue(myUnit.rank) * myUnit.rank)
+        {
+            //Remove the mana.
+            Player.mana -= MathP.GetReapValue(myUnit.rank) * myUnit.rank;
+
+            //Return the unit to level 1.
+            myUnit.level = 1;
+            myUnit.exp = 0;
+            myUnit.mHP = myUnit.myData.HP;
+            myUnit.cHP = myUnit.GetmHP();
+            myUnit.STR = myUnit.myData.STR;
+            myUnit.DEF = myUnit.myData.DEF;
+            myUnit.INT = myUnit.myData.INT;
+            myUnit.SPR = myUnit.myData.SPR;
+            myUnit.DEX = myUnit.myData.DEX;
+            myUnit.AGI = myUnit.myData.AGI;
+
+            //Increase rank.
+            myUnit.rank++;
+        }
+    }
+
+    //Reap the unit.
+    public void OnReap()
+    {
+        if (myUnit.level >= MathP.maxLevels[myUnit.rank - 1])
+        {
+            //Add the reaped mana.
+            myUnit.Reap();
+
+            //Delete the unit.
+            DeleteUnit();
+        }
     }
 }

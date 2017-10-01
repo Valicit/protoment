@@ -25,6 +25,7 @@ public class StatusEffect : ScriptableObject
     public float STRmod = 1;
     public float DEFmod = 1;
     public float INTmod = 1;
+    public float SPRmod = 1;
     public float DEXmod = 1;
     public float AGImod = 1;
     public float critMod = 1;

@@ -1,0 +1,1081 @@
+fileFormatVersion: 2
+guid: 3bcbf86be68efba47ab2fcbe5b8b0a4b
+timeCreated: 1506715878
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ElectricSlime_0
+    21300002: ElectricSlime_1
+    21300004: ElectricSlime_2
+    21300006: ElectricSlime_3
+    21300008: ElectricSlime_4
+    21300010: ElectricSlime_5
+    21300012: ElectricSlime_6
+    21300014: ElectricSlime_7
+    21300016: ElectricSlime_8
+    21300018: ElectricSlime_9
+    21300020: ElectricSlime_10
+    21300022: ElectricSlime_11
+    21300024: ElectricSlime_12
+    21300026: ElectricSlime_13
+    21300028: ElectricSlime_14
+    21300030: ElectricSlime_15
+    21300032: ElectricSlime_16
+    21300034: ElectricSlime_17
+    21300036: ElectricSlime_18
+    21300038: ElectricSlime_19
+    21300040: ElectricSlime_20
+    21300042: ElectricSlime_21
+    21300044: ElectricSlime_22
+    21300046: ElectricSlime_23
+    21300048: ElectricSlime_24
+    21300050: ElectricSlime_25
+    21300052: ElectricSlime_26
+    21300054: ElectricSlime_27
+    21300056: ElectricSlime_28
+    21300058: ElectricSlime_29
+    21300060: ElectricSlime_30
+    21300062: ElectricSlime_31
+    21300064: ElectricSlime_32
+    21300066: ElectricSlime_33
+    21300068: ElectricSlime_34
+    21300070: ElectricSlime_35
+    21300072: ElectricSlime_36
+    21300074: ElectricSlime_37
+    21300076: ElectricSlime_38
+    21300078: ElectricSlime_39
+    21300080: ElectricSlime_40
+    21300082: ElectricSlime_41
+    21300084: ElectricSlime_42
+    21300086: ElectricSlime_43
+    21300088: ElectricSlime_44
+    21300090: ElectricSlime_45
+    21300092: ElectricSlime_46
+    21300094: ElectricSlime_47
+    21300096: ElectricSlime_48
+    21300098: ElectricSlime_49
+    21300100: ElectricSlime_50
+    21300102: ElectricSlime_51
+    21300104: ElectricSlime_52
+    21300106: ElectricSlime_53
+    21300108: ElectricSlime_54
+    21300110: ElectricSlime_55
+    21300112: ElectricSlime_56
+    21300114: ElectricSlime_57
+    21300116: ElectricSlime_58
+    21300118: ElectricSlime_59
+    21300120: ElectricSlime_60
+    21300122: ElectricSlime_61
+    21300124: ElectricSlime_62
+    21300126: ElectricSlime_63
+    21300128: ElectricSlime_64
+    21300130: ElectricSlime_65
+    21300132: ElectricSlime_66
+    21300134: ElectricSlime_67
+    21300136: ElectricSlime_68
+    21300138: ElectricSlime_69
+    21300140: ElectricSlime_70
+    21300142: ElectricSlime_71
+    21300144: ElectricSlime_72
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ElectricSlime_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1509
+        width: 134
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_1
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1518
+        width: 121
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_2
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1510
+        width: 137
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_3
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 1512
+        width: 95
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_4
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 1638
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1362
+        width: 119
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_6
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1368
+        width: 117
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_7
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 1377
+        width: 118
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_8
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 1386
+        width: 120
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_9
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 1490
+        width: 115
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_10
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 1491
+        width: 118
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_11
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 1502
+        width: 117
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_12
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 1491
+        width: 116
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_13
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 1241
+        width: 122
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_14
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 1245
+        width: 126
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_15
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 1317
+        width: 109
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_16
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 1319
+        width: 198
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_17
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 1367
+        width: 172
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1230
+        width: 123
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_19
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1232
+        width: 118
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_20
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 1144
+        width: 65
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_21
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 1142
+        width: 195
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_22
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 1236
+        width: 207
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_23
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1145
+        width: 117
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_24
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 1142
+        width: 115
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_25
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 1141
+        width: 131
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_26
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 1115
+        width: 210
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_27
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 997
+        width: 134
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_28
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1005
+        width: 141
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_29
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 1007
+        width: 135
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_30
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 982
+        width: 74
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_31
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 959
+        width: 193
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_32
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 964
+        width: 170
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_33
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 951
+        width: 117
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_34
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 860
+        width: 133
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_35
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 860
+        width: 135
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_36
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 863
+        width: 127
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_37
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 829
+        width: 84
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_38
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 815
+        width: 149
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_39
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 795
+        width: 161
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_40
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 778
+        width: 154
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_41
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 725
+        width: 123
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_42
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 720
+        width: 128
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_43
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 725
+        width: 128
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_44
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 685
+        width: 66
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_45
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 651
+        width: 225
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_46
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 608
+        width: 121
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_47
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 603
+        width: 124
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_48
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 627
+        width: 127
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_49
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 627
+        width: 124
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_50
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 628
+        width: 110
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_51
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 498
+        width: 125
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_52
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 504
+        width: 120
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_53
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 501
+        width: 113
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_54
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 499
+        width: 119
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_55
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 467
+        width: 160
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_56
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 450
+        width: 199
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_57
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 371
+        width: 132
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_58
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 334
+        width: 146
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_59
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 333
+        width: 147
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_60
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 342
+        width: 145
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_61
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 297
+        width: 158
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_62
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 313
+        width: 148
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_63
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 271
+        width: 83
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_64
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 179
+        width: 141
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_65
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 179
+        width: 135
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_66
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 182
+        width: 129
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_67
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 223
+        width: 79
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_68
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 181
+        width: 118
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_69
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 148
+        width: 118
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_70
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 162
+        width: 110
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_71
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 164
+        width: 120
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ElectricSlime_72
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 5
+        width: 184
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

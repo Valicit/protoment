@@ -13,6 +13,7 @@ public class Unit
     public string job = "Job";
     public Element uElement = Element.Fire;
     public Rarity uRarity = Rarity.Common;
+    public int rank = 1;
     public float classExpMod;
     public List<Skill> mySkills = new List<Skill>();
     public Sprite uSprite;
@@ -48,6 +49,11 @@ public class Unit
     public float modDEX = 1;
     public float modAGI = 1;
 
+    //This is the units equipment.
+    public Equipment weapon;
+    public Equipment armor;
+    public Equipment accessory;
+
     //Current Battle Stuff
     public long cHP = 100;
     public float atb = 0;
@@ -79,9 +85,7 @@ public class Unit
         {
             if (myStatusEffects[i].percentDamage > 0) TakeHit((long)((float)GetmHP() * myStatusEffects[i].percentDamage), false, 1f);
             if (myStatusEffects[i].percentHealing > 0) TakeHit((long)((float)GetmHP() * myStatusEffects[i].percentHealing), true, 1f);
-            if (!myStatusEffects[i].permanent) myStatusEffects[i].duration--;
         }
-        myStatusEffects.RemoveAll(n => n.duration <= 0);
     }
 
     //This happens when the turn ends.
@@ -92,6 +96,13 @@ public class Unit
         {
             mySkills[i].CountCD();
         }
+
+        //Tick down and remove status effects.
+        for (int i = 0; i < myStatusEffects.Count; i++)
+        {
+            if (!myStatusEffects[i].permanent) myStatusEffects[i].duration--;
+        }
+        myStatusEffects.RemoveAll(n => n.duration <= 0 && !n.permanent);
     }
 
     //This checks if the character is ready to take a turn.
@@ -149,6 +160,15 @@ public class Unit
         if (cHP > GetmHP()) cHP = GetmHP();
     }
 
+    //Dodge an attack.
+    public void TakeMiss()
+    {
+        //Add damage text.
+        string dString = "Miss!";
+        textQueue.Add(dString);
+        textColor.Add(Color.white);
+    }
+
     //Add a status effect to the character.
     public void AddStatusEffect(StatusEffect s)
     {
@@ -188,7 +208,7 @@ public class Unit
         exp += n;
         Debug.Log(n);
         //If we got a level.
-        while (exp >= GetENext(level))
+        while (exp >= GetENext(level) && level < MathP.maxLevels[rank - 1])
         {
             //Subtract the exp and level up.
             exp -= GetENext(level);
@@ -199,7 +219,7 @@ public class Unit
     //Level up the unit.
     public void LevelUp()
     {
-        mHP += (long)(myData.HP * Random.Range(MathP.minStatGain, MathP.maxStatGain));
+        mHP += (long)(myData.HP * Random.Range(MathP.minStatGain * 2, MathP.maxStatGain * 2));
         STR += (long)(myData.STR * Random.Range(MathP.minStatGain, MathP.maxStatGain));
         DEF += (long)(myData.DEF * Random.Range(MathP.minStatGain, MathP.maxStatGain));
         INT += (long)(myData.INT * Random.Range(MathP.minStatGain, MathP.maxStatGain));
@@ -217,17 +237,24 @@ public class Unit
         }
     }
 
+    //Reap the unit for stuff.
+    public void Reap()
+    {
+        //Add mana.
+        Player.mana += MathP.GetReapValue(rank);
+    }
+
     #region GetStats
-    public long GetmHP() { return (long)(mHP * modHP); }
-    public long GetSTR() { return (long)(STR * modSTR * GetSTRstatus()); }
-    public long GetDEF() { return (long)(DEF * modDEF * GetDEFstatus()); }
-    public long GetINT() { return (long)(INT * modINT); }
-    public long GetSPR() { return (long)(SPR * modSPR); }
-    public long GetDEX() { return (long)(DEX * modDEX); }
-    public long GetAGI() { return (long)(AGI * modAGI); }
+    public long GetmHP() { return (long)((mHP + GetEquipStats(EquipStats.FlatHP)) * modHP * GetStatStatus(StatBase.HP) * GetEquipStatsPercentage(EquipStats.HP)); }
+    public long GetSTR() { return (long)((STR + GetEquipStats(EquipStats.FlatSTR)) * modSTR * GetStatStatus(StatBase.STR) * GetEquipStatsPercentage(EquipStats.STR)); }
+    public long GetDEF() { return (long)((DEF + GetEquipStats(EquipStats.FlatDEF)) * modSTR * GetStatStatus(StatBase.DEF) * GetEquipStatsPercentage(EquipStats.DEF)); }
+    public long GetINT() { return (long)((INT + GetEquipStats(EquipStats.FlatINT)) * modSTR * GetStatStatus(StatBase.INT) * GetEquipStatsPercentage(EquipStats.INT)); }
+    public long GetSPR() { return (long)((SPR + GetEquipStats(EquipStats.FlatSPR)) * modSTR * GetStatStatus(StatBase.SPR) * GetEquipStatsPercentage(EquipStats.SPR)); }
+    public long GetDEX() { return (long)((DEX + GetEquipStats(EquipStats.FlatDEX)) * modSTR * GetStatStatus(StatBase.DEX) * GetEquipStatsPercentage(EquipStats.DEX)); }
+    public long GetAGI() { return (long)((AGI + GetEquipStats(EquipStats.FlatAGI)) * modSTR * GetStatStatus(StatBase.AGI) * GetEquipStatsPercentage(EquipStats.AGI)); }
     public float GetCrit() { return Crit; }
     public float GetCritDMG() { return CritDMG; }
-    public float GetSpeed() { return Speed * GetSpeedStatus(); }
+    public float GetSpeed() { return ((Speed + GetEquipStats(EquipStats.Speed)) * GetStatStatus(StatBase.Speed)); }
     public float GetDamageReduction()
     {
         float r = 1f;
@@ -238,30 +265,38 @@ public class Unit
         }
         return r;
     }
-    public float GetSTRstatus() //TODO: Add in other stat mods from Status Effects.
+    public float GetStatStatus(StatBase s)
     {
         float r = 1;
         for (int i = 0; i < myStatusEffects.Count; i++)
         {
-            r *= myStatusEffects[i].STRmod;
-        }
-        return r;
-    }
-    public float GetDEFstatus() //TODO: Add in other stat mods from Status Effects.
-    {
-        float r = 1;
-        for (int i = 0; i < myStatusEffects.Count; i++)
-        {
-            r *= myStatusEffects[i].DEFmod;
-        }
-        return r;
-    }
-    public float GetSpeedStatus()
-    {
-        float r = 1;
-        for (int i = 0; i < myStatusEffects.Count; i++)
-        {
-            r *= myStatusEffects[i].speedMod;
+            switch (s)
+            {
+                case StatBase.HP:
+                    r *= myStatusEffects[i].HPmod;
+                    break;
+                case StatBase.STR:
+                    r *= myStatusEffects[i].STRmod;
+                    break;
+                case StatBase.DEF:
+                    r *= myStatusEffects[i].DEFmod;
+                    break;
+                case StatBase.INT:
+                    r *= myStatusEffects[i].INTmod;
+                    break;
+                case StatBase.SPR:
+                    r *= myStatusEffects[i].SPRmod;
+                    break;
+                case StatBase.DEX:
+                    r *= myStatusEffects[i].DEXmod;
+                    break;
+                case StatBase.AGI:
+                    r *= myStatusEffects[i].AGImod;
+                    break;
+                case StatBase.Speed:
+                    r *= myStatusEffects[i].speedMod;
+                    break;
+            }
         }
         return r;
     }
@@ -285,6 +320,8 @@ public class Unit
                 return GetDEX();
             case StatBase.AGI:
                 return GetAGI();
+            case StatBase.Speed:
+                return (long)GetSpeed();
         }
 
         //Default to STR.
@@ -298,6 +335,40 @@ public class Unit
         float r = (0.04f * Mathf.Pow(level,3)) + (0.8f * Mathf.Pow(level, 2)) + (2 * level);
         r *= classExpMod;
         return (long)r;
+    }
+
+    //Get the currently equipped item in a given slot.
+    public Equipment GetEquipped(EquipType et)
+    {
+        switch (et)
+        {
+            case EquipType.Weapon:
+                return weapon;
+            case EquipType.Armor:
+                return armor;
+            case EquipType.Accessory:
+                return accessory;
+        }
+        Debug.Log("Something has gone terribly wrong with finding an equipped item.");
+        return null;
+    }
+
+    //Get all values of one stat on all of our equipment.
+    public float GetEquipStats(EquipStats es)
+    {
+        float r = 0;
+        if (weapon != null) r += weapon.GetStatValue(es);
+        if (armor != null) r += armor.GetStatValue(es);
+        if (accessory != null) r += accessory.GetStatValue(es);
+        return r;
+    }
+    public float GetEquipStatsPercentage(EquipStats es)
+    {
+        float r = 0;
+        if (weapon != null) r += weapon.GetStatValue(es);
+        if (armor != null) r += armor.GetStatValue(es);
+        if (accessory != null) r += accessory.GetStatValue(es);
+        return 1 + (r / 100);
     }
     #endregion
 
@@ -317,6 +388,7 @@ public class Unit
         }
         r.uRarity = u.uRarity;
         r.classExpMod = u.classExpMod;
+        r.rank = (int)u.uRarity + 1;
         r.uSprite = u.unitSprite;
         r.myData = UnitData.Instantiate(u);
 

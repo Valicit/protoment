@@ -70,11 +70,12 @@ public class Party
     public List<Unit> ValidateSingleRandom()
     {
         if (GetAllLiving().Count > 0) return GetAllLiving();
-        return null;
+        return new List<Unit>();
     }
     public Unit GetSingleRandom()
     {
-        return ValidateSingleRandom()[Random.Range(0, ValidateSingleRandom().Count)];
+        if (ValidateSingleRandom().Count > 0) return ValidateSingleRandom()[Random.Range(0, ValidateSingleRandom().Count)];
+        else return null;
     }
 
     //Get a random target closest to the front line.
@@ -106,6 +107,34 @@ public class Party
     public Unit GetSingleFrontLine()
     {
         return ValidateSingleFrontLine()[Random.Range(0, ValidateSingleFrontLine().Count)];
+    }
+
+    //Get any units that share a row with the given unit.
+    public List<Unit> GetUnitRow(Unit u)
+    {
+        //Get a list to hold our result.
+        List<Unit> r = new List<Unit>();
+
+        //Get the y of our unit.
+        int y = 0;
+        for (int i = 0; i < 3; i++)
+        {
+            for (int z = 0; z < 3; z++)
+            {
+                if (myUnits[i, z] == u)
+                {
+                    y = z;
+                }
+            }
+        }
+
+        //Add those units to the list.
+        if (GetAllLiving().Contains(myUnits[0, y])) r.Add(myUnits[0, y]);
+        if (GetAllLiving().Contains(myUnits[1, y])) r.Add(myUnits[1, y]);
+        if (GetAllLiving().Contains(myUnits[2, y])) r.Add(myUnits[2, y]);
+
+        //Return the result.
+        return r;
     }
     #endregion
 }

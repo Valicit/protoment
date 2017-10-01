@@ -9,12 +9,38 @@ public static class MathP
     public static float minStatGain = 0.45f;
     public static float maxStatGain = 0.55f;
 
+    //These are max levels at different ranks.
+    public static int[] maxLevels = new int[] {
+        20,
+        40,
+        60,
+        80,
+        100,
+        200,
+        500,
+        1000,
+        5000,
+        9999
+    };
+
+    //Get rank value.
+    public static long GetReapValue(int rank)
+    {
+        long r = 1;
+        for (int i = 0; i < rank; i++)
+        {
+            r *= i +1;
+        }
+        return r;
+    }
+
     //Calculate normal damage.
     public static long GetDamage(decimal atk, decimal def)
     {
-        decimal r = (atk * (decimal)Random.Range(0.3f, 0.367f));
-        //r *= (1000 / (1100 + (def * 3)));
+        decimal r = (atk * (decimal)Random.Range(0.9f, 1.1f));
         r -= (def * (decimal)Random.Range(0.15f, 0.2f));
+        r *= (1000 / (1000 + (def * 3)));
+        //r -= (def * (decimal)Random.Range(0.15f, 0.2f));
         if (r < 0) r = 0;
         return (long)r;
     }

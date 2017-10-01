@@ -15,12 +15,19 @@ public class Town : MonoBehaviour
 
     //This is a reference to the starter character.
     public UnitData starter;
+    public Equipment commonEquip;
 
     //Startup stuff.
     public void Start()
     {
         //If the players unit list is empty, spawn the starter character.
-        if (Player.playerUnits.Count == 0) Player.playerUnits.Add(Unit.NewUnit(starter, 9999));
+        if (Player.playerUnits.Count == 0)
+        {
+            Player.playerUnits.Add(Unit.NewUnit(starter, 1));
+            Player.playerEquips.Add(Equipment.GetItem(commonEquip, EquipType.Weapon));
+            Player.playerEquips[0].MainStat.stat = EquipStats.FlatSTR;
+            Player.playerEquips[0].MainStat.value = 1000f;
+        }
     }
 
     //This starts a battle.

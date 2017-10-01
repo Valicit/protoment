@@ -12,7 +12,8 @@ public enum StatBase
     INT,
     SPR,
     DEX,
-    AGI
+    AGI,
+    Speed
 }
 
 //This controls what main code the skill component executes. What it DOES to the target, without anything being added.
@@ -20,14 +21,14 @@ public enum SkillBehaviour
 {
     None,
     Healing, 
-    TrueDamage, //Not Implemented.
+    TrueDamage,
     AddStatus,
     AddBuff,
     RemoveStatus,
-    RemoveBuff, //Not Implemented.
+    RemoveBuff,
     ModAttackBar,
     NormalAttack,
-    NormalAttackWithChance, //Not Implemented.
+    NormalAttackWithChance,
     NormalAttackAddedCrit
 }
 
@@ -86,12 +87,17 @@ public class SkillComponent
         {
             case SkillTargets.SingleRandom:
                 if (data.selectedUnit != null) targets.Add(data.selectedUnit);
-                else targets.Add(p.GetSingleRandom());
+                else if(p.GetSingleRandom() != null) targets.Add(p.GetSingleRandom());
                 break;
 
             case SkillTargets.SingleFrontLine:
                 if (data.selectedUnit != null) targets.Add(data.selectedUnit);
-                else targets.Add(p.GetSingleFrontLine());
+                else if (p.GetSingleFrontLine() != null) targets.Add(p.GetSingleFrontLine());
+                break;
+
+            case SkillTargets.RowRandom:
+                if (data.selectedUnit != null) targets.AddRange(p.GetUnitRow(data.selectedUnit));
+                else if (p.GetSingleRandom() != null) targets.AddRange(p.GetUnitRow(p.GetSingleRandom()));
                 break;
 
             case SkillTargets.Self:
@@ -131,8 +137,16 @@ public class SkillComponent
         float critmod = 1f;
         if (isCrit) critmod = actor.GetCritDMG();
 
-        //Deal the damage.
-        target.TakeHit(MathP.GetDamage(GetSkillDamage(actor), target.GetStat(defenseStat)), false, critmod);
+        //Check if we miss.
+        if (Random.Range(0, 100) < ((float)actor.GetDEX() / (float)target.GetAGI()) * 100)
+        {
+            //Deal the damage.
+            target.TakeHit(MathP.GetDamage(GetSkillDamage(actor), target.GetStat(defenseStat)), false, critmod);
+        }
+        else
+        {
+            target.TakeMiss();
+        }
     }
     public void AttackTarget(Unit actor, Unit target, AttackData data)
     {
@@ -145,7 +159,7 @@ public class SkillComponent
     }
 
     //Apply status effects.
-    public void ApplyStatusEffects(Unit t)
+    public void ApplyStatusEffects(Unit t, AttackData data)
     {
         //For each status effect.
         for (int se = 0; se < statusEffects.Length; se++)
@@ -154,7 +168,8 @@ public class SkillComponent
             if (Random.Range(0, 100) < statusChances[se])
             {
                 StatusEffect r = StatusEffect.Instantiate(statusEffects[se]);
-                r.duration = statusDurations[se];
+                if (t == data.actor) r.duration = statusDurations[se] + 1;
+                else r.duration = statusDurations[se];
                 t.AddStatusEffect(r);
             }
         }
@@ -175,6 +190,10 @@ public class SkillComponent
                 Healing(GetTargets(data), data);
                 break;
 
+            case SkillBehaviour.TrueDamage:
+                TrueDamage(GetTargets(data), data);
+                break;
+
             case SkillBehaviour.AddStatus:
                 AddStatus(GetTargets(data), data);
                 break;
@@ -185,6 +204,10 @@ public class SkillComponent
 
             case SkillBehaviour.RemoveStatus:
                 RemoveStatus(GetTargets(data), data);
+                break;
+
+            case SkillBehaviour.RemoveBuff:
+                RemoveBuff(GetTargets(data), data);
                 break;
 
             case SkillBehaviour.ModAttackBar:
@@ -211,17 +234,28 @@ public class SkillComponent
         foreach (Unit u in targets)
         {
             u.TakeHit(GetSkillDamage(data.actor), true, 1f);
+            ApplyStatusEffects(u, data);
         }
         data.AddAffectedUnits(data.helpedTargets, targets);
     }
-    public void TrueDamage(List<Unit> targets, AttackData data) { }
+
+    //Deals direct and true damage.
+    public void TrueDamage(List<Unit> targets, AttackData data)
+    {
+        foreach (Unit u in targets)
+        {
+            u.TakeHit(GetSkillDamage(data.actor), false, 1f);
+            ApplyStatusEffects(u, data);
+        }
+        data.AddAffectedUnits(data.affectedTargets, targets);
+    }
     
     //Add a status effect to the targets.
     public void AddStatus(List<Unit> targets, AttackData data)
     {
         foreach (Unit u in targets)
         {
-            ApplyStatusEffects(u);
+            ApplyStatusEffects(u, data);
         }
         data.AddAffectedUnits(data.affectedTargets, targets);
     }
@@ -231,7 +265,7 @@ public class SkillComponent
     {
         foreach (Unit u in targets)
         {
-            ApplyStatusEffects(u);
+            ApplyStatusEffects(u, data);
         }
         data.AddAffectedUnits(data.helpedTargets, targets);
     }
@@ -255,7 +289,24 @@ public class SkillComponent
         }
         data.AddAffectedUnits(data.helpedTargets, targets);
     }
-    public void RemoveBuff(List<Unit> targets, AttackData data) { }
+    public void RemoveBuff(List<Unit> targets, AttackData data)
+    {
+        foreach (Unit u in targets)
+        {
+            //Get how many effects to remove.
+            int i = 0;
+            //If we have no number of effects to remove.
+            if (otherValues.Length == 0) i = u.myStatusEffects.FindAll(n => !n.isNegative).Count;
+            else i = (int)Mathf.Min(otherValues[0], u.myStatusEffects.FindAll(n => !n.isNegative).Count);
+
+            //For each status effect we get to remove.
+            for (int x = 0; x < i; x++)
+            {
+                u.myStatusEffects.Remove(u.myStatusEffects.FindAll(n => !n.isNegative)[0]);
+            }
+        }
+        data.AddAffectedUnits(data.helpedTargets, targets);
+    }
 
     //Modify the attack bar by OtherValues[0] at a otherValues[1] chance.
     public void ModifyAttackBar(List<Unit> targets, AttackData data)
@@ -267,7 +318,9 @@ public class SkillComponent
             {
                 u.atb = Mathf.Clamp(u.atb + otherValues[0], 0, 100);
                 
-                ApplyStatusEffects(u);
+                ApplyStatusEffects(u, data);
+
+                if (statValues.Length > 0) AttackTarget(data.actor, u, data);
             }
         }
     }
@@ -278,7 +331,7 @@ public class SkillComponent
         foreach (Unit u in targets)
         {
             AttackTarget(data.actor, u, data);
-            ApplyStatusEffects(u);
+            ApplyStatusEffects(u, data);
         }
         data.AddAffectedUnits(data.affectedTargets, targets);
     }
@@ -293,7 +346,7 @@ public class SkillComponent
             foreach (Unit u in targets)
             {
                 AttackTarget(data.actor, u, data);
-                ApplyStatusEffects(u);
+                ApplyStatusEffects(u, data);
             }
             data.AddAffectedUnits(data.affectedTargets, targets);
         }
@@ -310,7 +363,7 @@ public class SkillComponent
 
             //Attack the target.
             AttackTarget(data.actor, u, data, crit);
-            ApplyStatusEffects(u);
+            ApplyStatusEffects(u, data);
         }
         data.AddAffectedUnits(data.affectedTargets, targets);
     }
