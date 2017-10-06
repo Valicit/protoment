@@ -18,7 +18,6 @@ public class SummoningScreen : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
 	}
 	
 	// Update is called once per frame
@@ -47,7 +46,7 @@ public class SummoningScreen : MonoBehaviour {
     //Perform an advanced summon.
     public void AdvancedSummon()
     {
-        Summon(new float[] { 2, 25, 100 }, new Rarity[] { Rarity.Rare, Rarity.Rare, Rarity.Rare }, new List<Element>() { Element.Fire, Element.Water, Element.Wood, Element.Electric }, ref Player.advancedMaterial);
+        Summon(new float[] { 2, 8, 90 }, new Rarity[] { Rarity.Legendary, Rarity.Epic, Rarity.Rare }, new List<Element>() { Element.Fire, Element.Water, Element.Wood, Element.Electric }, ref Player.advancedMaterial);
     }
 
     //Perform a rainbow summon.
@@ -59,13 +58,13 @@ public class SummoningScreen : MonoBehaviour {
     //Perform a luminous summon.
     public void LuminousSummon()
     {
-        Summon(new float[] { 2, 25, 100 }, new Rarity[] { Rarity.Rare, Rarity.Rare, Rarity.Rare }, new List<Element>() { Element.Fire, Element.Water, Element.Wood, Element.Electric, Element.Light, Element.Dark }, ref Player.luminousMaterial);
+        Summon(new float[] { 2, 8, 90 }, new Rarity[] { Rarity.Legendary, Rarity.Epic, Rarity.Rare }, new List<Element>() { Element.Fire, Element.Water, Element.Wood, Element.Electric, Element.Light, Element.Dark }, ref Player.luminousMaterial);
     }
 
     //Perform a light and shadow summon.
     public void LightShadowSummon()
     {
-        Summon(new float[] { 2, 25, 100 }, new Rarity[] { Rarity.Rare, Rarity.Rare, Rarity.Rare }, new List<Element>() { Element.Light, Element.Dark }, ref Player.lightShadowMaterial);
+        Summon(new float[] { 2, 8, 90 }, new Rarity[] { Rarity.Legendary, Rarity.Epic, Rarity.Rare }, new List<Element>() { Element.Light, Element.Dark }, ref Player.lightShadowMaterial);
     }
 
     //Perform a basic summon.

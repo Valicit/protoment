@@ -55,6 +55,15 @@ public class Panel : MonoBehaviour
             HPBar.gameObject.SetActive(false);
             ATBBar.gameObject.SetActive(false);
             EXPBar.gameObject.SetActive(false);
+            statusFrame.SetActive(false);
+        }
+        else if (!myUnit.IsAlive())
+        {
+            uSpriteObject.SetActive(false);
+            HPBar.gameObject.SetActive(false);
+            ATBBar.gameObject.SetActive(false);
+            EXPBar.gameObject.SetActive(false);
+            statusFrame.SetActive(false);
         }
         else
         {
@@ -62,6 +71,7 @@ public class Panel : MonoBehaviour
             HPBar.gameObject.SetActive(true);
             ATBBar.gameObject.SetActive(true);
             EXPBar.gameObject.SetActive(true);
+            statusFrame.SetActive(true);
         }
     }
 
@@ -72,7 +82,7 @@ public class Panel : MonoBehaviour
         if (myUnit != null)
         {
             HPBar.value = ((float)myUnit.cHP / (float)myUnit.GetmHP());
-            ATBBar.value = myUnit.atb / 100;
+            ATBBar.value = myUnit.atb / 1000;
             EXPBar.value = (float)myUnit.exp / (float)myUnit.GetENext(myUnit.level);
             uSprite.sprite = myUnit.uSprite;
             levelText.text = myUnit.level.ToString();

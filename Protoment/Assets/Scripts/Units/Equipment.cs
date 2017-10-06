@@ -36,7 +36,23 @@ public enum EquipStats
     Regen,
     FlatRegen,
     EXP,
-    Mana
+}
+
+//These identify substat groups.
+public enum SubstatValueGroup
+{
+    FlatHP,
+    FlatStat,
+    PercentageStat,
+    Crit,
+    CritDMG,
+    Thorns,
+    FlatThorns,
+    Regen,
+    FlatRegen,
+    EXP,
+    Healing,
+    Speed
 }
 
 [CreateAssetMenu]
@@ -44,12 +60,27 @@ public class Equipment : ScriptableObject
 {
     //This controls what kind of equipment we are.
     public EquipType equipType;
+    public Rarity rarity;
 
     //These are the stats on the equipment. 0 is the main stat, and the other 8 are substats.
     public EquipComponent MainStat;
     public List<EquipComponent> SubStats;
     public int substatCount = 2;
     public int level = 1;
+
+    //These are substat values.
+    public Vector2 subFlatHP;
+    public Vector2 subFlatStat;
+    public Vector2 subPercentageStat;
+    public Vector2 subCrit;
+    public Vector2 subCritDMG;
+    public Vector2 subThorns;
+    public Vector2 subFlatThorns;
+    public Vector2 subRegen;
+    public Vector2 subFlatRegen;
+    public Vector2 subEXP;
+    public Vector2 subHealing;
+    public Vector2 subSpeed;
 
     //This is the list of possible main stats on different kinds of equipments.
     public List<EquipComponent> WeaponMainStatsChoices;
@@ -85,6 +116,39 @@ public class Equipment : ScriptableObject
         return r;
     }
 
+    //Get a substat value group.
+    public Vector2 GetSubstatVectorGroup(SubstatValueGroup g)
+    {
+        switch (g)
+        {
+            case SubstatValueGroup.FlatHP:
+                return subFlatHP;
+            case SubstatValueGroup.FlatStat:
+                return subFlatStat;
+            case SubstatValueGroup.PercentageStat:
+                return subPercentageStat;
+            case SubstatValueGroup.Crit:
+                return subCrit;
+            case SubstatValueGroup.CritDMG:
+                return subCrit;
+            case SubstatValueGroup.Thorns:
+                return subThorns;
+            case SubstatValueGroup.FlatThorns:
+                return subFlatThorns;
+            case SubstatValueGroup.Regen:
+                return subRegen;
+            case SubstatValueGroup.FlatRegen:
+                return subFlatRegen;
+            case SubstatValueGroup.EXP:
+                return subEXP;
+            case SubstatValueGroup.Healing:
+                return subHealing;
+            case SubstatValueGroup.Speed:
+                return subSpeed;
+        }
+        return new Vector2();
+    }
+
     //Get an item.
     public static Equipment GetItem(Equipment e, EquipType et)
     {
@@ -104,7 +168,8 @@ public class Equipment : ScriptableObject
                 r.MainStat = r.AccessoryMainStatsChoices[Random.Range(0, r.AccessoryMainStatsChoices.Count)];
                 break;
         }
-        r.MainStat.value = Mathf.Round(Random.Range(r.MainStat.minValue, r.MainStat.maxValue));
+        Vector2 v = r.GetSubstatVectorGroup(r.MainStat.statGroup);
+        r.MainStat.value = Mathf.Round(Random.Range(v.x * 4, v.y * 4));
         r = GenerateSubstats(r);
         r.equipType = et;
 
@@ -119,21 +184,28 @@ public class Equipment : ScriptableObject
     public static Equipment GenerateSubstats(Equipment r)
     {
         //Roll substats.
-        for (int i = 0; i < r.substatCount;)
+        while (r.SubStats.Count < Mathf.FloorToInt((float)r.level / 10f) && r.SubStats.Count < r.substatCount)
         {
             //Get a new substat.
             EquipComponent c = r.SubStatsChoices[Random.Range(0, r.SubStatsChoices.Count)];
 
             //If we don't already have a substat with this.
-            if (r.SubStats.Find(n => n.stat == c.stat) == null)
+            if (r.SubStats.Find(n => n.stat == c.stat) == null || c.stat == EquipStats.EXP) // Known bug: Duplicate rolls of a stat like EXP always have the same value for some reason.
             {
-                c.value = Mathf.Round(Random.Range(c.minValue, c.maxValue));
+                Vector2 v = r.GetSubstatVectorGroup(c.statGroup);
+                c.value = Mathf.Round(Random.Range(v.x, v.y));
                 r.SubStats.Add(c);
-                i++;
             }
         }
 
         return r;
+    }
+
+    //Level up the item.
+    public void SetLevel(int nlevel)
+    {
+        level = nlevel;
+        GenerateSubstats(this);
     }
 }
 
@@ -142,7 +214,6 @@ public class EquipComponent
 {
     //This is the stat and value pair.
     public EquipStats stat;
+    public SubstatValueGroup statGroup;
     public float value;
-    public float minValue;
-    public float maxValue;
 }

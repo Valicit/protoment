@@ -15,15 +15,18 @@ public class Player
     //This is a list of equipment the player has.
     public static List<Equipment> playerEquips = new List<Equipment>();
 
-    //This is the player's mana. Mostly used for upgrading units to higher ranks.
+    //This is the player's mana. Used for upgrading units.
     public static long mana;
 
     //These are summoning materials.
-    public static int basicMaterial = 20000;
-    public static int advancedMaterial = 1000;
-    public static int rainbowMaterial = 1000;
-    public static int luminousMaterial = 1000;
-    public static int lightShadowMaterial = 1000;
+    public static int basicMaterial = 100000;
+    public static int advancedMaterial = 0;
+    public static int rainbowMaterial = 0;
+    public static int luminousMaterial = 0;
+    public static int lightShadowMaterial = 0;
+
+    //Other materials.
+    public static int itemWorldKeys = 10;
 
     //This is a reference to the current dungeon.
     public static Dungeon currentDungeon;

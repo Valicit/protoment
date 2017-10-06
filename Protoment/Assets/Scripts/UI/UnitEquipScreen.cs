@@ -15,6 +15,8 @@ public class UnitEquipScreen : MonoBehaviour
     public Text MainStatSelectedText;
     public Text[] SubstatEquippedText;
     public Text[] SubstatSelectedText;
+    public Text txt_ItemWorldButton;
+    public Text txt_SellItemButton;
 
     //These are references to other things in the scene.
     public UnitStatusScreen uStatus;
@@ -22,6 +24,10 @@ public class UnitEquipScreen : MonoBehaviour
 
     //These are dungeon prefabs for all sorts of items.
     public Dungeon commonFab;
+    public Dungeon uncommonFab;
+    public Dungeon rareFab;
+    public Dungeon epicFab;
+    public Dungeon legendFab;
 
 	// Use this for initialization
 	void Awake () {
@@ -32,7 +38,25 @@ public class UnitEquipScreen : MonoBehaviour
 	void Update () {
         UpdateEquipmentText(uStatus.myUnit.GetEquipped(typeSelected), MainStatEquippedText, SubstatEquippedText);
         UpdateEquipmentText(selectedInventory, MainStatSelectedText, SubstatSelectedText);
+
+        //Update other stuff.
+        UpdateButtons();
 	}
+
+    //Update buttons and stuff.
+    public void UpdateButtons()
+    {
+        if (selectedInventory != null)
+        {
+            txt_ItemWorldButton.text = string.Format("Item World: {0} / {1} Keys", Player.itemWorldKeys, GetItemWorldPrice(selectedInventory.rarity));
+            txt_SellItemButton.text = string.Format("Sell Item: {0} Keys", GetItemWorldPrice(selectedInventory.rarity) / 10);
+        }
+        else
+        {
+            txt_ItemWorldButton.text = string.Format("Select an item.");
+            txt_SellItemButton.text = string.Format("Select an item.");
+        }
+    }
 
     //Update the UI elements.
     public void UpdateEquipmentText(Equipment selected, Text MainStat, Text[] SubStats)
@@ -43,12 +67,12 @@ public class UnitEquipScreen : MonoBehaviour
             //Set main stat text.
             MainStat.gameObject.SetActive(true);
             MainStat.text = selected.MainStat.stat + ": +" + selected.GetComponentValue(selected.MainStat);
-            if (new List<EquipStats> { EquipStats.AGI, EquipStats.Crit, EquipStats.CritDMG, EquipStats.DEF, EquipStats.DEX, EquipStats.EXP, EquipStats.Healing, EquipStats.HP, EquipStats.INT, EquipStats.Mana, EquipStats.Regen, EquipStats.SPR, EquipStats.STR, EquipStats.Thorns }.Contains(selected.MainStat.stat))
+            if (new List<EquipStats> { EquipStats.AGI, EquipStats.Crit, EquipStats.CritDMG, EquipStats.DEF, EquipStats.DEX, EquipStats.EXP, EquipStats.Healing, EquipStats.HP, EquipStats.INT, EquipStats.Regen, EquipStats.SPR, EquipStats.STR, EquipStats.Thorns }.Contains(selected.MainStat.stat))
             {
                 MainStat.text += "%";
             }
             MainStat.text = MainStat.text.Replace("Flat", "");
-            MainStat.text += " Lv." + selected.level;
+            MainStat.text += string.Format(" Lv.{0} ({1})", selected.level, selected.rarity);
 
             //For each substat slot.
             for (int i = 0; i < 8; i++)
@@ -59,7 +83,7 @@ public class UnitEquipScreen : MonoBehaviour
                     //Set the text.
                     SubStats[i].gameObject.SetActive(true);
                     SubStats[i].text = selected.SubStats[i].stat + ": +" + selected.GetComponentValue(selected.SubStats[i]);
-                    if (new List<EquipStats> { EquipStats.AGI, EquipStats.Crit, EquipStats.CritDMG, EquipStats.DEF, EquipStats.DEX, EquipStats.EXP, EquipStats.Healing, EquipStats.HP, EquipStats.INT, EquipStats.Mana, EquipStats.Regen, EquipStats.SPR, EquipStats.STR, EquipStats.Thorns }.Contains(selected.SubStats[i].stat))
+                    if (new List<EquipStats> { EquipStats.AGI, EquipStats.Crit, EquipStats.CritDMG, EquipStats.DEF, EquipStats.DEX, EquipStats.EXP, EquipStats.Healing, EquipStats.HP, EquipStats.INT, EquipStats.Regen, EquipStats.SPR, EquipStats.STR, EquipStats.Thorns }.Contains(selected.SubStats[i].stat))
                     {
                         SubStats[i].text += "%";
                     }
@@ -94,6 +118,7 @@ public class UnitEquipScreen : MonoBehaviour
     {
         typeSelected = (EquipType)et;
         itemPane.eType = typeSelected;
+        if(selectedInventory != null) if (selectedInventory.equipType != typeSelected) selectedInventory = null;
         itemPane.OnLoad();
     }
 
@@ -158,9 +183,52 @@ public class UnitEquipScreen : MonoBehaviour
         //If we have a selected equipment.
         if (selectedInventory != null)
         {
-            Player.currentDungeon = Dungeon.CreateRandom(commonFab, selectedInventory);
-            SceneManager.LoadScene("Battle");
+            Dungeon d = null;
+            switch (selectedInventory.rarity)
+            {
+                case Rarity.Common:
+                    d = Dungeon.CreateRandom(commonFab, selectedInventory);
+                    break;
+                case Rarity.Uncommon:
+                    d = Dungeon.CreateRandom(uncommonFab, selectedInventory);
+                    break;
+                case Rarity.Rare:
+                    d = Dungeon.CreateRandom(rareFab, selectedInventory);
+                    break;
+                case Rarity.Epic:
+                    d = Dungeon.CreateRandom(epicFab, selectedInventory);
+                    break;
+                case Rarity.Legendary:
+                    d = Dungeon.CreateRandom(legendFab, selectedInventory);
+                    break;
+            }
+            if (Player.itemWorldKeys >= GetItemWorldPrice(selectedInventory.rarity))
+            {
+                Player.itemWorldKeys -= GetItemWorldPrice(selectedInventory.rarity);
+                Player.currentDungeon = d;
+                Player.currentDungeon.currentWave = Player.currentDungeon.itemWorldEquip.level - 1;
+                SceneManager.LoadScene("Battle");
+            }
         }
+    }
+
+    //Get the cost of item world.
+    public int GetItemWorldPrice(Rarity r)
+    {
+        switch (r)
+        {
+            case Rarity.Common:
+                return 10;
+            case Rarity.Uncommon:
+                return 40;
+            case Rarity.Rare:
+                return 90;
+            case Rarity.Epic:
+                return 160;
+            case Rarity.Legendary:
+                return 250;
+        }
+        return 10;
     }
 
     //Sell an item to get rid of it.
@@ -171,6 +239,7 @@ public class UnitEquipScreen : MonoBehaviour
         {
             //Get rid of it.
             Player.playerEquips.Remove(selectedInventory);
+            Player.itemWorldKeys += GetItemWorldPrice(selectedInventory.rarity) / 10;
             selectedInventory = null;
             itemPane.OnLoad();
         }

@@ -5,9 +5,9 @@ using System.Collections.Generic;
 //This helps decide what is and is not a valid target.
 public enum ValidTarget
 {
-    SingleEnemy = 0,
-    SingleFrontEnemy = 1,
-    SingleAlly = 101,
+    AnyEnemy = 0,
+    AnyFrontEnemy = 1,
+    AnyAlly = 101,
 }
 
 [CreateAssetMenu]
@@ -17,14 +17,17 @@ public class Skill : ScriptableObject
 
     //These are a list of variables commonly needed by skills.
     public string displayName = "Skill";
-    public ValidTarget validTarget = ValidTarget.SingleEnemy;
+    public ValidTarget validTarget = ValidTarget.AnyEnemy;
+    private float wait = 1f;
     public int cd = 0;
     public int maxCD = 0;
     public bool isCounterable = true;
     public bool isPassive = false;
+    public bool isTriggered = false;
     public StatusEffect passiveStatus;
     public StatusEffect passivePartyStatus;
     public StatusEffect passiveEnemyStatus;
+    public Skill statusTriggerSkill;
     public SkillComponent[] components;
 
     //Skill use requires attack data, populated by all the data that can be collected before the skill starts.
@@ -53,6 +56,9 @@ public class Skill : ScriptableObject
 
         //Put the skill on cooldown.
         cd = maxCD;
+
+        //Make the battle wait.
+        Battle.battle.wait += wait;
     }
 
     //This applies the status effect to everyone in the scene.
@@ -75,7 +81,7 @@ public class Skill : ScriptableObject
         //If I should have a passive effect.
         if (passiveStatus != null)
         {
-            me.AddStatusEffect(passiveStatus);
+            me.AddStatusEffect(GetPassiveStatus(passiveStatus, me));
         }
 
         //If the party should have an effect.
@@ -83,7 +89,7 @@ public class Skill : ScriptableObject
         {
             foreach (Unit u in ally.GetAllLiving())
             {
-                u.AddStatusEffect(passivePartyStatus);
+                u.AddStatusEffect(GetPassiveStatus(passivePartyStatus, me));
             }
         }
 
@@ -92,9 +98,18 @@ public class Skill : ScriptableObject
         {
             foreach (Unit u in enemy.GetAllLiving())
             {
-                u.AddStatusEffect(passiveEnemyStatus);
+                u.AddStatusEffect(GetPassiveStatus(passiveEnemyStatus, me));
             }
         }
+    }
+
+    //Get a passive status.
+    public StatusEffect GetPassiveStatus(StatusEffect b, Unit me)
+    {
+        StatusEffect se = StatusEffect.Instantiate(b);
+        if (statusTriggerSkill != null) se.triggerSkill = statusTriggerSkill;
+        se.applier = me;
+        return se;
     }
 
     //This checks if the skill is ready to use.
@@ -116,13 +131,13 @@ public class Skill : ScriptableObject
     {
         switch (validTarget)
         {
-            case ValidTarget.SingleEnemy:
+            case ValidTarget.AnyEnemy:
                 if (data.defendingParty.ValidateSingleRandom().Contains(target)) return true;
                 break;
-            case ValidTarget.SingleFrontEnemy:
-                if(data.defendingParty.ValidateSingleFrontLine().Contains(target)) return true;
+            case ValidTarget.AnyFrontEnemy:
+                if(data.defendingParty.GetFrontLine().Contains(target)) return true;
                 break;
-            case ValidTarget.SingleAlly:
+            case ValidTarget.AnyAlly:
                 if (data.actorParty.ValidateSingleRandom().Contains(target)) return true;
                 break;
         }

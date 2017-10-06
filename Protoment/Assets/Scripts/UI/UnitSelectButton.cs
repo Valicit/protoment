@@ -16,7 +16,6 @@ public class UnitSelectButton : MonoBehaviour {
     public DungeonSelect dSelect;
     public void OnPressParty()
     {
-        Debug.Log(x +"," + y);
         dSelect.PartySelectButton(x, y);
     }
 

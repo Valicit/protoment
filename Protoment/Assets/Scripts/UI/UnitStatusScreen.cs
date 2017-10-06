@@ -48,14 +48,14 @@ public class UnitStatusScreen : MonoBehaviour
         unitPort.sprite = myUnit.uSprite;
         txt_name.text = myUnit.uName;
         txt_class.text = myUnit.job;
-        txt_level.text = "Lv. " + myUnit.level + " / " + MathP.maxLevels[myUnit.rank - 1] + " " + myUnit.exp + " / " + myUnit.GetENext(myUnit.level) + " " + ((float)myUnit.exp / (float)myUnit.GetENext(myUnit.level)) + "%";
-        txt_HP.text = "HP: " + myUnit.GetmHP() + " (" + (myUnit.modHP * 100) + "%)";
-        txt_str.text = "STR: " + myUnit.GetSTR() + " (" + (myUnit.modSTR * 100) + "%)";
-        txt_def.text = "DEF: " + myUnit.GetDEF() + " (" + (myUnit.modDEF * 100) + "%)";
-        txt_int.text = "INT: " + myUnit.GetINT() + " (" + (myUnit.modINT * 100) + "%)";
-        txt_spr.text = "SPR: " + myUnit.GetSPR() + " (" + (myUnit.modSPR * 100) + "%)";
-        txt_dex.text = "DEX: " + myUnit.GetDEX() + " (" + (myUnit.modDEX * 100) + "%)";
-        txt_agi.text = "AGI: " + myUnit.GetAGI() + " (" + (myUnit.modAGI * 100) + "%)";
+        txt_level.text = "Lv. " + myUnit.level + " / " + MathP.maxLevels[myUnit.rank - 1];// + " " + myUnit.exp + " / " + myUnit.GetENext(myUnit.level) + " " + ((float)myUnit.exp / (float)myUnit.GetENext(myUnit.level)) + "%";
+        txt_HP.text = "HP: " + myUnit.GetmHP();
+        txt_str.text = "STR: " + myUnit.GetSTR();
+        txt_def.text = "DEF: " + myUnit.GetDEF();
+        txt_int.text = "INT: " + myUnit.GetINT();
+        txt_spr.text = "SPR: " + myUnit.GetSPR();
+        txt_dex.text = "DEX: " + myUnit.GetDEX();
+        txt_agi.text = "AGI: " + myUnit.GetAGI();
         txt_crit.text = "Crit: " + (myUnit.GetCrit()) + "%";
         txt_critDMG.text = "CritDMG: " + (myUnit.GetCritDMG() * 100) + "%";
         txt_speed.text = "Speed: " + myUnit.GetSpeed();
@@ -80,6 +80,7 @@ public class UnitStatusScreen : MonoBehaviour
         if (myUnit != null && Player.playerUnits.Count > 1)
         {
             Player.playerUnits.Remove(myUnit);
+            Player.playerParty.Delete(myUnit);
             myUnit = Player.playerUnits[0];
         }
         partyPane.OnLoad();
@@ -89,7 +90,7 @@ public class UnitStatusScreen : MonoBehaviour
     public void OnUpgrade()
     {
         //If we have the mana.
-        if (Player.mana >= MathP.GetReapValue(myUnit.rank) * myUnit.rank)
+        if (Player.mana >= MathP.GetReapValue(myUnit.rank) * myUnit.rank && myUnit.level >= MathP.maxLevels[myUnit.rank - 1])
         {
             //Remove the mana.
             Player.mana -= MathP.GetReapValue(myUnit.rank) * myUnit.rank;

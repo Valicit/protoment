@@ -10,11 +10,8 @@ public class Town : MonoBehaviour
     //This is our test dungeon.
     public Dungeon testDungeon;
 
-    //This is a list of units we can potentially summon.
-    public List<UnitData> summonList;
-
     //This is a reference to the starter character.
-    public UnitData starter;
+    public List<UnitData> starters;
     public Equipment commonEquip;
 
     //Startup stuff.
@@ -23,10 +20,16 @@ public class Town : MonoBehaviour
         //If the players unit list is empty, spawn the starter character.
         if (Player.playerUnits.Count == 0)
         {
-            Player.playerUnits.Add(Unit.NewUnit(starter, 1));
+            foreach (UnitData ud in starters)
+            {
+                Player.playerUnits.Add(Unit.NewUnit(ud, 1));
+            }
+            Player.playerParty.myUnits[1, 1] = Player.playerUnits[0];
+
             Player.playerEquips.Add(Equipment.GetItem(commonEquip, EquipType.Weapon));
-            Player.playerEquips[0].MainStat.stat = EquipStats.FlatSTR;
-            Player.playerEquips[0].MainStat.value = 1000f;
+            //Player.playerEquips[0].SetLevel(100);
+            //Player.playerEquips[0].SubStats.Add(new EquipComponent() { stat = EquipStats.Crit, value = 10000 });
+            //Player.playerEquips[0].SubStats.Add(new EquipComponent() { stat = EquipStats.CritDMG, value = 10000 });
         }
     }
 
@@ -35,11 +38,5 @@ public class Town : MonoBehaviour
     {
         Player.currentDungeon = Dungeon.Instantiate(testDungeon);
         SceneManager.LoadScene("DungeonSelect");
-    }
-
-    //Summon a unit.
-    public void SummonUnit()
-    {
-        Player.playerUnits.Add(Unit.NewUnit(summonList[Random.Range(0, summonList.Count)]));
     }
 }

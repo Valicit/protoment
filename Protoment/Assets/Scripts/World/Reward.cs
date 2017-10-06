@@ -12,7 +12,8 @@ public enum RewardType
     LightShadowMaterial,
     Weapon,
     Armor,
-    Accessory
+    Accessory,
+    ItemWorldKey
 }
 
 [System.Serializable]
@@ -49,6 +50,8 @@ public class Reward
                 return GrantMats("luminous", ref Player.luminousMaterial);
             case RewardType.LightShadowMaterial:
                 return GrantMats("light and shadow", ref Player.lightShadowMaterial);
+            case RewardType.ItemWorldKey:
+                return GrantMats("item world key", ref Player.itemWorldKeys);
             case RewardType.Weapon:
                 return GrantItem(EquipType.Weapon);
             case RewardType.Armor:
@@ -81,6 +84,6 @@ public class Reward
     {
         int r = Mathf.CeilToInt(Random.Range(average * 0.85f, average * 1.15f));
         mat += r;
-        return string.Format("Got {0} summoning materials!", name);
+        return string.Format("Got {0} {1} summoning materials! Now at {2} / {3}", r, name, mat, 100);
     }
 }

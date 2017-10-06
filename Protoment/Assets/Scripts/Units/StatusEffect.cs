@@ -19,6 +19,14 @@ public class StatusEffect : ScriptableObject
     public bool permanent;
     public int duration;
     public bool preventAction;
+    public bool provoke;
+    public bool isThorns;
+    public bool isShield;
+    public bool isCover;
+    public int provokeSkill = 0;
+    public bool invulnerable;
+    public bool removeOnDamage;
+    public float variableValue;
     public float percentDamage;
     public float percentHealing;
     public float HPmod = 1;
@@ -32,7 +40,14 @@ public class StatusEffect : ScriptableObject
     public float critDMGMod = 1;
     public float speedMod = 1;
     public float takenDamageMod;
-    public StatusEffect counterStatus;
-    public float counterStatusChance;
-    public int counterStatusDuration;
+    public StatusEffect[] counterStatus;
+    public float[] counterStatusChance;
+    public int[] counterStatusDuration;
+    public Unit applier;
+
+    //This is for passives that trigger other skills.
+    public Skill triggerSkill;
+    public bool triggerTurnEnd;
+    public bool triggerOnDeath;
+    public bool triggerOnGetCrit;
 }

@@ -14,6 +14,7 @@ public class Battle : MonoBehaviour
 
     //A reference to the character whose turn is currently up.
     public static Unit readyUnit;
+    public static Unit triggerUnit;
     public Unit selectedUnit;
 
     //A reference to our UI objects.
@@ -22,16 +23,19 @@ public class Battle : MonoBehaviour
     public int selectedSkill;
     public Button AutoButton;
     public GameObject EscapeScreen;
+    public Text txt_EscapeRewardText;
     public GameObject DefeatScreen;
     public GameObject VictoryScreen;
     public Text VictoryText;
     public Image VictorySprite;
+    public Text WaveText;
 
     //These are battle variables.
     public static bool auto;
     public bool ended = false;
     public static long exp = 0;
-    public static float speed = 0.5f;
+    public static float speed = 1000f;
+    public float wait = 0f;
     public static List<AttackData> usedActions = new List<AttackData>();
     public static Battle battle;
 
@@ -46,7 +50,14 @@ public class Battle : MonoBehaviour
     public void Update()
     {
         //Updates the units of the battle, if the battle is ongoing.
-        if (PlayerArena.myParty.GetAllLiving().Count > 0 && EnemyArena.myParty.GetAllLiving().Count > 0) UpdateUnits();
+        if (wait > 0)
+        {
+            wait -= Time.deltaTime;
+        }
+        else if (PlayerArena.myParty.GetAllLiving().Count > 0 && EnemyArena.myParty.GetAllLiving().Count > 0)
+        {
+            UpdateUnits();
+        }
         else if (PlayerArena.myParty.GetAllLiving().Count > 0 && !ended)
         {
             Invoke("NextWave", 2.0f);
@@ -60,13 +71,14 @@ public class Battle : MonoBehaviour
         }
 
         //Update the battle UI.
-            UpdateBattleUI();
+        UpdateBattleUI();
     }
 
     //Update the battle UI.
     public void UpdateBattleUI()
     {
         UpdateSkillButtons();
+        WaveText.text = string.Format("Wave: {0} / {1}", Player.currentDungeon.currentWave + 1, Player.currentDungeon.waves.Length);
     }
 
     //Update the skill buttons.
@@ -155,91 +167,163 @@ public class Battle : MonoBehaviour
         EnemyArena.Tick();
     }
 
+    #region Making a Move
     //Attempt to make a move, but fail if not all data is available yet.
     public void MakeMove()
     {
-        //Information a skill needs to go off. 1) A reference to the unit using the skill. 2) A reference to the characters party. 3) A reference to the enemy party. 
-        //We also need to choose a skill to use. 
-        //One auto, the skill will use an enum to find a random valid target from Party class. On manual, it will check if the player selected target is contained in that set of valid targets, and if not, the target will become unselected and the skill will not go off.
-        
+        //Make sure our ready unit isn't dead. That happens sometimes.
+        CheckLivingReadyUnit();
+
         //If we're on manual, and there's already a ready unit, a selected unit, and this isn't an enemy unit.
         if (!auto && readyUnit != null && selectedUnit != null && !EnemyArena.myParty.GetAllLiving().Contains(readyUnit))
         {
-            //Get a reference to the selected skill.
-            Skill s = readyUnit.mySkills[selectedSkill];
+            //Execute manual code.
+            MoveManual();
+        }
+        else if ((auto || (EnemyArena.myParty.GetAllLiving().Contains(readyUnit)) && readyUnit != null)) //If we're on auto, or this is an enemy unit, this happens instead.
+        {
+            //Execute Auto code.
+            MoveAuto();
+        }
+    }
 
-            //If there's a selected skill ready to be used.
-            if (s.IsReady() && !s.isPassive)
+    //Make a manual move.
+    public void MoveManual()
+    {
+        //If we aren't stunned or something.
+        if (readyUnit.myStatusEffects.Find(n => n.preventAction) == null)
+        {
+            //Set our skill.
+            Skill s = SetSkill();
+
+            //Use our skill.
+            UseSkill(s);
+        }
+        else EndTurn();
+    }
+
+    //Make an automatic move.
+    public void MoveAuto()
+    {
+        //If we aren't stunned or something.
+        if (readyUnit.myStatusEffects.Find(n => n.preventAction) == null)
+        {
+            Skill s = SetSkill();
+            UseSkill(s);
+        }
+        else
+        {
+            EndTurn();
+        }
+    }
+
+    //Use a skill.
+    public bool UseSkill(Skill s)
+    {
+        //If the skill is ready and not passive.
+        if (s.IsReady() && !s.isPassive)
+        {
+            Unit u = readyUnit;
+            if (triggerUnit != null) u = triggerUnit;
+
+            //Gather attack data.
+            AttackData data = new AttackData
             {
-                //Gather attack data.
-                AttackData data = new AttackData
-                {
-                    actor = readyUnit
-                };
-                if (PlayerArena.myParty.GetAllUnits().Contains(readyUnit))
-                {
-                    data.actorParty = PlayerArena.myParty;
-                    data.defendingParty = EnemyArena.myParty;
-                }
-                else
-                {
-                    data.actorParty = EnemyArena.myParty;
-                    data.defendingParty = PlayerArena.myParty;
-                }
+                actor = u
+            };
+            if (PlayerArena.myParty.GetAllUnits().Contains(u))
+            {
+                data.actorParty = PlayerArena.myParty;
+                data.defendingParty = EnemyArena.myParty;
+            }
+            else
+            {
+                data.actorParty = EnemyArena.myParty;
+                data.defendingParty = PlayerArena.myParty;
+            }
 
-                //If we've got a valid target, use the skill.
-                if (s.IsValidTarget(selectedUnit, data))
+            //If this is auto or our selected target is vald, use the skill. If we're provoked, ignore validation.
+            if (auto || s.IsValidTarget(selectedUnit, data) || s.isTriggered || u.myStatusEffects.Find(n => n.provoke) != null || EnemyArena.myParty.GetAllLiving().Contains(u))
+            {
+                //If we are provoked, the applier exists and is alive, select that guy.
+                SetSkillTarget(data);
+
+                //Use the skill.
+                if (u.myStatusEffects.Find(n => n.preventAction) == null) s.UseSkill(data);
+                if (!s.isTriggered)
                 {
-                    //Use the skill.
-                    data.selectedUnit = selectedUnit;
-                    if(readyUnit.myStatusEffects.Find(n => n.preventAction) == null) s.UseSkill(data);
-                    selectedUnit = null;
-                    selectedSkill = 0;
-                    readyUnit.TurnEnd();
-                    readyUnit = null;
+                    EndTurn();
                 }
-                else
-                {
-                    //Deselect the selected unit.
-                    selectedUnit = null;
-                }
+                return true;
+            }
+            else
+            {
+                selectedUnit = null;
             }
         }
-        else if ((auto || EnemyArena.myParty.GetAllLiving().Contains(readyUnit)) && readyUnit != null) //If we're on auto, or this is an enemy unit, this happens instead.
+        return false;
+    }
+
+    //Check if the ready unit is dead, and if so end the turn.
+    public void CheckLivingReadyUnit()
+    {
+        if (!readyUnit.IsAlive())
+        {
+            readyUnit = null;
+        }
+    }
+
+    //Set the skill we're going to use.
+    public Skill SetSkill()
+    {
+        Skill s = null;
+        //If manual.
+        if (!auto && !EnemyArena.myParty.GetAllLiving().Contains(readyUnit))
+        {
+            //Get a reference to the selected skill.
+            s = readyUnit.mySkills[selectedSkill];
+        }
+        //Otherwise.
+        else
         {
             //for each skill, counting down.
-            for (int sk = readyUnit.mySkills.Count -1; sk >= 0; sk--)
+            for (int sk = readyUnit.mySkills.Count - 1; sk >= 0; sk--)
             {
-                Skill autoSkill = readyUnit.mySkills[sk];
-
-                //If the skill is ready and not passive.
-                if (autoSkill.IsReady() && !autoSkill.isPassive)
+                //Get the selected skill.
+                if (readyUnit.mySkills[sk].IsReady() && !readyUnit.mySkills[sk].isPassive)
                 {
-                    //Gather attack data.
-                    AttackData data = new AttackData
-                    {
-                        actor = readyUnit
-                    };
-                    if (PlayerArena.myParty.GetAllUnits().Contains(readyUnit))
-                    {
-                        data.actorParty = PlayerArena.myParty;
-                        data.defendingParty = EnemyArena.myParty;
-                    }
-                    else
-                    {
-                        data.actorParty = EnemyArena.myParty;
-                        data.defendingParty = PlayerArena.myParty;
-                    }
-
-                    //Use the skill.
-                    if (readyUnit.myStatusEffects.Find(n => n.preventAction) == null) autoSkill.UseSkill(data);
-                    readyUnit.TurnEnd();
-                    readyUnit = null;
+                    s = readyUnit.mySkills[sk];
                     break;
                 }
             }
         }
+
+        //Return the result.
+        if (readyUnit.myStatusEffects.Find(n => n.provoke) != null) s = readyUnit.mySkills[readyUnit.myStatusEffects.Find(n => n.provoke).provokeSkill];
+        return s;
     }
+
+    //Check if we're provoked and change targets if so.
+    public void SetSkillTarget(AttackData data)
+    {
+        //Choose a selected unit normally.
+        if (selectedUnit != null) data.selectedUnit = selectedUnit;
+
+        //Change it if we're provoked.
+        if (data.actor.myStatusEffects.Find(n => n.provoke) != null)
+            if (data.actor.myStatusEffects.Find(n => n.provoke).applier != null)
+                if (data.actor.myStatusEffects.Find(n => n.provoke).applier.IsAlive()) data.selectedUnit = readyUnit.myStatusEffects.Find(n => n.provoke).applier;
+    }
+
+    //End the units turn.
+    public void EndTurn()
+    {
+        selectedUnit = null;
+        selectedSkill = 0;
+        readyUnit.TurnEnd();
+        readyUnit = null;
+    }
+    #endregion
     #endregion
 
     //This sets off the next wave.
@@ -250,7 +334,7 @@ public class Battle : MonoBehaviour
         GrantExp();
 
         //If this is a random dungeon.
-        if (Player.currentDungeon.isRandom && Player.currentDungeon.currentWave < Player.currentDungeon.waves.Length - 1)
+        if (Player.currentDungeon.isRandom && Player.currentDungeon.currentWave < Player.currentDungeon.waves.Length - 1 && (Player.currentDungeon.currentWave + 1) % 10 == 9)
         {
             Escape();
         }
@@ -270,6 +354,7 @@ public class Battle : MonoBehaviour
     public void Escape()
     {
         EscapeScreen.SetActive(true);
+        txt_EscapeRewardText.text = Player.currentDungeon.GrantReward();
     }
 
     //This goes off on Victory.
@@ -294,10 +379,18 @@ public class Battle : MonoBehaviour
             u.cHP = u.GetmHP();
             u.myStatusEffects = new List<StatusEffect>();
             u.atb = 0;
+
+            foreach (Skill s in u.mySkills)
+            {
+                s.cd = 0;
+            }
         }
 
         //Remove exp.
         exp = 0;
+
+        //Deselect characters.
+        readyUnit = null;
     }
 
     //This happens when the done button is pressed.
@@ -313,7 +406,8 @@ public class Battle : MonoBehaviour
     {
         //Resolve the battle and repeat the stage.
         ResolveBattle();
-        Player.currentDungeon.currentWave = 0;
+        if (!Player.currentDungeon.isRandom) Player.currentDungeon.currentWave = 0;
+        else Player.currentDungeon.currentWave = Player.currentDungeon.itemWorldEquip.level - 1;
         SceneManager.LoadScene("Battle");
     }
 
@@ -321,11 +415,6 @@ public class Battle : MonoBehaviour
     public void OnContinueButton()
     {
         //Level up the item if there is one.
-        if (Player.currentDungeon.itemWorldEquip != null)
-        {
-            Equipment e = Player.currentDungeon.itemWorldEquip;
-            e.level = Mathf.Max(e.level, Player.currentDungeon.currentWave);
-        }
         Player.currentDungeon.currentWave++;
         SceneManager.LoadScene("Battle");
     }
@@ -337,7 +426,7 @@ public class Battle : MonoBehaviour
         if (Player.currentDungeon.itemWorldEquip != null)
         {
             Equipment e = Player.currentDungeon.itemWorldEquip;
-            e.level = Mathf.Max(e.level, Player.currentDungeon.currentWave);
+            e.SetLevel(Mathf.Max(e.level, Player.currentDungeon.currentWave + 2));
         }
         //Resolve the battle and go back to town.
         ResolveBattle();
