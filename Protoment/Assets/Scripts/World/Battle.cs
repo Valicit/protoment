@@ -60,12 +60,11 @@ public class Battle : MonoBehaviour
         }
         else if (PlayerArena.myParty.GetAllLiving().Count > 0 && !ended)
         {
-            Invoke("NextWave", 2.0f);
+            NextWave();
             ended = true;
         }
         else if (!ended)
         {
-            //Invoke("Deafeat", 2.0f);
             Defeat();
             ended = true;
         }
@@ -95,12 +94,12 @@ public class Battle : MonoBehaviour
         else
         {
             //If the battle is on manual and we have a unit waiting, show the buttons and update them.
-            for (int i = 0; i < Mathf.Min(SkillButtons.Length, readyUnit.mySkills.Count); i++)
+            for (int i = 0; i < Mathf.Min(SkillButtons.Length, readyUnit.GetMySkills().Count); i++)
             {
                 SkillButtons[i].gameObject.SetActive(true);
-                SkillButtons[i].interactable = readyUnit.mySkills[i].IsReady();
-                string t = readyUnit.mySkills[i].displayName;
-                if (!readyUnit.mySkills[i].IsReady()) t += "CD" + readyUnit.mySkills[i].cd;
+                SkillButtons[i].interactable = readyUnit.GetMySkills()[i].IsReady();
+                string t = readyUnit.GetMySkills()[i].displayName;
+                if (!readyUnit.GetMySkills()[i].IsReady()) t += "CD" + readyUnit.GetMySkills()[i].cd;
                 SkillButtonText[i].text = t;
             }
         }
@@ -167,6 +166,21 @@ public class Battle : MonoBehaviour
         EnemyArena.Tick();
     }
 
+    //Get the average agility stat.
+    public float GetAverageAgi()
+    {
+        List<Unit> living = new List<Unit>();
+        living.AddRange(PlayerArena.myParty.GetAllLiving());
+        living.AddRange(EnemyArena.myParty.GetAllLiving());
+        float avg = 0;
+        foreach (Unit u in living)
+        {
+            avg += u.GetAGI();
+        }
+        avg = avg / living.Count;
+        return avg;
+    }
+
     #region Making a Move
     //Attempt to make a move, but fail if not all data is available yet.
     public void MakeMove()
@@ -175,7 +189,7 @@ public class Battle : MonoBehaviour
         CheckLivingReadyUnit();
 
         //If we're on manual, and there's already a ready unit, a selected unit, and this isn't an enemy unit.
-        if (!auto && readyUnit != null && selectedUnit != null && !EnemyArena.myParty.GetAllLiving().Contains(readyUnit))
+        if (!auto && readyUnit != null && selectedUnit != null && !EnemyArena.myParty.GetAllLiving().Contains(readyUnit) && readyUnit.myStatusEffects.Find(n => n.preventAction || n.provoke) == null)
         {
             //Execute manual code.
             MoveManual();
@@ -193,11 +207,13 @@ public class Battle : MonoBehaviour
         //If we aren't stunned or something.
         if (readyUnit.myStatusEffects.Find(n => n.preventAction) == null)
         {
+            AttackData data = GatherAttackData();
+
             //Set our skill.
-            Skill s = SetSkill();
+            Skill s = SetSkill(data);
 
             //Use our skill.
-            UseSkill(s);
+            UseSkill(s, data);
         }
         else EndTurn();
     }
@@ -208,8 +224,9 @@ public class Battle : MonoBehaviour
         //If we aren't stunned or something.
         if (readyUnit.myStatusEffects.Find(n => n.preventAction) == null)
         {
-            Skill s = SetSkill();
-            UseSkill(s);
+            AttackData data = GatherAttackData();
+            Skill s = SetSkill(data);
+            UseSkill(s, data);
         }
         else
         {
@@ -217,39 +234,44 @@ public class Battle : MonoBehaviour
         }
     }
 
+    //Gather attack data.
+    public AttackData GatherAttackData()
+    {
+        Unit u = readyUnit;
+        if (triggerUnit != null) u = triggerUnit;
+
+        //Gather attack data.
+        AttackData data = new AttackData
+        {
+            actor = u
+        };
+        if (PlayerArena.myParty.GetAllUnits().Contains(u))
+        {
+            data.actorParty = PlayerArena.myParty;
+            data.defendingParty = EnemyArena.myParty;
+        }
+        else
+        {
+            data.actorParty = EnemyArena.myParty;
+            data.defendingParty = PlayerArena.myParty;
+        }
+        return data;
+    }
+
     //Use a skill.
-    public bool UseSkill(Skill s)
+    public bool UseSkill(Skill s, AttackData data)
     {
         //If the skill is ready and not passive.
         if (s.IsReady() && !s.isPassive)
         {
-            Unit u = readyUnit;
-            if (triggerUnit != null) u = triggerUnit;
-
-            //Gather attack data.
-            AttackData data = new AttackData
-            {
-                actor = u
-            };
-            if (PlayerArena.myParty.GetAllUnits().Contains(u))
-            {
-                data.actorParty = PlayerArena.myParty;
-                data.defendingParty = EnemyArena.myParty;
-            }
-            else
-            {
-                data.actorParty = EnemyArena.myParty;
-                data.defendingParty = PlayerArena.myParty;
-            }
-
             //If this is auto or our selected target is vald, use the skill. If we're provoked, ignore validation.
-            if (auto || s.IsValidTarget(selectedUnit, data) || s.isTriggered || u.myStatusEffects.Find(n => n.provoke) != null || EnemyArena.myParty.GetAllLiving().Contains(u))
+            if (auto || s.IsValidTarget(selectedUnit, data) || s.isTriggered || data.actor.myStatusEffects.Find(n => n.provoke) != null || EnemyArena.myParty.GetAllLiving().Contains(data.actor))
             {
                 //If we are provoked, the applier exists and is alive, select that guy.
                 SetSkillTarget(data);
 
                 //Use the skill.
-                if (u.myStatusEffects.Find(n => n.preventAction) == null) s.UseSkill(data);
+                if (data.actor.myStatusEffects.Find(n => n.preventAction) == null) s.UseSkill(data);
                 if (!s.isTriggered)
                 {
                     EndTurn();
@@ -274,32 +296,32 @@ public class Battle : MonoBehaviour
     }
 
     //Set the skill we're going to use.
-    public Skill SetSkill()
+    public Skill SetSkill(AttackData data)
     {
         Skill s = null;
         //If manual.
         if (!auto && !EnemyArena.myParty.GetAllLiving().Contains(readyUnit))
         {
             //Get a reference to the selected skill.
-            s = readyUnit.mySkills[selectedSkill];
+            s = readyUnit.GetMySkills()[selectedSkill];
         }
         //Otherwise.
         else
         {
             //for each skill, counting down.
-            for (int sk = readyUnit.mySkills.Count - 1; sk >= 0; sk--)
+            for (int sk = readyUnit.GetMySkills().Count - 1; sk >= 0; sk--)
             {
                 //Get the selected skill.
-                if (readyUnit.mySkills[sk].IsReady() && !readyUnit.mySkills[sk].isPassive)
+                if (readyUnit.GetMySkills()[sk].IsReady() && !readyUnit.GetMySkills()[sk].isPassive && readyUnit.GetMySkills()[sk].IsConditionMet(data))
                 {
-                    s = readyUnit.mySkills[sk];
+                    s = readyUnit.GetMySkills()[sk];
                     break;
                 }
             }
         }
 
         //Return the result.
-        if (readyUnit.myStatusEffects.Find(n => n.provoke) != null) s = readyUnit.mySkills[readyUnit.myStatusEffects.Find(n => n.provoke).provokeSkill];
+        if (readyUnit.myStatusEffects.Find(n => n.provoke) != null) s = readyUnit.GetMySkills()[readyUnit.myStatusEffects.Find(n => n.provoke).provokeSkill];
         return s;
     }
 
@@ -380,7 +402,7 @@ public class Battle : MonoBehaviour
             u.myStatusEffects = new List<StatusEffect>();
             u.atb = 0;
 
-            foreach (Skill s in u.mySkills)
+            foreach (Skill s in u.GetMySkills())
             {
                 s.cd = 0;
             }
@@ -441,7 +463,7 @@ public class Battle : MonoBehaviour
         if (PlayerArena.myParty.GetAllUnits().Count > 0) fExp = (long)Mathf.Round((float)exp / PlayerArena.myParty.GetAllUnits().Count);
 
         //Give out exp.
-        foreach (Unit u in Player.playerParty.GetAllLiving())
+        foreach (Unit u in Player.playerParty.GetAllUnits())
         {
             u.AddExp(fExp);
         }

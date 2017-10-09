@@ -26,7 +26,7 @@ public class Town : MonoBehaviour
             }
             Player.playerParty.myUnits[1, 1] = Player.playerUnits[0];
 
-            Player.playerEquips.Add(Equipment.GetItem(commonEquip, EquipType.Weapon));
+            //Player.playerEquips.Add(Equipment.GetItem(commonEquip, EquipType.Weapon));
             //Player.playerEquips[0].SetLevel(100);
             //Player.playerEquips[0].SubStats.Add(new EquipComponent() { stat = EquipStats.Crit, value = 10000 });
             //Player.playerEquips[0].SubStats.Add(new EquipComponent() { stat = EquipStats.CritDMG, value = 10000 });

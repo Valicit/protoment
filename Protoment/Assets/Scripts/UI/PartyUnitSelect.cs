@@ -19,6 +19,8 @@ public class PartyUnitSelect : MonoBehaviour
     //This is what happens when we load the window.
     public void OnLoad()
     {
+        //Sort the player party.
+        Player.SortParty();
         //Destroy the old buttons and make new ones.
         DestroyButtons();
         CreateButtons();
@@ -59,6 +61,8 @@ public class PartyUnitSelect : MonoBehaviour
         //Set the unit.
         b.GetComponent<UnitSelectButton>().myUnit = u;
         b.GetComponent<UnitSelectButton>().SetImage(u.uSprite);
+        b.GetComponent<UnitSelectButton>().rankFrame.UpdateFrame(u.rank);
+        b.GetComponent<UnitSelectButton>().txt_level.text = u.level.ToString();
 
         //Add it to the button list.
         buttonList.Add(b.GetComponent<UnitSelectButton>());

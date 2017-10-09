@@ -1,6 +1,5 @@
-﻿using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class Party
 {
@@ -206,6 +205,19 @@ public class Party
 
         //Return the result.
         return r;
+    }
+
+    //Get line damage mod.
+    public float GetRowDamageMod(Unit u)
+    {
+        int line = 0;
+        if (GetLine(1).Contains(u)) line = 1;
+        if (GetLine(2).Contains(u)) line = 2;
+
+        if (line == 2 && GetLine(0).Count > 0 && GetLine(1).Count > 0) return MathP.backLineMod;
+        else if (line == 1 && GetLine(0).Count > 0) return MathP.midLineMod;
+        else if (line == 2 && (GetLine(0).Count > 0 || GetLine(1).Count > 0)) return MathP.midLineMod;
+        else return MathP.frontLineMod;
     }
     #endregion
 }

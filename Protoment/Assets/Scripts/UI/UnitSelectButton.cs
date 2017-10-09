@@ -9,6 +9,8 @@ public class UnitSelectButton : MonoBehaviour {
 
     //This is the unit image we should be changing.
     public Image unitImage;
+    public RankFrame rankFrame;
+    public Text txt_level;
 
     //This is what happens if we are a party button.
     public int x;

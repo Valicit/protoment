@@ -49,7 +49,7 @@ public class UnitEquipScreen : MonoBehaviour
         if (selectedInventory != null)
         {
             txt_ItemWorldButton.text = string.Format("Item World: {0} / {1} Keys", Player.itemWorldKeys, GetItemWorldPrice(selectedInventory.rarity));
-            txt_SellItemButton.text = string.Format("Sell Item: {0} Keys", GetItemWorldPrice(selectedInventory.rarity) / 10);
+            txt_SellItemButton.text = string.Format("Sell Item: {0} Keys", GetItemWorldPrice(selectedInventory.rarity) / ((int)selectedInventory.rarity + 1));
         }
         else
         {
@@ -239,7 +239,7 @@ public class UnitEquipScreen : MonoBehaviour
         {
             //Get rid of it.
             Player.playerEquips.Remove(selectedInventory);
-            Player.itemWorldKeys += GetItemWorldPrice(selectedInventory.rarity) / 10;
+            Player.itemWorldKeys += GetItemWorldPrice(selectedInventory.rarity) / ((int)selectedInventory.rarity + 1);
             selectedInventory = null;
             itemPane.OnLoad();
         }

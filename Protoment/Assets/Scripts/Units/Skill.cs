@@ -10,6 +10,14 @@ public enum ValidTarget
     AnyAlly = 101,
 }
 
+//These are conditions for the skill to go off automatically.
+public enum SkillConditions
+{
+    None,
+    SelfLowHP,
+    PartyLowHP
+}
+
 [CreateAssetMenu]
 public class Skill : ScriptableObject
 {
@@ -17,7 +25,11 @@ public class Skill : ScriptableObject
 
     //These are a list of variables commonly needed by skills.
     public string displayName = "Skill";
+    public string description = "Coming Soon";
+    public int rankUnlock = 0;
     public ValidTarget validTarget = ValidTarget.AnyEnemy;
+    public SkillConditions condition = SkillConditions.None;
+    public float ConditionalValue;
     private float wait = 1f;
     public int cd = 0;
     public int maxCD = 0;
@@ -79,13 +91,13 @@ public class Skill : ScriptableObject
         }
 
         //If I should have a passive effect.
-        if (passiveStatus != null)
+        if (passiveStatus != null && me.rank >= rankUnlock)
         {
             me.AddStatusEffect(GetPassiveStatus(passiveStatus, me));
         }
 
         //If the party should have an effect.
-        if (passivePartyStatus != null)
+        if (passivePartyStatus != null && me.rank >= rankUnlock)
         {
             foreach (Unit u in ally.GetAllLiving())
             {
@@ -94,7 +106,7 @@ public class Skill : ScriptableObject
         }
 
         //If the enemy party should have an effect.
-        if (passiveEnemyStatus != null)
+        if (passiveEnemyStatus != null && me.rank >= rankUnlock)
         {
             foreach (Unit u in enemy.GetAllLiving())
             {
@@ -135,7 +147,8 @@ public class Skill : ScriptableObject
                 if (data.defendingParty.ValidateSingleRandom().Contains(target)) return true;
                 break;
             case ValidTarget.AnyFrontEnemy:
-                if(data.defendingParty.GetFrontLine().Contains(target)) return true;
+                //if(data.defendingParty.GetFrontLine().Contains(target)) return true;
+                if (data.defendingParty.ValidateSingleRandom().Contains(target)) return true;
                 break;
             case ValidTarget.AnyAlly:
                 if (data.actorParty.ValidateSingleRandom().Contains(target)) return true;
@@ -143,6 +156,25 @@ public class Skill : ScriptableObject
         }
 
         //Default to false.
+        return false;
+    }
+
+    //Get whether we meet the conditions to automatically use a skill.
+    public bool IsConditionMet(AttackData data)
+    {
+        switch (condition)
+        {
+            case SkillConditions.None:
+                return true;
+
+            case SkillConditions.SelfLowHP:
+                if ((float)data.actor.cHP / (float)data.actor.GetmHP() < ConditionalValue) return true;
+                else return false;
+
+            case SkillConditions.PartyLowHP:
+                if (data.actorParty.GetAllLiving().Find(n => (float)n.cHP / (float)n.GetmHP() < ConditionalValue) != null) return true;
+                else return false;
+        }
         return false;
     }
 }

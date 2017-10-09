@@ -59,12 +59,15 @@ public class UnitStatusScreen : MonoBehaviour
         txt_crit.text = "Crit: " + (myUnit.GetCrit()) + "%";
         txt_critDMG.text = "CritDMG: " + (myUnit.GetCritDMG() * 100) + "%";
         txt_speed.text = "Speed: " + myUnit.GetSpeed();
-        txt_skill1.text = "SkillText";
-        txt_skill2.text = "SkillText";
-        txt_skill3.text = "SkillText";
+        if (myUnit.GetMySkillsFull().Count > 0) txt_skill1.text = string.Format("{0}: {1} (Unlocks at rank {2})", myUnit.GetMySkillsFull()[0].displayName, myUnit.GetMySkillsFull()[0].description, myUnit.GetMySkillsFull()[0].rankUnlock);
+        else txt_skill1.text = "";
+        if (myUnit.GetMySkillsFull().Count > 1) txt_skill2.text = string.Format("{0}: {1} (Unlocks at rank {2})", myUnit.GetMySkillsFull()[1].displayName, myUnit.GetMySkillsFull()[1].description, myUnit.GetMySkillsFull()[1].rankUnlock);
+        else txt_skill2.text = "";
+        if (myUnit.GetMySkillsFull().Count > 2) txt_skill3.text = string.Format("{0}: {1} (Unlocks at rank {2})", myUnit.GetMySkillsFull()[2].displayName, myUnit.GetMySkillsFull()[2].description, myUnit.GetMySkillsFull()[2].rankUnlock);
+        else txt_skill3.text = "";
 
-        txt_reap.text = string.Format("Reap: {0}", MathP.GetReapValue(myUnit.rank));
-        txt_upgrade.text = string.Format("Upgrade: {0} / {1}", Player.mana, MathP.GetReapValue(myUnit.rank) * myUnit.rank);
+        txt_reap.text = string.Format("Reap: {0}", 1);
+        txt_upgrade.text = string.Format("Upgrade: {0} / {1}", Player.imagination[myUnit.rank - 1], myUnit.rank);
     }
 
     //Select a new unit.
@@ -90,10 +93,10 @@ public class UnitStatusScreen : MonoBehaviour
     public void OnUpgrade()
     {
         //If we have the mana.
-        if (Player.mana >= MathP.GetReapValue(myUnit.rank) * myUnit.rank && myUnit.level >= MathP.maxLevels[myUnit.rank - 1])
+        if (Player.imagination[myUnit.rank - 1] >= myUnit.rank && myUnit.level >= MathP.maxLevels[myUnit.rank - 1])
         {
             //Remove the mana.
-            Player.mana -= MathP.GetReapValue(myUnit.rank) * myUnit.rank;
+            Player.imagination[myUnit.rank - 1] -= myUnit.rank;
 
             //Return the unit to level 1.
             myUnit.level = 1;

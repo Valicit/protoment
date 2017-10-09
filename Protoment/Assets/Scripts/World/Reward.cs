@@ -7,7 +7,7 @@ public enum RewardType
     Item,
     BasicMaterial,
     AdvancedMaterial,
-    RainbowMaterial,
+    MonochromeMaterial,
     LuminousMaterial,
     LightShadowMaterial,
     Weapon,
@@ -44,8 +44,8 @@ public class Reward
                 return GrantMats("basic", ref Player.basicMaterial);
             case RewardType.AdvancedMaterial:
                 return GrantMats("advanced", ref Player.advancedMaterial);
-            case RewardType.RainbowMaterial:
-                return GrantMats("rainbow", ref Player.rainbowMaterial);
+            case RewardType.MonochromeMaterial:
+                return GrantMats("monochrome", ref Player.rainbowMaterial);
             case RewardType.LuminousMaterial:
                 return GrantMats("luminous", ref Player.luminousMaterial);
             case RewardType.LightShadowMaterial:

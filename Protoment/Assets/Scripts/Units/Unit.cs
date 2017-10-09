@@ -15,7 +15,7 @@ public class Unit
     public Rarity uRarity = Rarity.Common;
     public int rank = 1;
     public float classExpMod;
-    public List<Skill> mySkills = new List<Skill>();
+    private List<Skill> mySkills = new List<Skill>();
     public Sprite uSprite;
     public UnitData myData;
 
@@ -65,7 +65,9 @@ public class Unit
     public void Tick()
     {
         //Move the atb forward.
-        atb += (GetSpeed() / 100) * Battle.speed * Time.deltaTime;
+        //atb += (GetSpeed() / 100) * Battle.speed * Time.deltaTime;
+        //if (atb > 1000) atb = 1000;
+        atb += ((GetAGI() / Battle.battle.GetAverageAgi()) * (GetSpeed() / 100)) * Time.deltaTime * Battle.speed;
         if (atb > 1000) atb = 1000;
 
         //Work through passive skills.
@@ -123,7 +125,7 @@ public class Unit
     public void TriggerSkill(Skill s)
     {
         Battle.triggerUnit = this;
-        Battle.battle.UseSkill(s);
+        Battle.battle.UseSkill(s, Battle.battle.GatherAttackData());
         Battle.triggerUnit = null;
     }
 
@@ -304,7 +306,7 @@ public class Unit
         SPR += (long)Mathf.Max(1, (myData.SPR * Random.Range(MathP.StatGain[rank - 1].x, MathP.StatGain[rank - 1].y)));
         DEX += (long)Mathf.Max(1, (myData.DEX * Random.Range(MathP.StatGain[rank - 1].x, MathP.StatGain[rank - 1].y)));
         AGI += (long)Mathf.Max(1, (myData.AGI * Random.Range(MathP.StatGain[rank - 1].x, MathP.StatGain[rank - 1].y)));
-        cHP = GetmHP();
+        if(cHP != 0) cHP = GetmHP(); //level ups dont res people.
         level++;
     }
     public void LevelUp(int times)
@@ -319,7 +321,7 @@ public class Unit
     public void Reap()
     {
         //Add mana.
-        Player.mana += MathP.GetReapValue(rank);
+        Player.imagination[rank - 1] += 1;
     }
 
     #region GetStats
@@ -417,8 +419,21 @@ public class Unit
     public long GetENext(float level)
     {
         float r = (0.04f * Mathf.Pow(level,3)) + (0.8f * Mathf.Pow(level, 2)) + (2 * level);
-        r *= classExpMod;
+        r *= (rank * 3);
         return (long)r;
+    }
+
+    //Get my skills.
+    public List<Skill> GetMySkills()
+    {
+        List<Skill> r = new List<Skill>();
+        r.AddRange(mySkills.FindAll(n => n.rankUnlock <= rank));
+        return r;
+    }
+    //Get ALL of my skills, even if I can't access them yet.
+    public List<Skill> GetMySkillsFull()
+    {
+        return mySkills;
     }
 
     //Get the currently equipped item in a given slot.
@@ -507,7 +522,7 @@ public class Unit
         }
         r.uRarity = u.uRarity;
         r.classExpMod = u.classExpMod;
-        r.rank = (int)u.uRarity + 1;
+        r.rank = 1;
         r.uSprite = u.unitSprite;
         r.myData = UnitData.Instantiate(u);
 

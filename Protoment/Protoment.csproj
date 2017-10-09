@@ -83,6 +83,7 @@
     <Compile Include="Assets\Scripts\UI\EquipSelectButton.cs" />
     <Compile Include="Assets\Scripts\UI\EquipSelectPane.cs" />
     <Compile Include="Assets\Scripts\UI\PartyUnitSelect.cs" />
+    <Compile Include="Assets\Scripts\UI\RankFrame.cs" />
     <Compile Include="Assets\Scripts\UI\StatusIcon.cs" />
     <Compile Include="Assets\Scripts\UI\SummoningScreen.cs" />
     <Compile Include="Assets\Scripts\UI\UnitEquipScreen.cs" />

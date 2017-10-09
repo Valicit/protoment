@@ -20,6 +20,7 @@ public class Panel : MonoBehaviour
     public Text levelText;
     public GameObject statusFrame;
     public StatusIcon[] sIcons;
+    public RankFrame rankFrame;
     public Skill s;
 
     //This is our text prefab.
@@ -56,6 +57,7 @@ public class Panel : MonoBehaviour
             ATBBar.gameObject.SetActive(false);
             EXPBar.gameObject.SetActive(false);
             statusFrame.SetActive(false);
+            rankFrame.gameObject.SetActive(false);
         }
         else if (!myUnit.IsAlive())
         {
@@ -64,6 +66,7 @@ public class Panel : MonoBehaviour
             ATBBar.gameObject.SetActive(false);
             EXPBar.gameObject.SetActive(false);
             statusFrame.SetActive(false);
+            rankFrame.gameObject.SetActive(false);
         }
         else
         {
@@ -72,6 +75,7 @@ public class Panel : MonoBehaviour
             ATBBar.gameObject.SetActive(true);
             EXPBar.gameObject.SetActive(true);
             statusFrame.SetActive(true);
+            rankFrame.gameObject.SetActive(true);
         }
     }
 
@@ -86,6 +90,7 @@ public class Panel : MonoBehaviour
             EXPBar.value = (float)myUnit.exp / (float)myUnit.GetENext(myUnit.level);
             uSprite.sprite = myUnit.uSprite;
             levelText.text = myUnit.level.ToString();
+            rankFrame.UpdateFrame(myUnit.rank);
 
             //Update the status icons.
             UpdateStatusIcons();

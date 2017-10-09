@@ -21,19 +21,34 @@ public static class MathP
         new Vector2(0.95f, 1.05f)
     };
 
+    //These values control damage modifier for being in different battle lines.
+    public static float frontLineMod = 1f;
+    public static float midLineMod = 0.9f;
+    public static float backLineMod = 0.75f;
+
     //These are max levels at different ranks.
     public static int[] maxLevels = new int[] {
-        20,
-        40,
-        60,
-        80,
+        25,
         100,
-        200,
+        250,
         500,
+        750,
         1000,
+        2500,
         5000,
+        7500,
         9999
     };
+
+    //Get rank based on max level.
+    public static int GetRank(int level)
+    {
+        for (int i = 0; i < maxLevels.Length; i++)
+        {
+            if (level < maxLevels[i]) return i + 1;
+        }
+        return 10;
+    }
 
     //Get rank value.
     public static long GetReapValue(int rank)

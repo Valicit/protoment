@@ -7,13 +7,22 @@ public class Dungeon : ScriptableObject
 {
     //This controls one dungeon, and has all the variables needed to make it interesting.
 
+    //These are primary dungeon values.
+    public int unitLevel = 1;
+    public int unitRank = -1;
+    public int unitEquipLevel = 1;
+    public Equipment randEquip;
+    public bool weaponEquipped;
+    public bool armorEquipped;
+    public bool accessoryEquipped;
+    public bool isRandom;
+    public List<UnitData> randomUnits;
+
     //This is an array of unit arrays that can be loaded into a party.
     public int currentWave = 0;
     public Wave[] waves;
 
     //These are only used for random dungeon creation.
-    public bool isRandom;
-    public List<UnitData> randomUnits;
     public int baseLevel = 1;
     public int floorCount = 100;
     public float unitChance = 100f;
@@ -29,15 +38,15 @@ public class Dungeon : ScriptableObject
         Party p = new Party();
 
         //Insert Units. There was no reason not to use a nested loop here. But I am tired and I realized half way through making it. Go me.
-        if (waves[wave].unit00 != null) p.myUnits[0, 0] = Unit.NewUnit(waves[wave].unit00, waves[wave].Level[0]);
-        if (waves[wave].unit01 != null) p.myUnits[0, 1] = Unit.NewUnit(waves[wave].unit01, waves[wave].Level[1]);
-        if (waves[wave].unit02 != null) p.myUnits[0, 2] = Unit.NewUnit(waves[wave].unit02, waves[wave].Level[2]);
-        if (waves[wave].unit10 != null) p.myUnits[1, 0] = Unit.NewUnit(waves[wave].unit10, waves[wave].Level[3]);
-        if (waves[wave].unit11 != null) p.myUnits[1, 1] = Unit.NewUnit(waves[wave].unit11, waves[wave].Level[4]);
-        if (waves[wave].unit12 != null) p.myUnits[1, 2] = Unit.NewUnit(waves[wave].unit12, waves[wave].Level[5]);
-        if (waves[wave].unit20 != null) p.myUnits[2, 0] = Unit.NewUnit(waves[wave].unit20, waves[wave].Level[6]);
-        if (waves[wave].unit21 != null) p.myUnits[2, 1] = Unit.NewUnit(waves[wave].unit21, waves[wave].Level[7]);
-        if (waves[wave].unit22 != null) p.myUnits[2, 2] = Unit.NewUnit(waves[wave].unit22, waves[wave].Level[8]);
+        if (waves[wave].frontLine1.filled) p.myUnits[0, 0] = waves[wave].GetUnit(0, this);
+        if (waves[wave].frontLine2.filled) p.myUnits[0, 1] = waves[wave].GetUnit(1, this);
+        if (waves[wave].frontLine3.filled) p.myUnits[0, 2] = waves[wave].GetUnit(2, this);
+        if (waves[wave].midLine1.filled) p.myUnits[1, 0] = waves[wave].GetUnit(3, this);
+        if (waves[wave].midLine2.filled) p.myUnits[1, 1] = waves[wave].GetUnit(4, this);
+        if (waves[wave].midLine3.filled) p.myUnits[1, 2] = waves[wave].GetUnit(5, this);
+        if (waves[wave].backLine1.filled) p.myUnits[2, 0] = waves[wave].GetUnit(6, this);
+        if (waves[wave].backLine2.filled) p.myUnits[2, 1] = waves[wave].GetUnit(7, this);
+        if (waves[wave].backLine3.filled) p.myUnits[2, 2] = waves[wave].GetUnit(8, this);
 
         //Return the party.
         return p;
@@ -79,19 +88,17 @@ public class Dungeon : ScriptableObject
         {
             d.waves[i] = new Wave();
             int key = Random.Range(1, 10);
-            if (Random.Range(0, 100) < d.unitChance || key == 1) d.waves[i].unit00 = d.randomUnits[Random.Range(0, d.randomUnits.Count)];
-            if (Random.Range(0, 100) < d.unitChance || key == 2) d.waves[i].unit01 = d.randomUnits[Random.Range(0, d.randomUnits.Count)];
-            if (Random.Range(0, 100) < d.unitChance || key == 3) d.waves[i].unit02 = d.randomUnits[Random.Range(0, d.randomUnits.Count)];
-            if (Random.Range(0, 100) < d.unitChance || key == 4) d.waves[i].unit10 = d.randomUnits[Random.Range(0, d.randomUnits.Count)];
-            if (Random.Range(0, 100) < d.unitChance || key == 5) d.waves[i].unit11 = d.randomUnits[Random.Range(0, d.randomUnits.Count)];
-            if (Random.Range(0, 100) < d.unitChance || key == 6) d.waves[i].unit12 = d.randomUnits[Random.Range(0, d.randomUnits.Count)];
-            if (Random.Range(0, 100) < d.unitChance || key == 7) d.waves[i].unit20 = d.randomUnits[Random.Range(0, d.randomUnits.Count)];
-            if (Random.Range(0, 100) < d.unitChance || key == 8) d.waves[i].unit21 = d.randomUnits[Random.Range(0, d.randomUnits.Count)];
-            if (Random.Range(0, 100) < d.unitChance || key == 9) d.waves[i].unit22 = d.randomUnits[Random.Range(0, d.randomUnits.Count)];
-            for (int z = 0; z < d.waves[i].Level.Length; z++)
-            {
-                d.waves[i].Level[z] = Dungeon.GetRandomEnemyLevel(i, d.baseLevel);
-            }
+            if (Random.Range(0, 100) < d.unitChance || key == 1) d.waves[i].frontLine1.filled = true;
+            if (Random.Range(0, 100) < d.unitChance || key == 2) d.waves[i].frontLine2.filled = true;
+            if (Random.Range(0, 100) < d.unitChance || key == 3) d.waves[i].frontLine3.filled = true;
+            if (Random.Range(0, 100) < d.unitChance || key == 4) d.waves[i].midLine1.filled = true;
+            if (Random.Range(0, 100) < d.unitChance || key == 5) d.waves[i].midLine2.filled = true;
+            if (Random.Range(0, 100) < d.unitChance || key == 6) d.waves[i].midLine3.filled = true;
+            if (Random.Range(0, 100) < d.unitChance || key == 7) d.waves[i].backLine1.filled = true;
+            if (Random.Range(0, 100) < d.unitChance || key == 8) d.waves[i].backLine2.filled = true;
+            if (Random.Range(0, 100) < d.unitChance || key == 9) d.waves[i].backLine3.filled = true;
+            d.waves[i].level = Dungeon.GetRandomEnemyLevel(i, d.baseLevel);
+            d.waves[i].equipLevel = Mathf.CeilToInt(Mathf.Max(1, d.waves[i].level * 0.01f));
         }
 
         //Return the result.

@@ -111,13 +111,17 @@ public class SkillComponent
                 break;
 
             case SkillTargets.SingleFrontLine:
+                //if (data.selectedUnit != null) targets.Add(data.selectedUnit);
+                //else if (p.GetSingleFrontLine() != null) targets.Add(p.GetSingleFrontLine());
                 if (data.selectedUnit != null) targets.Add(data.selectedUnit);
-                else if (p.GetSingleFrontLine() != null) targets.Add(p.GetSingleFrontLine());
+                else if (p.GetSingleRandom() != null) targets.Add(p.GetSingleRandom());
                 break;
 
             case SkillTargets.SingleBackLine:
+                //if (data.selectedUnit != null) targets.Add(data.selectedUnit);
+                //else if (p.GetSingleFrontLine() != null) targets.Add(p.GetSingleBackLine());
                 if (data.selectedUnit != null) targets.Add(data.selectedUnit);
-                else if (p.GetSingleFrontLine() != null) targets.Add(p.GetSingleBackLine());
+                else if (p.GetSingleRandom() != null) targets.Add(p.GetSingleRandom());
                 break;
 
             case SkillTargets.RowRandom:
@@ -131,8 +135,10 @@ public class SkillComponent
                 break;
 
             case SkillTargets.LineFront:
+                //if (data.selectedUnit != null) targets.AddRange(p.GetLineContaining(data.selectedUnit));
+                //else targets.AddRange(p.GetFrontLine());
                 if (data.selectedUnit != null) targets.AddRange(p.GetLineContaining(data.selectedUnit));
-                else targets.AddRange(p.GetFrontLine());
+                else if (p.GetSingleRandom() != null) targets.AddRange(p.GetLineContaining(p.GetSingleRandom()));
                 break;
 
             case SkillTargets.Self:
@@ -187,7 +193,11 @@ public class SkillComponent
         if (hit < ((float)actor.GetDEX() / (float)target.GetAGI()) * 100)
         {
             //Roll for damage.
+            float rowMod = 1;
+            if (data.actorParty.GetAllUnits().Contains(target)) rowMod = data.actorParty.GetRowDamageMod(target);
+            else if (data.defendingParty.GetAllUnits().Contains(target)) rowMod = data.defendingParty.GetRowDamageMod(target);
             long d = MathP.GetDamage((decimal)(GetSkillDamage(actor) * dmgMod), target.GetStat(defenseStat));
+            d = (long)(Mathf.CeilToInt(d * rowMod));
 
             //Apply elemental advantage.
             if (MathP.IsElementAdavantage(actor.uElement, target.uElement) == 1) d = (long)(d * ELEMPLUS);

@@ -9,7 +9,7 @@ public class SummoningScreen : MonoBehaviour {
     public Button btn_Basic;
     public Text txt_BasicButton;
     public Text txt_AdvancedButton;
-    public Text txt_RainbowButton;
+    public Text txt_MonochromeButton;
     public Text txt_LuminousButton;
     public Text txt_LightShadowButton;
 
@@ -32,7 +32,7 @@ public class SummoningScreen : MonoBehaviour {
     {
         txt_BasicButton.text = string.Format("Basic Summon: {0} / {1}", Player.basicMaterial, 100);
         txt_AdvancedButton.text = string.Format("Advanced Summon: {0} / {1}", Player.advancedMaterial, 100);
-        txt_RainbowButton.text = string.Format("Rainbow Summon: {0} / {1}", Player.rainbowMaterial, 100);
+        txt_MonochromeButton.text = string.Format("Monochrome Summon: {0} / {1}", Player.rainbowMaterial, 100);
         txt_LuminousButton.text = string.Format("Luminous Summon: {0} / {1}", Player.luminousMaterial, 100);
         txt_LightShadowButton.text = string.Format("Light and Shadow Summon: {0} / {1}", Player.lightShadowMaterial, 100);
     }
@@ -52,13 +52,13 @@ public class SummoningScreen : MonoBehaviour {
     //Perform a rainbow summon.
     public void RainbowSummon()
     {
-        Summon(new float[] { 2, 25, 100 }, new Rarity[] { Rarity.Rare, Rarity.Uncommon, Rarity.Common }, new List<Element>() { Element.Fire, Element.Water, Element.Wood, Element.Electric, Element.Light, Element.Dark }, ref Player.rainbowMaterial);
+        Summon(new float[] { 2, 25, 100 }, new Rarity[] { Rarity.Rare, Rarity.Uncommon, Rarity.Common }, new List<Element>() { Element.Light, Element.Dark }, ref Player.rainbowMaterial);
     }
 
     //Perform a luminous summon.
     public void LuminousSummon()
     {
-        Summon(new float[] { 2, 8, 90 }, new Rarity[] { Rarity.Legendary, Rarity.Epic, Rarity.Rare }, new List<Element>() { Element.Fire, Element.Water, Element.Wood, Element.Electric, Element.Light, Element.Dark }, ref Player.luminousMaterial);
+        Summon(new float[] { 8, 92 }, new Rarity[] { Rarity.Legendary, Rarity.Epic }, new List<Element>() { Element.Fire, Element.Water, Element.Wood, Element.Electric, Element.Light, Element.Dark }, ref Player.luminousMaterial);
     }
 
     //Perform a light and shadow summon.
